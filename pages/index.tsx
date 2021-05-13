@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import styles from './index.module.scss'
 
 export default function Home() {
   return (
@@ -19,14 +19,14 @@ export default function Home() {
           <a href='https://github.com/danburonline/oscy-space'>Oscy Space</a>
         </h1>
 
-        <p className={styles.description}>See ThreeJS example scenes</p>
+        <p className={styles.description}>ThreeJS example scenes</p>
 
         <div className={styles.grid}>
           <a href='/basic-cube' className={styles.card}>
-            <h2>Basic 3D Cube &rarr;</h2>
+            <h2>#1 Basic Cube &rarr;</h2>
             <p>
-              Basic 3D cube with <code>react-three-fiber</code> and{' '}
-              <code>leva</code> debug controls.
+              Basic cube with <code>react-three-fiber</code> and{' '}
+              <code>leva</code> controls.
             </p>
           </a>
 

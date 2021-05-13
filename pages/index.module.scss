@@ -1,3 +1,5 @@
+$blue: #0070f3;
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -34,7 +36,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: $blue;
   text-decoration: none;
 }
 
@@ -93,8 +95,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: $blue;
+  border-color: $blue;
 }
 
 .card h2 {

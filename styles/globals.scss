@@ -1,3 +1,5 @@
+@import './reset.scss';
+
 html,
 body {
   padding: 0;
@@ -13,4 +15,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
