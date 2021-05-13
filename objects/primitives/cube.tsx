@@ -2,7 +2,7 @@ import { useState } from 'react'
 import * as THREE from 'three'
 import { useControls } from 'leva'
 
-export default function Box() {
+export default function Cube() {
   const [hover, setHover] = useState(false)
 
   const { posZ, color, hoverColor, scale } = useControls({
