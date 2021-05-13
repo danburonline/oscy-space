@@ -2,7 +2,7 @@ import { Canvas } from '@react-three/fiber'
 import Box from './objects/box'
 import styles from './BasicCube.module.scss'
 import { useControls } from 'leva'
-import { OrbitControls as CameraOrbitControls, Stars } from '@react-three/drei'
+import { OrbitControls, Stars } from '@react-three/drei'
 
 export default function BasicCube() {
   const { ambientIntensity } = useControls({ ambientIntensity: 0.25 })
@@ -11,7 +11,7 @@ export default function BasicCube() {
     <div className={styles.canvasContainer}>
       <Canvas>
         {/* Controls */}
-        <CameraOrbitControls />
+        <OrbitControls />
 
         {/* Lights */}
         <pointLight position={[10, 15, 10]} />
