@@ -7,7 +7,6 @@ $blue: #0070f3;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .main {
@@ -47,9 +46,10 @@ $blue: #0070f3;
 }
 
 .title {
-  margin: 0;
+  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 4rem;
+  font-weight: 700;
 }
 
 .title,
@@ -102,6 +102,7 @@ $blue: #0070f3;
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .card p {
@@ -110,14 +111,18 @@ $blue: #0070f3;
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.bold {
+  font-weight: 700;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-left: 0;
   }
 }

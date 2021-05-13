@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Html } from 'next/document'
 import styles from './index.module.scss'
 
 export default function Home() {
@@ -53,7 +54,8 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <p>
-          Created by <b>Daniel Burger & David Fritz</b>
+          Created by{' '}
+          <span className={styles.bold}>Daniel Burger & David Fritz</span>
         </p>
       </footer>
     </div>
