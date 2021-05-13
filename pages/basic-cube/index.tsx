@@ -10,6 +10,7 @@ export default function BasicCube() {
   return (
     <div className={styles.canvasContainer}>
       <Canvas>
+        {/* TODO Resolve OrbitControls TypeScript error */}
         {/* @ts-ignore Utils */}
         <OrbitControls />
         <Stars />

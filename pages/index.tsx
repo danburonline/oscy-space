@@ -25,8 +25,8 @@ export default function Home() {
           <a href='/basic-cube' className={styles.card}>
             <h2>Basic 3D Cube &rarr;</h2>
             <p>
-              This is a basic 3D cube with orbit controls and simple point
-              lights.
+              Basic 3D cube with <code>react-three-fiber</code> and{' '}
+              <code>leva</code> debug controls.
             </p>
           </a>
 
