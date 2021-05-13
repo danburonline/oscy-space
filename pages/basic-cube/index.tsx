@@ -1,8 +1,8 @@
 import { Canvas } from '@react-three/fiber'
 import Box from './objects/box'
 import styles from './BasicCube.module.scss'
-import { OrbitControls, Stars } from '@react-three/drei'
 import { useControls } from 'leva'
+import { OrbitControls, Stars } from '@react-three/drei'
 
 export default function BasicCube() {
   const { ambientIntensity } = useControls({ ambientIntensity: 0.25 })
@@ -10,16 +10,15 @@ export default function BasicCube() {
   return (
     <div className={styles.canvasContainer}>
       <Canvas>
-        {/* TODO Resolve OrbitControls TypeScript error */}
-        {/* @ts-ignore Utils */}
+        {/* Controls */}
         <OrbitControls />
-        <Stars />
 
         {/* Lights */}
-        <pointLight position={[10, 15, 10]} angle={0.3} />
+        <pointLight position={[10, 15, 10]} />
         <ambientLight intensity={ambientIntensity} />
 
         {/* Objects */}
+        <Stars />
         <Box />
       </Canvas>
     </div>
