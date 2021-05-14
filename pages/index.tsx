@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Html } from 'next/document'
 import styles from './index.module.scss'
 
 export default function Home() {
