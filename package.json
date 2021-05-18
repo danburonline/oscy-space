@@ -13,6 +13,7 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
+    "@react-three/cannon": "^1.1.1",
     "@react-three/drei": "^4.3.3",
     "@react-three/fiber": "^6.1.2",
     "next": "10.2.0",
