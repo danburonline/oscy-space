@@ -30,9 +30,9 @@ export default function Home() {
             </p>
           </a>
 
-          <a href='https://nextjs.org/learn' className={styles.card}>
-            <h2>Scene 2 &rarr;</h2>
-            <p>Neque est ut quo rerum aperiam quas. Natus nulla in harum.</p>
+          <a href='/physics' className={styles.card}>
+            <h2>#2 Physics Cube &rarr;</h2>
+            <p>Reused Cube applied with physics from the cannon package.</p>
           </a>
 
           <a
