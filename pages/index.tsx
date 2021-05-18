@@ -24,15 +24,12 @@ export default function Home() {
         <div className={styles.grid}>
           <a href='/basic-cube' className={styles.card}>
             <h2>#1 Basic Cube &rarr;</h2>
-            <p>
-              Basic cube with <code>react-three-fiber</code> and{' '}
-              <code>leva</code> controls.
-            </p>
+            <p>Basic cube with react-three-fiber and leva controls.</p>
           </a>
 
           <a href='/physics' className={styles.card}>
             <h2>#2 Physics Cube &rarr;</h2>
-            <p>Reused Cube applied with physics from the cannon package.</p>
+            <p>Basic cube applied with physics from the cannon package.</p>
           </a>
 
           <a

@@ -32,7 +32,8 @@ export default function Cube() {
       <boxBufferGeometry attach='geometry'></boxBufferGeometry>
       <meshLambertMaterial
         attach='material'
-        color={hover ? hoverColor : color}></meshLambertMaterial>
+        color={hover ? hoverColor : color}
+      />
     </mesh>
   )
 }

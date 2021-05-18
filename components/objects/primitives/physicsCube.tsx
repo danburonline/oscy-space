@@ -10,7 +10,11 @@ function Plane() {
 }
 
 function Cube() {
-  const [ref] = useBox(() => ({ mass: 1, position: [0, 5, 0] }))
+  const [ref] = useBox(() => ({
+    mass: 1,
+    position: [0, 0, 0],
+    rotation: [-Math.PI / 1.5, 0, 0]
+  }))
   return (
     <mesh ref={ref}>
       <boxBufferGeometry />
