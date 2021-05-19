@@ -1,59 +1,49 @@
 import Head from 'next/head'
-import styles from './index.module.scss'
+import Header from '../components/organisms/Header'
+import Cards from '../components/organisms/Cards'
+
+const content = [
+  {
+    title: '#1 Basic Cube',
+    description: 'Basic cube with react-three-fiber and leva controls.',
+    link: '/basic-cube'
+  },
+  {
+    title: '#2 Physics Cube',
+    description: 'Basic cube applied with physics from the cannon package.',
+    link: '/physics-cube'
+  },
+  {
+    title: '#3 Physics Experiment',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
+  },
+  {
+    title: '#4 FPV Scene',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
+  }
+]
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Oscy Space – Proof of Concept</title>
-        <meta
-          name='description'
-          content='This is the proof of concept for Oscy Space'
-        />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to{' '}
-          <a href='https://github.com/danburonline/oscy-space'>Oscy Space</a>
-        </h1>
-
-        <p className={styles.description}>ThreeJS example scenes</p>
-
-        <div className={styles.grid}>
-          <a href='/basic-cube' className={styles.card}>
-            <h2>#1 Basic Cube &rarr;</h2>
-            <p>Basic cube with react-three-fiber and leva controls.</p>
-          </a>
-
-          <a href='/physics' className={styles.card}>
-            <h2>#2 Physics Cube &rarr;</h2>
-            <p>Basic cube applied with physics from the cannon package.</p>
-          </a>
-
-          <a
-            href='https://github.com/vercel/next.js/tree/master/examples'
-            className={styles.card}>
-            <h2>Scene 3 &rarr;</h2>
-            <p>Neque est ut quo rerum aperiam quas. Natus nulla in harum.</p>
-          </a>
-
-          <a
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            className={styles.card}>
-            <h2>Scene 4 &rarr;</h2>
-            <p>Neque est ut quo rerum aperiam quas. Natus nulla in harum.</p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <p>
-          Created by{' '}
-          <span className={styles.bold}>Daniel Burger & David Fritz</span>
-        </p>
-      </footer>
-    </div>
+      <section className='tw-min-h-screen tw-flex tw-flex-col '>
+        <main className='tw-min-h-screen tw-py-20 tw-flex tw-flex-col tw-justify-center'>
+          <Header
+            title='Welcome to'
+            subTitle='ThreeJS Proof of Concept Scenes'
+            linkText='Oscy Space'
+            linkUrl='https://github.com/danburonline/oscy-space'
+          />
+          <Cards cards={content} />
+        </main>
+      </section>
+    </>
   )
 }
