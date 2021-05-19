@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import styles from './index.module.scss'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Oscy Space – Proof of Concept</title>
         <meta
@@ -13,47 +12,42 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main>
+        <h1>
           Welcome to{' '}
           <a href='https://github.com/danburonline/oscy-space'>Oscy Space</a>
         </h1>
 
-        <p className={styles.description}>ThreeJS example scenes</p>
+        <p>ThreeJS example scenes</p>
 
-        <div className={styles.grid}>
-          <a href='/basic-cube' className={styles.card}>
+        <div>
+          <a href='/basic-cube'>
             <h2>#1 Basic Cube &rarr;</h2>
             <p>Basic cube with react-three-fiber and leva controls.</p>
           </a>
 
-          <a href='/physics' className={styles.card}>
+          <a href='/physics'>
             <h2>#2 Physics Cube &rarr;</h2>
             <p>Basic cube applied with physics from the cannon package.</p>
           </a>
 
-          <a
-            href='https://github.com/vercel/next.js/tree/master/examples'
-            className={styles.card}>
+          <a href='https://github.com/vercel/next.js/tree/master/examples'>
             <h2>Scene 3 &rarr;</h2>
             <p>Neque est ut quo rerum aperiam quas. Natus nulla in harum.</p>
           </a>
 
-          <a
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            className={styles.card}>
+          <a href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'>
             <h2>Scene 4 &rarr;</h2>
             <p>Neque est ut quo rerum aperiam quas. Natus nulla in harum.</p>
           </a>
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <p>
-          Created by{' '}
-          <span className={styles.bold}>Daniel Burger & David Fritz</span>
+          Created by <span>Daniel Burger & David Fritz</span>
         </p>
       </footer>
-    </div>
+    </>
   )
 }
