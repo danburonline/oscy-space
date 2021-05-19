@@ -33,8 +33,8 @@ export default function Home() {
       <Head>
         <title>Oscy Space – Proof of Concept</title>
       </Head>
-      <div className='tw-min-h-screen tw-flex tw-flex-col '>
-        <div className='tw-min-h-screen tw-py-20 tw-flex tw-flex-col tw-justify-center'>
+      <section className='tw-min-h-screen tw-flex tw-flex-col '>
+        <main className='tw-min-h-screen tw-py-20 tw-flex tw-flex-col tw-justify-center'>
           <Header
             title='Welcome to'
             subTitle='ThreeJS Proof of Concept Scenes'
@@ -42,8 +42,8 @@ export default function Home() {
             linkUrl='https://github.com/danburonline/oscy-space'
           />
           <Cards cards={content} />
-        </div>
-      </div>
+        </main>
+      </section>
     </>
   )
 }
