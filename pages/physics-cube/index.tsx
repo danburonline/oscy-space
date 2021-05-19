@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import { OrbitControls, Stats } from '@react-three/drei'
 
 // The Cube needs to be imported on the client-side since
-// the cannon library uses the window object
+// the cannon package uses the window object
 const DynamicPhysicsCube = dynamic(
   () => import('../../components/objects/primitives/physicsCube'),
   {
@@ -13,15 +13,18 @@ const DynamicPhysicsCube = dynamic(
 
 export default function PhysicsScene() {
   return (
-    <Canvas>
-      {/* Controls */}
-      <OrbitControls enableRotate={false} enablePan={false} />
+    <>
+      <a href='/'>&larr; Go back home</a>
+      <Canvas>
+        {/* Controls */}
+        <OrbitControls enableRotate={false} enablePan={false} />
 
-      {/* Cube */}
-      <DynamicPhysicsCube />
+        {/* Cube */}
+        <DynamicPhysicsCube />
 
-      {/* Stats */}
-      <Stats />
-    </Canvas>
+        {/* Stats */}
+        <Stats />
+      </Canvas>
+    </>
   )
 }

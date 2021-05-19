@@ -7,20 +7,23 @@ export default function BasicCube() {
   const { ambientIntensity } = useControls({ ambientIntensity: 0.25 })
 
   return (
-    <Canvas>
-      {/* Controls */}
-      <OrbitControls />
+    <>
+      <a href='/'>&larr; Go back home</a>
+      <Canvas>
+        {/* Controls */}
+        <OrbitControls />
 
-      {/* Lights */}
-      <pointLight position={[10, 15, 10]} />
-      <ambientLight intensity={ambientIntensity} />
+        {/* Lights */}
+        <pointLight position={[10, 15, 10]} />
+        <ambientLight intensity={ambientIntensity} />
 
-      {/* Objects */}
-      <Stars />
-      <Cube />
+        {/* Objects */}
+        <Stars />
+        <Cube />
 
-      {/* Stats */}
-      <Stats />
-    </Canvas>
+        {/* Stats */}
+        <Stats />
+      </Canvas>
+    </>
   )
 }
