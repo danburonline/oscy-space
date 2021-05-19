@@ -1,16 +1,24 @@
-export default function Header() {
+export type HeaderProps = {
+  title: string
+  linkText: string
+  linkUrl: string
+  subTitle: string
+}
+
+export default function Header(props: HeaderProps) {
   return (
-    <header className='tw-mt-20 tw-mb-12'>
-      <h1 className='tw-w-full tw-text-center tw-text-blue-600 tw-font-bold tw-text-5xl'>
-        Welcome to{' '}
+    <header className='tw-mb-14'>
+      <h1 className='tw-w-full tw-text-center tw-font-bold tw-text-5xl tw-px-10 md:tw-text-6xl'>
+        {props.title}{' '}
         <a
-          className='hover:tw-text-blue-800 hover:tw-underline transition-all'
-          href='https://github.com/danburonline/oscy-space'>
-          Oscy Space
+          target='_blank'
+          className='hover:tw-underline tw-text-blue-600'
+          href={props.linkUrl}>
+          {props.linkText}
         </a>
       </h1>
-      <h2 className='tw-text-center tw-text-2xl tw-mt-4 tw-font-semibold'>
-        ThreeJS example scenes
+      <h2 className='tw-text-center tw-text-2xl md:tw-text-2xl tw-px-10 tw-mt-4 md:tw-font-semibold'>
+        {props.subTitle}
       </h2>
     </header>
   )

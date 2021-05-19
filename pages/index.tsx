@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Footer from '../components/organisms/Footer'
 import Header from '../components/organisms/Header'
 import Cards from '../components/organisms/Cards'
 
-const data = [
+const content = [
   {
     title: '#1 Basic Cube',
     description: 'Basic cube with react-three-fiber and leva controls.',
@@ -13,6 +12,18 @@ const data = [
     title: '#2 Physics Cube',
     description: 'Basic cube applied with physics from the cannon package.',
     link: '/physics-cube'
+  },
+  {
+    title: '#3 Physics Experiment',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
+  },
+  {
+    title: '#4 FPV Scene',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
   }
 ]
 
@@ -21,16 +32,18 @@ export default function Home() {
     <>
       <Head>
         <title>Oscy Space – Proof of Concept</title>
-        <meta
-          name='description'
-          content='This is the proof of concept for Oscy Space'
-        />
       </Head>
-      <main>
-        <Header />
-        <Cards cards={data} />
-      </main>
-      <Footer createdByText={'David Fritz & Daniel Burger'} />
+      <div className='tw-min-h-screen tw-flex tw-flex-col '>
+        <div className='tw-min-h-screen tw-py-20 tw-flex tw-flex-col tw-justify-center'>
+          <Header
+            title='Welcome to'
+            subTitle='ThreeJS Proof of Concept Scenes'
+            linkText='Oscy Space'
+            linkUrl='https://github.com/danburonline/oscy-space'
+          />
+          <Cards cards={content} />
+        </div>
+      </div>
     </>
   )
 }

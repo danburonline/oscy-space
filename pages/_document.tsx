@@ -10,6 +10,10 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
+          <meta
+            name='description'
+            content='This is the proof of concept for Oscy Space'
+          />
           <link rel='icon' href='/favicon.ico' />
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link

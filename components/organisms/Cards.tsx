@@ -15,7 +15,7 @@ export default function Cards(props: CardsProps) {
   ))
 
   return (
-    <section className='tw-grid tw-grid-cols-2 tw-gap-2 tw-'>
+    <section className='tw-grid tw-px-5 tw-grid-cols-1 tw-gap-6 tw-mx-auto tw-max-w-screen-md md:tw-grid-cols-2'>
       {mappedCards}
     </section>
   )
