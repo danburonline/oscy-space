@@ -1,5 +1,20 @@
 import Head from 'next/head'
-import 'tailwindcss/tailwind.css'
+import Footer from '../components/organisms/Footer'
+import Header from '../components/organisms/Header'
+import Cards from '../components/organisms/Cards'
+
+const data = [
+  {
+    title: '#1 Basic Cube',
+    description: 'Basic cube with react-three-fiber and leva controls.',
+    link: '/basic-cube'
+  },
+  {
+    title: '#2 Physics Cube',
+    description: 'Basic cube applied with physics from the cannon package.',
+    link: '/physics-cube'
+  }
+]
 
 export default function Home() {
   return (
@@ -10,45 +25,12 @@ export default function Home() {
           name='description'
           content='This is the proof of concept for Oscy Space'
         />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <main className='tw-flex'>
-        <h1 className='tw-text-lg tw-font-semibold'>
-          Welcome to{' '}
-          <a href='https://github.com/danburonline/oscy-space'>Oscy Space</a>
-        </h1>
-
-        <p>ThreeJS example scenes</p>
-
-        <div>
-          <a href='/basic-cube'>
-            <h2>#1 Basic Cube &rarr;</h2>
-            <p>Basic cube with react-three-fiber and leva controls.</p>
-          </a>
-
-          <a href='/physics-cube'>
-            <h2>#2 Physics Cube &rarr;</h2>
-            <p>Basic cube applied with physics from the cannon package.</p>
-          </a>
-
-          <a href='https://github.com/vercel/next.js/tree/master/examples'>
-            <h2>Scene 3 &rarr;</h2>
-            <p>Neque est ut quo rerum aperiam quas. Natus nulla in harum.</p>
-          </a>
-
-          <a href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'>
-            <h2>Scene 4 &rarr;</h2>
-            <p>Neque est ut quo rerum aperiam quas. Natus nulla in harum.</p>
-          </a>
-        </div>
+      <main>
+        <Header />
+        <Cards cards={data} />
       </main>
-
-      <footer>
-        <p>
-          Created by <span>Daniel Burger & David Fritz</span>
-        </p>
-      </footer>
+      <Footer createdByText={'David Fritz & Daniel Burger'} />
     </>
   )
 }
