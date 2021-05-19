@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import dynamic from 'next/dynamic'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, Stats } from '@react-three/drei'
 
 // The Cube needs to be imported on the client-side since
 // the cannon library uses the window object
@@ -19,6 +19,9 @@ export default function PhysicsScene() {
 
       {/* Cube */}
       <DynamicPhysicsCube />
+
+      {/* Stats */}
+      <Stats />
     </Canvas>
   )
 }

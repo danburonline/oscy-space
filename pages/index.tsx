@@ -26,7 +26,7 @@ export default function Home() {
             <p>Basic cube with react-three-fiber and leva controls.</p>
           </a>
 
-          <a href='/physics'>
+          <a href='/physics-cube'>
             <h2>#2 Physics Cube &rarr;</h2>
             <p>Basic cube applied with physics from the cannon package.</p>
           </a>

@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber'
 import Cube from '../../components/objects/primitives/cube'
 import { useControls } from 'leva'
-import { OrbitControls, Stars } from '@react-three/drei'
+import { OrbitControls, Stars, Stats } from '@react-three/drei'
 
 export default function BasicCube() {
   const { ambientIntensity } = useControls({ ambientIntensity: 0.25 })
@@ -18,6 +18,9 @@ export default function BasicCube() {
       {/* Objects */}
       <Stars />
       <Cube />
+
+      {/* Stats */}
+      <Stats />
     </Canvas>
   )
 }
