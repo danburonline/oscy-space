@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import 'tailwindcss/tailwind.css'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
+        <h1 className='text-lg font-semibold font-display'>
           Welcome to{' '}
           <a href='https://github.com/danburonline/oscy-space'>Oscy Space</a>
         </h1>
