@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className='text-lg font-semibold font-display'>
+        <h1 className='text-lg font-semibold'>
           Welcome to{' '}
           <a href='https://github.com/danburonline/oscy-space'>Oscy Space</a>
         </h1>

@@ -6,12 +6,9 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {}
-  },
-  fontFamily: {
-    sans: ['Graphik', 'sans-serif'],
-    serif: ['Merriweather', 'serif'],
-    display: ['Roboto', 'serif']
+    fontFamily: {
+      sans: ['Open Sans', 'sans-serif']
+    }
   },
   variants: {
     extend: {}
