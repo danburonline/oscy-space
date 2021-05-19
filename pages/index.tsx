@@ -13,7 +13,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main>
+      <main className='tw-flex'>
         <h1 className='tw-text-lg tw-font-semibold'>
           Welcome to{' '}
           <a href='https://github.com/danburonline/oscy-space'>Oscy Space</a>
