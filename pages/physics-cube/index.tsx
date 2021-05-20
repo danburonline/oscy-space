@@ -3,9 +3,9 @@ import dynamic from 'next/dynamic'
 import { OrbitControls, Stats } from '@react-three/drei'
 import BackHomeButton from '../../components/atoms/BackHomeButton'
 
-// The Cube needs to be imported on the client-side since
-// the cannon package uses the window object
-const DynamicPhysicsCube = dynamic(
+// The PhysicsCube needs to be imported on the client-side since
+// the Cannon package uses the window object
+const PhysicsCube = dynamic(
   () => import('../../components/objects/primitives/physicsCube'),
   {
     ssr: false
@@ -17,13 +17,8 @@ export default function PhysicsScene() {
     <div className='tw-h-screen'>
       <BackHomeButton />
       <Canvas className='tw-bg-black'>
-        {/* Controls */}
         <OrbitControls enableRotate={false} enablePan={false} />
-
-        {/* Cube */}
-        <DynamicPhysicsCube />
-
-        {/* Stats */}
+        <PhysicsCube />
         <Stats />
       </Canvas>
     </div>

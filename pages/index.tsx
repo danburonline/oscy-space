@@ -4,23 +4,47 @@ import Cards from '../components/organisms/Cards'
 
 const content = [
   {
-    title: '#1 Basic Cube',
+    title: '✅ Basic Cube',
     description: 'Basic cube with react-three-fiber and leva controls.',
     link: '/basic-cube'
   },
   {
-    title: '#2 Physics Cube',
+    title: '✅ Physics Cube',
     description: 'Basic cube applied with physics from the cannon package.',
     link: '/physics-cube'
   },
   {
-    title: '#3 Physics Experiment',
+    title: '❌ Physics Experiment',
+    description:
+      'Little physics experiment using Cannon, animation and textures.',
+    isNotDone: true
+  },
+  {
+    title: '❌ Imported 3D Object',
     description:
       "This scene is currently in development. As soon as it's done, you'll see it here.",
     isNotDone: true
   },
   {
-    title: '#4 FPV Scene',
+    title: '❌  FPV Scene',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
+  },
+  {
+    title: '❌ Forest Block-In',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
+  },
+  {
+    title: '❌ Tamina Block-In',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
+  },
+  {
+    title: '❌ Spatial Audio',
     description:
       "This scene is currently in development. As soon as it's done, you'll see it here.",
     isNotDone: true

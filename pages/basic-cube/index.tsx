@@ -11,18 +11,14 @@ export default function BasicCube() {
     <div className='tw-h-screen'>
       <BackHomeButton />
       <Canvas className='tw-bg-black'>
-        {/* Controls */}
         <OrbitControls />
 
-        {/* Lights */}
         <pointLight position={[10, 15, 10]} />
         <ambientLight intensity={ambientIntensity} />
 
-        {/* Objects */}
         <Stars />
         <Cube />
 
-        {/* Stats */}
         <Stats />
       </Canvas>
     </div>

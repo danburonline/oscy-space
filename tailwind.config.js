@@ -26,9 +26,5 @@ module.exports = {
       sans: ['Open Sans', 'sans-serif']
     }
   },
-  variants: {
-    extend: {}
-  },
-  plugins: [],
   prefix: 'tw-'
 }

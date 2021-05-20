@@ -9,5 +9,5 @@ export default function Page404() {
     router.push('/')
   }, [])
 
-  return <p>Redirecting...</p>
+  return null
 }
