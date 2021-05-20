@@ -6,7 +6,7 @@ import BackHomeButton from '../../components/atoms/BackHomeButton'
 // The PhysicsCube needs to be imported on the client-side since
 // the Cannon package uses the window object
 const PhysicsCube = dynamic(
-  () => import('../../components/objects/primitives/physicsCube'),
+  () => import('../../components/objects/primitives/PhysicsCube'),
   {
     ssr: false
   }
