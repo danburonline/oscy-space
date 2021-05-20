@@ -14,10 +14,10 @@ const content = [
     link: '/physics-cube'
   },
   {
-    title: '✅ Physics Experiment',
+    title: '❌ Physics Experiment',
     description:
-      'Little physics experiment using Cannon, animations and textures.',
-    link: '/physics-experiment'
+      'Little physics experiment using Cannon, animation and textures.',
+    isNotDone: true
   },
   {
     title: '❌ Imported 3D Object',

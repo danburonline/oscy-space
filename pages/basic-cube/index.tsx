@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import Cube from '../../components/objects/primitives/Cube'
+import Cube from '../../components/objects/primitives/cube'
 import { useControls } from 'leva'
 import { OrbitControls, Stars, Stats } from '@react-three/drei'
 import BackHomeButton from '../../components/atoms/BackHomeButton'
