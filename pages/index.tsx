@@ -5,7 +5,8 @@ import Cards from '../components/organisms/Cards'
 const content = [
   {
     title: '✅ Basic Cube',
-    description: 'Basic cube with react-three-fiber and leva controls.',
+    description:
+      'Basic cube with orbit controls, react-three-fiber and leva controls.',
     link: '/basic-cube'
   },
   {

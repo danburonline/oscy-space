@@ -12,6 +12,7 @@ export default function Header(props: HeaderProps) {
         {props.title}{' '}
         <a
           target='_blank'
+          rel='noopener'
           className='text-blue-600 hover:underline'
           href={props.linkUrl}
         >

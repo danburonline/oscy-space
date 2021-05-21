@@ -1,4 +1,4 @@
-name: oscy-cloudrun-deploy
+name: 'Deploy to Google Cloud Run'
 
 on:
   push:

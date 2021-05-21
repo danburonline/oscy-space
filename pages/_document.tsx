@@ -15,7 +15,7 @@ class CustomDocument extends Document {
             content='This is the proof of concept for Oscy Space'
           />
           <link rel='icon' href='/favicon.ico' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' />
+          <link rel='preload' href='https://fonts.gstatic.com' />
           <link
             href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap'
             rel='stylesheet'
