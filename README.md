@@ -21,4 +21,4 @@
 
 - Push your branch to this repository and create a merge request.
 - As soon as your MR is merged, it will trigger a GitHub Action to automatically deploy the Docker image to Google Cloud Run.
-- Access the deployed application via <https://oscy.space/>.
+- Access the deployed application via <https://oscy.space>.
