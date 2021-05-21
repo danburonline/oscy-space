@@ -27,7 +27,8 @@ export default function Cube() {
       position={[0, 0, posZ]}
       scale={scale}
       onPointerOver={() => setHover(true)}
-      onPointerOut={() => setHover(false)}>
+      onPointerOut={() => setHover(false)}
+    >
       <primitive object={new THREE.AxesHelper(1.25)} />
       <boxBufferGeometry attach='geometry'></boxBufferGeometry>
       <meshLambertMaterial

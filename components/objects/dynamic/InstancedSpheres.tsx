@@ -29,7 +29,8 @@ export default function InstancedSpheres({ number = 100 }) {
       ref={ref}
       castShadow
       receiveShadow
-      args={[null, null, number]}>
+      args={[null, null, number]}
+    >
       <sphereBufferGeometry attach='geometry' args={[1, 16, 16]}>
         <instancedBufferAttribute
           attachObject={['attributes', 'color']}

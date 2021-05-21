@@ -7,17 +7,18 @@ export type HeaderProps = {
 
 export default function Header(props: HeaderProps) {
   return (
-    <header className='tw-mb-14'>
-      <h1 className='tw-w-full tw-text-center tw-font-bold tw-text-5xl tw-px-10 md:tw-text-6xl'>
+    <header className='mb-14'>
+      <h1 className='w-full px-10 text-5xl font-bold text-center md:text-6xl'>
         {props.title}{' '}
         <a
           target='_blank'
-          className='hover:tw-underline tw-text-blue-600'
-          href={props.linkUrl}>
+          className='text-blue-600 hover:underline'
+          href={props.linkUrl}
+        >
           {props.linkText}
         </a>
       </h1>
-      <h2 className='tw-text-center tw-text-2xl md:tw-text-2xl tw-px-10 tw-mt-4 md:tw-font-semibold'>
+      <h2 className='px-10 mt-4 text-2xl text-center md:text-2xl md:font-semibold'>
         {props.subTitle}
       </h2>
     </header>

@@ -15,12 +15,13 @@ const PhysicsExperimentScene = dynamic(
 
 export default function PhysicsExperiment() {
   return (
-    <div className='tw-h-screen'>
+    <div className='h-screen'>
       <BackHomeButton />
       <Canvas
-        className='tw-bg-black'
+        className='bg-black'
         gl={{ alpha: false }}
-        camera={{ position: [0, -12, 16] }}>
+        camera={{ position: [0, -12, 16] }}
+      >
         <OrbitControls />
         <PhysicsExperimentScene />
       </Canvas>

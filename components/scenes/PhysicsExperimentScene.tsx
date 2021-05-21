@@ -3,7 +3,7 @@ import { Physics } from '@react-three/cannon'
 import niceColors from 'nice-color-palettes'
 
 import Plane from '../../components/objects/primitives/Plane'
-import Box from '../../components/objects/primitives/Box'
+import KinematicBox from '../objects/primitives/KinematicBox'
 import InstancedSpheres from '../../components/objects/dynamic/InstancedSpheres'
 
 export default function PhysicsExperiment() {
@@ -42,7 +42,7 @@ export default function PhysicsExperiment() {
           position={[0, -6, 0]}
           rotation={[-0.9, 0, 0]}
         />
-        <Box />
+        <KinematicBox />
         <Suspense fallback={null}>
           <InstancedSpheres number={100} />
         </Suspense>
