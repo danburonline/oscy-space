@@ -25,8 +25,22 @@ const content = [
       "This scene is currently in development. As soon as it's done, you'll see it here.",
     isNotDone: true
   },
+  ,
   {
-    title: '❌  FPV Scene',
+    title: '❌ Imported Animation',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
+  },
+  {
+    title: '❌  Dynamic Scene Loading',
+    description:
+      "This scene is currently in development. As soon as it's done, you'll see it here.",
+    isNotDone: true
+  },
+  ,
+  {
+    title: '❌  FPV Example',
     description:
       "This scene is currently in development. As soon as it's done, you'll see it here.",
     isNotDone: true
@@ -57,8 +71,8 @@ export default function Home() {
       <Head>
         <title>Oscy Space – Proof of Concept</title>
       </Head>
-      <section className='tw-min-h-screen tw-flex tw-flex-col '>
-        <main className='tw-min-h-screen tw-py-20 tw-flex tw-flex-col tw-justify-center'>
+      <section className='flex flex-col min-h-screen '>
+        <main className='flex flex-col justify-center min-h-screen py-20'>
           <Header
             title='Welcome to'
             subTitle='ThreeJS Proof of Concept Scenes'
