@@ -7,7 +7,7 @@ import niceColors from 'nice-color-palettes'
 export default function InstancedSpheres({ number = 100 }) {
   const map = useLoader(
     THREE.TextureLoader,
-    '/imgs/textures/normals/carbon-normal.jpeg'
+    '/imgs/textures/carbon-cube/carbon-normal.jpeg'
   )
   const [ref] = useSphere(index => ({
     mass: 1,
