@@ -15,9 +15,9 @@
     "link": "/physics-experiment"
   },
   {
-    "title": "❌ Imported 3D Object",
-    "description": "This scene is currently in development. As soon as it's done, you'll see it here.",
-    "isNotDone": true
+    "title": "✅ Imported 3D Object",
+    "description": "An imported model of a realistic brain mesh with materials and textures.",
+    "link": "/imported-3d-object"
   },
   {
     "title": "❌ Imported Animation",
