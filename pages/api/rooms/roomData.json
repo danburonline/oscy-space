@@ -20,9 +20,9 @@
     "link": "/imported-3d-object"
   },
   {
-    "title": "❌ Imported Animation",
-    "description": "This scene is currently in development. As soon as it's done, you'll see it here.",
-    "isNotDone": true
+    "title": "✅ Imported Animation",
+    "description": "A scene with an imported and converted FBX model that includes textures and animations.",
+    "link": "/imported-animation"
   },
   {
     "title": "❌  Dynamic Scene Loading",
