@@ -25,28 +25,28 @@
     "link": "/imported-animation"
   },
   {
+    "title": "🔄  FPV Example",
+    "description": "A simple scene where you can walk around and jump on boxes with default FPV controls.",
+    "link": "/fpv-example"
+  },
+  {
     "title": "❌  Dynamic Scene Loading",
-    "description": "This scene is currently in development. As soon as it's done, you'll see it here.",
+    "description": "Walk through a portal and you will land in a new dynamically loaded scene.",
     "isNotDone": true
   },
   {
-    "title": "❌  VR-FPV Example",
-    "description": "This scene is currently in development. As soon as it's done, you'll see it here.",
+    "title": "❌ WebXR Controls",
+    "description": "Same example as before but this time with virtual reality controls.",
     "isNotDone": true
   },
   {
-    "title": "❌ Forest Block-In",
-    "description": "This scene is currently in development. As soon as it's done, you'll see it here.",
+    "title": "❌ Dynamic Audio & Lights",
+    "description": "Same example as before but with dynamic audio and lights objects.",
     "isNotDone": true
   },
   {
-    "title": "❌ Tamina Block-In",
-    "description": "This scene is currently in development. As soon as it's done, you'll see it here.",
-    "isNotDone": true
-  },
-  {
-    "title": "❌ Spatial Audio",
-    "description": "This scene is currently in development. As soon as it's done, you'll see it here.",
+    "title": "❌ Forest & Tamina Block-In",
+    "description": "The two scenes imported from the Unreal Engine with FPV controls.",
     "isNotDone": true
   }
 ]
