@@ -3,12 +3,12 @@ import { Sky, PointerLockControls } from '@react-three/drei'
 import { Physics, usePlane, useBox } from '@react-three/cannon'
 import { Player } from '../objects/complex/Player'
 
-function SimplePhysicsCube() {
-  const [ref] = useBox(() => ({ type: 'Static', position: [0, 0.5, 0] }))
+function SimplePhysicsCube(props) {
+  const [ref] = useBox(() => ({ type: 'Static', position: props.position }))
   return (
     <mesh ref={ref} receiveShadow castShadow>
       <boxBufferGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color='white' />
+      <meshStandardMaterial color={props.color} />
     </mesh>
   )
 }
@@ -33,7 +33,8 @@ export default function FpvExample() {
       <pointLight castShadow intensity={0.8} position={[100, 100, 100]} />
 
       <Physics gravity={[0, -30, 0]}>
-        <SimplePhysicsCube />
+        <SimplePhysicsCube position={[0, 0.5, 0]} color='white' />
+        <SimplePhysicsCube position={[2, 1.5, 1.5]} color='darkgrey' />
         <Ground />
         <Player />
       </Physics>

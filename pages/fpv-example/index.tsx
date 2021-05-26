@@ -11,10 +11,15 @@ const FpvExampleScene = dynamic(
 
 export default function FpvExample() {
   return (
-    <div className='h-screen'>
-      <FpvExampleScene />
-      <BackHomeButton />
-      <Stats />
-    </div>
+    <>
+      <h1 className='absolute top-0 right-0 z-10 pr-2'>
+        Click on the screen to activate pointer lock controls
+      </h1>
+      <div className='h-screen'>
+        <FpvExampleScene />
+        <BackHomeButton />
+        <Stats />
+      </div>
+    </>
   )
 }
