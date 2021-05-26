@@ -1,11 +1,12 @@
 import { Canvas } from '@react-three/fiber'
 import { Sky, PointerLockControls } from '@react-three/drei'
-import { Physics, usePlane } from '@react-three/cannon'
+import { Physics, usePlane, useBox } from '@react-three/cannon'
 import { Player } from '../objects/complex/Player'
 
 function SimplePhysicsCube() {
+  const [ref] = useBox(() => ({ type: 'Static', position: [0, 0.5, 0] }))
   return (
-    <mesh position={[0, 0.5, 0]}>
+    <mesh ref={ref}>
       <boxBufferGeometry args={[1, 1, 1]} />
       <meshBasicMaterial color='white' />
     </mesh>
