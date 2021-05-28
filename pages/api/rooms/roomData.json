@@ -30,6 +30,11 @@
     "link": "/fpv-example"
   },
   {
+    "title": "✅ Ambient Sound Stereo",
+    "description": "A simple scene where you can walk around and listen to the sound of a stereo ambient sound",
+    "link": "/ambient-sound-stereo"
+  },
+  {
     "title": "❌  Dynamic Scene Loading",
     "description": "Walk through a portal and you will land in a new dynamically loaded scene.",
     "isNotDone": true
