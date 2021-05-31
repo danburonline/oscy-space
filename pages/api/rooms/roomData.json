@@ -35,8 +35,13 @@
     "link": "/ambient-sound-stereo"
   },
   {
-    "title": "❌  Dynamic Scene Loading",
-    "description": "Walk through a portal and you will land in a new dynamically loaded scene.",
+    "title": "✅  Dynamic Scene Loading",
+    "description": "Click on a 3D element and you will land in a new dynamically loaded scene.",
+    "link": "/dynamic-scene-loading"
+  },
+  {
+    "title": "❌ Dynamic Audio & Lights",
+    "description": "Same example as before but with dynamic audio and lights objects.",
     "isNotDone": true
   },
   {
@@ -45,13 +50,13 @@
     "isNotDone": true
   },
   {
-    "title": "❌ Dynamic Audio & Lights",
-    "description": "Same example as before but with dynamic audio and lights objects.",
+    "title": "❌ Forest Block-In",
+    "description": "The forest scene imported from the Unreal Engine with FPV controls.",
     "isNotDone": true
   },
   {
-    "title": "❌ Forest & Tamina Block-In",
-    "description": "The two scenes imported from the Unreal Engine with FPV controls.",
+    "title": "❌ Tamina Block-In",
+    "description": "The Tamina scene imported from the Unreal Engine with FPV controls.",
     "isNotDone": true
   }
 ]
