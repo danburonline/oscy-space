@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Sky, PointerLockControls } from '@react-three/drei'
 import { Physics, usePlane, useBox } from '@react-three/cannon'
 import { Player } from '../components/Player'
+import { roomProps } from '../types'
 
 function SimplePhysicsCube(props) {
   const [hover, setHover] = useState(false)
@@ -34,7 +35,7 @@ function Ground() {
   )
 }
 
-export default function Room1() {
+export default function Room1(props: roomProps) {
   return (
     <>
       <PointerLockControls />
@@ -45,7 +46,7 @@ export default function Room1() {
       <Physics gravity={[0, -30, 0]}>
         <SimplePhysicsCube position={[0, 0.5, 0]} />
         <Ground />
-        <Player />
+        <Player position={props.playerInitPosition} />
       </Physics>
     </>
   )

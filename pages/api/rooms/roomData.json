@@ -35,18 +35,13 @@
     "link": "/ambient-sound-stereo"
   },
   {
-    "title": "✅  Dynamic Scene Loading",
+    "title": "🔄  Dynamic Scene Loading",
     "description": "Click on a 3D element and you will land in a new dynamically loaded scene.",
     "link": "/dynamic-scene-loading"
   },
   {
     "title": "❌ Dynamic Audio & Lights",
     "description": "Same example as before but with dynamic audio and lights objects.",
-    "isNotDone": true
-  },
-  {
-    "title": "❌ WebXR Controls",
-    "description": "Same example as before but this time with virtual reality controls.",
     "isNotDone": true
   },
   {
@@ -57,6 +52,11 @@
   {
     "title": "❌ Tamina Block-In",
     "description": "The Tamina scene imported from the Unreal Engine with FPV controls.",
+    "isNotDone": true
+  },
+  {
+    "title": "❌ WebXR Controls",
+    "description": "Both block-in scenes but with optional virtual reality/WebXR controls.",
     "isNotDone": true
   }
 ]

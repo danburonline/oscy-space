@@ -1,7 +1,7 @@
-import { Canvas } from '@react-three/fiber'
 import { Sky, PointerLockControls } from '@react-three/drei'
 import { Physics, usePlane, useBox } from '@react-three/cannon'
 import { Player } from '../components/Player'
+import { roomProps } from '../types'
 
 function SimplePhysicsCube(props) {
   const [ref] = useBox(() => ({ type: 'Static', position: props.position }))
@@ -24,7 +24,7 @@ function Ground() {
   )
 }
 
-export default function Room2() {
+export default function Room2(props: roomProps) {
   return (
     <>
       <PointerLockControls />
@@ -35,7 +35,7 @@ export default function Room2() {
       <Physics gravity={[0, -30, 0]}>
         <SimplePhysicsCube position={[0, 0.5, 0]} color='blue' />
         <Ground />
-        <Player />
+        <Player position={props.playerInitPosition} />
       </Physics>
     </>
   )
