@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Sky, PointerLockControls } from '@react-three/drei'
+import { Sky } from '@react-three/drei'
 import { Physics, usePlane, useBox } from '@react-three/cannon'
 import { Player } from '../components/Player'
 import { roomProps, ROOM } from '../types'
@@ -37,7 +37,6 @@ function Ground() {
 export default function Room2(props: roomProps) {
   return (
     <>
-      <PointerLockControls />
       <Sky sunPosition={[100, 10, 100]} />
       <ambientLight intensity={0.3} />
       <pointLight castShadow intensity={0.8} position={[100, 100, 100]} />
