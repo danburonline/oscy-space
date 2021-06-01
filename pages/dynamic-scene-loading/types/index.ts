@@ -5,4 +5,5 @@ export enum ROOM {
 
 export type roomProps = {
   playerInitPosition: number[]
+  setSelectedRoom: () => void
 }

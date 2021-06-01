@@ -6,15 +6,24 @@ import BackHomeButton from '../../components/atoms/BackHomeButton'
 import { Stats } from '@react-three/drei'
 import React from 'react'
 
-function LoadDynamicRoom({ playerInitPosition, roomSelection }) {
+function LoadDynamicRoom({
+  playerInitPosition,
+  roomSelection,
+  setSelectedRoom
+}) {
   const Room = React.useMemo(() => {
     if (roomSelection == ROOM.A) {
       return dynamic(() => import('./room1'), { ssr: false })
     } else if (roomSelection == ROOM.B) {
       return dynamic(() => import('./room2'), { ssr: false })
     }
-  }, [])
-  return <Room playerInitPosition={playerInitPosition} />
+  }, [roomSelection])
+  return (
+    <Room
+      playerInitPosition={playerInitPosition}
+      setSelectedRoom={setSelectedRoom}
+    />
+  )
 }
 
 export default function DynamicSceneLoading() {
@@ -35,6 +44,7 @@ export default function DynamicSceneLoading() {
         <LoadDynamicRoom
           playerInitPosition={[10, 10, 0]}
           roomSelection={selectedRoom}
+          setSelectedRoom={setSelectedRoom}
         />
       </Canvas>
       <Stats />
