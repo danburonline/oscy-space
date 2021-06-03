@@ -50,6 +50,11 @@
     "isNotDone": true
   },
   {
+    "title": "❌ Adjustable Scene Setup",
+    "description": "Both block-in scenes with fully adjustable light and sound objects.",
+    "isNotDone": true
+  },
+  {
     "title": "❌ WebXR Controls",
     "description": "Both block-in scenes but with optional virtual reality/WebXR controls.",
     "isNotDone": true
