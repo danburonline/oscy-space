@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import dynamic from 'next/dynamic'
-import { ROOM } from './types'
+import { ROOM } from '../../components/types'
 import BackHomeButton from '../../components/atoms/BackHomeButton'
 import { Stats, PointerLockControls } from '@react-three/drei'
 import React from 'react'
-import startFullscreen from './utils/startFullScreen'
+import startFullscreen from '../../components/utils/startFullScreen'
 
 function LoadDynamicRoom({
   playerInitPosition,
@@ -14,9 +14,13 @@ function LoadDynamicRoom({
 }) {
   const Room = React.useMemo(() => {
     if (roomSelection == ROOM.A) {
-      return dynamic(() => import('./room1'), { ssr: false })
+      return dynamic(() => import('../../components/objects/rooms/Room1'), {
+        ssr: false
+      })
     } else if (roomSelection == ROOM.B) {
-      return dynamic(() => import('./room2'), { ssr: false })
+      return dynamic(() => import('../../components/objects/rooms/Room2'), {
+        ssr: false
+      })
     }
   }, [roomSelection])
   return (

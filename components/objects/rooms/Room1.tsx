@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Sky } from '@react-three/drei'
 import { Physics, usePlane, useBox } from '@react-three/cannon'
-import { Player } from '../components/Player'
-import { roomProps, ROOM } from '../types'
+import { Player } from '../complex/DynamicPlayer'
+import { roomProps, ROOM } from '../../types'
 
 function SimplePhysicsCube(props) {
   const [hover, setHover] = useState(false)
