@@ -35,6 +35,11 @@
     "link": "/ambient-sound-stereo"
   },
   {
+    "title": "✅ Ambient Sound 8 Channel",
+    "description": "A simple demo with a tweakable 8 channel ambient sound.",
+    "link": "/ambient-sound-8-channel"
+  },
+  {
     "title": "✅  Dynamic Scene Loading",
     "description": "Click on the cube and you will land in a new dynamically-loaded scene.",
     "link": "/dynamic-scene-loading"
