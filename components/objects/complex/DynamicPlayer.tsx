@@ -49,7 +49,7 @@ export const Player = (props: playerProps) => {
   const [ref, api] = useSphere(() => ({
     mass: 1,
     type: 'Dynamic',
-    position: props.position || [10, 10, 0] // Default player position
+    position: props.position || [10, 0, 0] // Default player position
   }))
   const { forward, backward, left, right, jump } = usePlayerControls()
   const { camera } = useThree()
