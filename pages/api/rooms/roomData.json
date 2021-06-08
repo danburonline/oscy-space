@@ -45,9 +45,9 @@
     "link": "/dynamic-scene-loading"
   },
   {
-    "title": "❌ Forest & Tamina Block-Ins",
+    "title": "🔄 Forest & Tamina Block-Ins",
     "description": "The Block-In scenes imported from the Unreal Engine with FPV controls.",
-    "isNotDone": true
+    "link": "/forest-tamina-blockin"
   },
   {
     "title": "❌ Adjustable Scene Setup",
