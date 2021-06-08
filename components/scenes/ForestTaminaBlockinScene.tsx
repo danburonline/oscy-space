@@ -16,7 +16,7 @@ export default function ForestScene() {
   return (
     <Canvas className='bg-black'>
       <Suspense fallback={null}>
-        <Environment preset='sunset' background />
+        <Environment preset='forest' background />
         <Forest />
       </Suspense>
       <OrbitControls />

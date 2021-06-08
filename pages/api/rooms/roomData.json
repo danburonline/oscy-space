@@ -46,12 +46,12 @@
   },
   {
     "title": "🔄 Forest & Tamina Block-Ins",
-    "description": "The Block-In scenes imported from the Unreal Engine with FPV controls.",
+    "description": "Imported optimised Unreal Engine scene with lights, textures and audio.",
     "link": "/forest-tamina-blockin"
   },
   {
-    "title": "❌ Adjustable Scene Setup",
-    "description": "Both block-in scenes with fully adjustable light and sound objects.",
+    "title": "❌ Non-Convex Mesh Collider",
+    "description": "An example physics scene to demonstrate non-convex mesh colliders.",
     "isNotDone": true
   },
   {
