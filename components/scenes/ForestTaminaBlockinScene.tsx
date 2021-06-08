@@ -1,6 +1,6 @@
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { useLoader, Canvas } from '@react-three/fiber'
-import { OrbitControls, Environment } from '@react-three/drei'
+import { FlyControls, Environment, OrbitControls } from '@react-three/drei'
 import { Suspense } from 'react'
 
 function Forest() {
@@ -19,6 +19,7 @@ export default function ForestScene() {
         <Environment preset='forest' background />
         <Forest />
       </Suspense>
+      <FlyControls dragToLook={true} movementSpeed={300.0} rollSpeed={0.005} />
       <OrbitControls />
     </Canvas>
   )
