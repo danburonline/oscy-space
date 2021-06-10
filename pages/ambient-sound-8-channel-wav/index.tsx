@@ -1,9 +1,9 @@
-import { Loader, Stats } from '@react-three/drei'
+import { Stats } from '@react-three/drei'
 import dynamic from 'next/dynamic'
 import BackHomeButton from '../../components/atoms/BackHomeButton'
 
 const AmbientSound8ChannelScene = dynamic(
-    () => import('../../components/scenes/AmbientSound8ChannelScene'),
+    () => import('../../components/scenes/AmbientSound8ChannelSceneWav'),
     {
         ssr: false
     }
@@ -19,7 +19,6 @@ return (
         <AmbientSound8ChannelScene />
         <BackHomeButton />
         <Stats />
-
     </div>
     </>
 )
