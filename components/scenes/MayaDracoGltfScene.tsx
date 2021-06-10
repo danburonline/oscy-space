@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Canvas } from '@react-three/fiber'
 import { FlyControls, Environment, OrbitControls } from '@react-three/drei'
 import { Suspense } from 'react'
@@ -12,7 +13,7 @@ function TaminaDraco() {
     '/models/TaminaSchlucht_Draco.gltf',
     loader => {
       const dracoLoader = new DRACOLoader()
-      dracoLoader.setDecoderPath("/draco-gltf/")
+      dracoLoader.setDecoderPath('/draco-gltf/')
       loader.setDRACOLoader(dracoLoader)
     }
   )
