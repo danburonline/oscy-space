@@ -14,7 +14,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [10, 0, -10],
-    filePath: './sounds/ambientSound8Channel/wav/r.wav',
+    filePath: '/sounds/test.wav',
     name: 'r',
     rotation: 0
   },
@@ -24,7 +24,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [10, 0, 10],
-    filePath: './sounds/ambientSound8Channel/wav/rs.wav',
+    filePath: '/sounds/test.wav',
     name: 'rs',
     rotation: Math.PI
   },
@@ -35,7 +35,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [10, 10, -10],
-    filePath: './sounds/ambientSound8Channel/wav/hr.wav',
+    filePath: '/sounds/test.wav',
     name: 'hr',
     rotation: 0
   },
@@ -46,7 +46,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [10, 10, 10],
-    filePath: './sounds/ambientSound8Channel/wav/hrs.wav',
+    filePath: '/sounds/test.wav',
     name: 'hrs',
     rotation: Math.PI
   },
@@ -57,7 +57,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [-10, 0, -10],
-    filePath: './sounds/ambientSound8Channel/wav/l.wav',
+    filePath: '/sounds/test.wav',
     name: 'l',
     rotation: 0
   },
@@ -68,7 +68,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [-10, 0, 10],
-    filePath: './sounds/ambientSound8Channel/wav/ls.wav',
+    filePath: '/sounds/test.wav',
     name: 'ls',
     rotation: Math.PI
   },
@@ -79,7 +79,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [-10, 10, -10],
-    filePath: './sounds/ambientSound8Channel/wav/hl.wav',
+    filePath: '/sounds/test.wav',
     name: 'hl',
     rotation: 0
   },
@@ -89,7 +89,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [-10, 10, 10],
-    filePath: './sounds/ambientSound8Channel/wav/hls.wav',
+    filePath: '/sounds/test.wav',
     name: 'hls',
     rotation: Math.PI
   }
@@ -111,20 +111,23 @@ export default function FpvExample() {
 
   return (
     <>
-    <Canvas camera={{ position: [0, 1, 5] }} className='bg-black'>
-      <PointerLockControls />
-      <Sky sunPosition={[100, 10, 100]} />
-      <ambientLight intensity={0.3} />
-      <pointLight castShadow intensity={0.8} position={[100, 100, 100]} />
+      <Canvas camera={{ position: [0, 1, 5] }} className='bg-black'>
+        <PointerLockControls />
+        <Sky sunPosition={[100, 10, 100]} />
+        <ambientLight intensity={0.3} />
+        <pointLight castShadow intensity={0.8} position={[100, 100, 100]} />
 
-      <Physics gravity={[0, -30, 0]}>
-        <Ground />
-        <Player position={[0, 1, 0]} />
-      </Physics>
-      <AmbientSoundObject soundObjects={soundObjects} state={audioState} />
-    </Canvas>
-    <AudioButton state={audioState} onClick={() => setAudioState(!audioState)} />
-    <Loader />
+        <Physics gravity={[0, -30, 0]}>
+          <Ground />
+          <Player position={[0, 1, 0]} />
+        </Physics>
+        <AmbientSoundObject soundObjects={soundObjects} state={audioState} />
+      </Canvas>
+      <AudioButton
+        state={audioState}
+        onClick={() => setAudioState(!audioState)}
+      />
+      <Loader />
     </>
   )
 }
