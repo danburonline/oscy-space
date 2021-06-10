@@ -30,38 +30,63 @@
     "link": "/fpv-example"
   },
   {
-    "title": "✅ Ambient Sound Stereo",
+    "title": "✅ Ambient Sound Stereo MP3",
     "description": "A simple demo with an embedded stereo ambient sound file.",
     "link": "/ambient-sound-stereo"
   },
   {
     "title": "✅ Ambient Sound 8 Channel",
-    "description": "A simple demo with a tweakable 8 channel ambient sound.",
-    "link": "/ambient-sound-8-channel"
+    "description": "A simple demo with a tweakable 8 channel MP3 ambient sound.",
+    "link": "/ambient-sound-8-channel-mp3"
   },
   {
-    "title": "✅ Ambient Sound 8 Channel (wav)",
-    "description": "A simple demo with a tweakable 8 channel ambient sound.",
+    "title": "❌ Ambient Sound 8 Channel",
+    "description": "A simple demo with a tweakable 8 channel wav ambient sound.",
     "link": "/ambient-sound-8-channel-wav"
   },
   {
-    "title": "✅  Dynamic Scene Loading",
+    "title": "✅ Dynamic Scene Loading",
     "description": "Click on the cube and you will land in a new dynamically-loaded scene.",
     "link": "/dynamic-scene-loading"
   },
   {
-    "title": "❌ Forest & Tamina Block-Ins",
-    "description": "The Block-In scenes imported from the Unreal Engine with FPV controls.",
+    "title": "✅ Unreal Engine Scene",
+    "description": "Imported Unreal Engine GLTF scene with no textures and no lights.",
+    "link": "/unreal-scene"
+  },
+  {
+    "title": "🔄 Maya GLTF Without Draco",
+    "description": "Imported GLTF scene from Maya converted via gltfjsx, with textures and no Draco.",
+    "link": "/maya-draco-gltf-scene"
+  },
+  {
+    "title": "❌ Maya GLTF With Draco",
+    "description": "Imported GLTF scene from Maya converted via gltfjsx, with textures and Draco.",
     "isNotDone": true
   },
   {
-    "title": "❌ Adjustable Scene Setup",
-    "description": "Both block-in scenes with fully adjustable light and sound objects.",
+    "title": "❌ Non-Convex Mesh Collider",
+    "description": "A block-in scene to demonstrate non-convex mesh colliders with FPV.",
+    "isNotDone": true
+  },
+  {
+    "title": "❌ Lightmap Scene",
+    "description": "A block-in scene to demonstrate pre-baked lightmaps, UVs and texture compressions/optimisations.",
+    "isNotDone": true
+  },
+  {
+    "title": "❌ Forest & Tamina Block-Ins",
+    "description": "Both block-in scenes, optimised, with audio, and FPV controls and dynamic scene loading.",
     "isNotDone": true
   },
   {
     "title": "❌ WebXR Controls",
-    "description": "Both block-in scenes but with optional virtual reality/WebXR controls.",
+    "description": "Both block-in scenes as before but with optional/opt-in virtual reality/WebXR controls.",
+    "isNotDone": true
+  },
+  {
+    "title": "❌ Dynamic Audio Placement",
+    "description": "A scene dedicated for the audio engineers to manually place sound objects in the scene.",
     "isNotDone": true
   }
 ]
