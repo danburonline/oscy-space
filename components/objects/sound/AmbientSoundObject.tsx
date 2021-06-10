@@ -122,5 +122,5 @@ export default function SoundObject(props: SoundObjectProps) {
       </mesh>
     )
   })
-  return <>{PositionalSoundObject}</>
+  return <Suspense fallback={null}>{PositionalSoundObject}</Suspense>
 }
