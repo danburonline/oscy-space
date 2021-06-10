@@ -1,4 +1,7 @@
+// @ts-nocheck
+
 import Sound from 'react-sound'
+import wavURL from '../../../public/sounds/ambientStereoSound.wav'
 
 export default function AmbientSound(props) {
   let state = ''
@@ -10,7 +13,7 @@ export default function AmbientSound(props) {
   
   return (
     <Sound
-      url='/sounds/ambientStereoSound.wav'
+      url={wavURL}
       autoLoad={true}
       playStatus={state}
       loop={true}
