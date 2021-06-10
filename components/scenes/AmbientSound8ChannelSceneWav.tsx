@@ -4,7 +4,7 @@ import { Sky, PointerLockControls, Loader } from '@react-three/drei'
 import { Physics, usePlane } from '@react-three/cannon'
 import { Player } from '../objects/complex/DynamicPlayer'
 import AmbientSoundObject from '../objects/sound/AmbientSoundObject'
-import AudioButton from '../../components/atoms/AudioButton'
+import AudioButton from '../atoms/AudioButton'
 import { useState } from 'react'
 
 const soundObjects = [
@@ -14,7 +14,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [10, 0, -10],
-    filePath: './sounds/ambientSound8Channel/r.mp3',
+    filePath: './sounds/ambientSound8Channel/wav/r.wav',
     name: 'r',
     rotation: 0
   },
@@ -24,7 +24,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [10, 0, 10],
-    filePath: './sounds/ambientSound8Channel/rs.mp3',
+    filePath: './sounds/ambientSound8Channel/wav/rs.wav',
     name: 'rs',
     rotation: Math.PI
   },
@@ -35,7 +35,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [10, 10, -10],
-    filePath: './sounds/ambientSound8Channel/hr.mp3',
+    filePath: './sounds/ambientSound8Channel/wav/hr.wav',
     name: 'hr',
     rotation: 0
   },
@@ -46,7 +46,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [10, 10, 10],
-    filePath: './sounds/ambientSound8Channel/hrs.mp3',
+    filePath: './sounds/ambientSound8Channel/wav/hrs.wav',
     name: 'hrs',
     rotation: Math.PI
   },
@@ -57,7 +57,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [-10, 0, -10],
-    filePath: './sounds/ambientSound8Channel/l.mp3',
+    filePath: './sounds/ambientSound8Channel/wav/l.wav',
     name: 'l',
     rotation: 0
   },
@@ -68,7 +68,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [-10, 0, 10],
-    filePath: './sounds/ambientSound8Channel/ls.mp3',
+    filePath: './sounds/ambientSound8Channel/wav/ls.wav',
     name: 'ls',
     rotation: Math.PI
   },
@@ -79,7 +79,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [-10, 10, -10],
-    filePath: './sounds/ambientSound8Channel/hl.mp3',
+    filePath: './sounds/ambientSound8Channel/wav/hl.wav',
     name: 'hl',
     rotation: 0
   },
@@ -89,7 +89,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [-10, 10, 10],
-    filePath: './sounds/ambientSound8Channel/hls.mp3',
+    filePath: './sounds/ambientSound8Channel/wav/hls.wav',
     name: 'hls',
     rotation: Math.PI
   }

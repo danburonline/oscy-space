@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import { Sky, PointerLockControls } from '@react-three/drei'
+import { Sky, PointerLockControls, Loader } from '@react-three/drei'
 import { Physics, usePlane } from '@react-three/cannon'
 import { Player } from '../objects/complex/Player'
 
@@ -16,6 +16,7 @@ function Ground() {
 
 export default function FpvExample() {
   return (
+    <>
     <Canvas camera={{ position: [0, 1, 5] }} className='bg-black'>
       <PointerLockControls />
       <Sky sunPosition={[100, 10, 100]} />
@@ -27,5 +28,7 @@ export default function FpvExample() {
         <Player />
       </Physics>
     </Canvas>
+    <Loader />
+    </>
   )
 }
