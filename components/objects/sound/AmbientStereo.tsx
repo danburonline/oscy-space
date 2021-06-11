@@ -5,7 +5,7 @@ export default function AmbientSound(props) {
   const [soundFile, setSoundFile] = useState('')
 
   useEffect(() => {
-    setSoundFile('/sounds/ambientStereoSound.wav')
+    setSoundFile('https://storage.googleapis.com/oscy-audio/test.wav')
   }, [])
 
   let state = ''
