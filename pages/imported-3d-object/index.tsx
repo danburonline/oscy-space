@@ -15,7 +15,7 @@ export default function ImportedModel() {
   return (
     <div className='h-screen'>
       <BackHomeButton />
-      <Canvas className='bg-black'>
+      <Canvas camera={{ position: [50, 0, 50] }} className='bg-black'>
         <Suspense fallback={null}>
           <Model />
           <OrbitControls />

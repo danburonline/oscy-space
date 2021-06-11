@@ -30,17 +30,17 @@
     "link": "/fpv-example"
   },
   {
-    "title": "✅ Ambient Sound Stereo Wav",
+    "title": "🔄 Ambient Sound Stereo",
     "description": "A simple demo with an embedded stereo ambient sound file.",
     "link": "/ambient-sound-stereo"
   },
   {
-    "title": "✅ Ambient Sound 8 Channel MP3",
+    "title": "✅ Ambient 8 Channel MP3",
     "description": "A simple demo with a tweakable 8 channel MP3 ambient sound.",
     "link": "/ambient-sound-8-channel-mp3"
   },
   {
-    "title": "✅ Ambient Sound 8 Channel Wav",
+    "title": "🔄 Ambient 8 Channel Wav",
     "description": "A simple demo with a tweakable 8 channel wav ambient sound.",
     "link": "/ambient-sound-8-channel-wav"
   },
@@ -55,14 +55,14 @@
     "link": "/unreal-scene"
   },
   {
-    "title": "🔄 Maya GLTF Without Draco",
+    "title": "❌ Maya GLTF Without Draco",
     "description": "Imported GLTF scene from Maya converted via gltfjsx, with textures and no Draco.",
-    "link": "/maya-draco-gltf-scene"
+    "isNotDone": true
   },
   {
-    "title": "❌ Maya GLTF With Draco",
+    "title": "🔄 Maya GLTF With Draco",
     "description": "Imported GLTF scene from Maya converted via gltfjsx, with textures and Draco.",
-    "isNotDone": true
+    "link": "/maya-draco-gltf-scene"
   },
   {
     "title": "❌ Non-Convex Mesh Collider",

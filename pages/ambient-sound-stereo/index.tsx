@@ -1,7 +1,7 @@
 import { Stats } from '@react-three/drei'
 import dynamic from 'next/dynamic'
 import BackHomeButton from '../../components/atoms/BackHomeButton'
-import AmbientStereo from '../../components/objects/sound/AmbientStereo'
+// import AmbientStereo from '../../components/objects/sound/AmbientStereo'
 import AudioButton from '../../components/atoms/AudioButton'
 import { useState } from 'react'
 
@@ -14,7 +14,7 @@ const AmbientSoundScene = dynamic(
 
 export default function FpvExample() {
   const [audioState, setAudioState] = useState(false)
-  
+
   return (
     <>
       <h1 className='absolute top-0 right-0 z-10 pr-2'>
@@ -24,8 +24,12 @@ export default function FpvExample() {
         <AmbientSoundScene />
         <BackHomeButton />
         <Stats />
-        <AmbientStereo state={audioState} />
-        <AudioButton state={audioState} onClick={() => setAudioState(!audioState)} />
+        {/* TODO Make this work again and try the WAV stuff in the WAV 8 Channel room */}
+        {/* <AmbientStereo state={audioState} /> */}
+        <AudioButton
+          state={audioState}
+          onClick={() => setAudioState(!audioState)}
+        />
       </div>
     </>
   )
