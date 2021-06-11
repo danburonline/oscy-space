@@ -1,15 +1,18 @@
 # Oscy Space
 
-## 🚀 Starting Guides
+> **_⚠️ Currently in development_**
 
-- Clone the repository with `git clone`.
-- Navigate to the project directory with `cd oscy-space`.
+Oscy Space is an immersive 3D virtual reality environment with spatial audio allowing users to explore interesting natural scenes from Switzerland via the WebXR API.
 
-### Use The Oscy Restful API
+## Branching and Continuous Deployment
 
-- Navigate to <https://oscy.space/api>.
-- Fetch whatever you want, e.g. <https://oscy.space/api/rooms?q=all>.
-- More information on how to use our API will be added to the [Wiki](https://github.com/danburonline/oscy-space/wiki).
+This repository divides into three branches which will trigger GitHub Actions pipelines to deploy changes to the corresponding environments automatically:
+
+- **Proof of Concept:** Merge your POC branches into the `proof-of-concept` branch to deploy to <https://poc.oscy.space>. Keep in mind that this branch is totally different from the other two branches since we're using this branch as a playground for testing things not directly bound to any upcoming release.
+- **Staging:** Merge your feature branches into the `staging` branch to deploy to <https://staging.oscy.space>. Use this Git [styleguide](https://udacity.github.io/git-styleguide/) for your PRs and commits.
+- **Main:** Merge `staging` into this branch to deploy to <https://oscy.space>. Only do this when `staging` is ready for a release.
+
+## Starting Guides
 
 ### Run The Build Server
 
@@ -22,9 +25,3 @@
 - Install all dependencies with `yarn`.
 - Start the NextJS development server with `yarn dev`.
 - Access the site on <http://localhost:3000>.
-
-### Deploy The Project
-
-- Push your branch to this repository and create a merge request.
-- As soon as your MR is merged, it will trigger a GitHub Action to automatically deploy the Docker image to Google Cloud Run.
-- Access the deployed application via <https://oscy.space>.
