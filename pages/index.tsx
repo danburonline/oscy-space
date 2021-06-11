@@ -7,7 +7,7 @@ export default function Home() {
         <title>Oscy Space</title>
       </Head>
       <main className='flex flex-row items-center justify-center min-h-screen'>
-        <h1>Oscy Space – V0.0.0</h1>
+        <h1>Oscy Space – V0.0.1</h1>
       </main>
     </>
   )
