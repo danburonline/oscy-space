@@ -14,7 +14,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [10, 0, -10],
-    filePath: '/sounds/example-from-the-web.wav',
+    filePath: 'https://storage.googleapis.com/oscy-audio/test.wav',
     name: 'r',
     rotation: 0
   },
@@ -24,7 +24,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [10, 0, 10],
-    filePath: '/sounds/example-from-the-web.wav',
+    filePath: 'https://storage.googleapis.com/oscy-audio/test.wav',
     name: 'rs',
     rotation: Math.PI
   },
@@ -35,7 +35,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [10, 10, -10],
-    filePath: '/sounds/example-from-the-web.wav',
+    filePath: 'https://storage.googleapis.com/oscy-audio/test.wav',
     name: 'hr',
     rotation: 0
   },
@@ -46,7 +46,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [10, 10, 10],
-    filePath: '/sounds/example-from-the-web.wav',
+    filePath: 'https://storage.googleapis.com/oscy-audio/test.wav',
     name: 'hrs',
     rotation: Math.PI
   },
@@ -57,7 +57,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [-10, 0, -10],
-    filePath: '/sounds/example-from-the-web.wav',
+    filePath: 'https://storage.googleapis.com/oscy-audio/test.wav',
     name: 'l',
     rotation: 0
   },
@@ -68,7 +68,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [-10, 0, 10],
-    filePath: '/sounds/example-from-the-web.wav',
+    filePath: 'https://storage.googleapis.com/oscy-audio/test.wav',
     name: 'ls',
     rotation: Math.PI
   },
@@ -79,7 +79,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [-10, 10, -10],
-    filePath: '/sounds/example-from-the-web.wav',
+    filePath: 'https://storage.googleapis.com/oscy-audio/test.wav',
     name: 'hl',
     rotation: 0
   },
@@ -89,7 +89,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [-10, 10, 10],
-    filePath: '/sounds/example-from-the-web.wav',
+    filePath: 'https://storage.googleapis.com/oscy-audio/test.wav',
     name: 'hls',
     rotation: Math.PI
   }
