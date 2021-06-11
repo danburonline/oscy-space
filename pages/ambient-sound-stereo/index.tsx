@@ -24,6 +24,7 @@ export default function FpvExample() {
         <AmbientSoundScene />
         <BackHomeButton />
         <Stats />
+        {/* TODO Make this work again and try the WAV stuff in the WAV 8 Channel room */}
         {/* <AmbientStereo state={audioState} /> */}
         <AudioButton
           state={audioState}
