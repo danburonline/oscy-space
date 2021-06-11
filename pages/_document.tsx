@@ -12,7 +12,8 @@ class CustomDocument extends Document {
         <Head>
           <meta
             name='description'
-            content='This is the proof of concept for Oscy Space'
+            // TODO Create a meta description for Oscy Space
+            content='Oscy Space description coming soon'
           />
           <link rel='icon' href='/favicon.ico' />
           <link as='font' href='https://fonts.gstatic.com' />
