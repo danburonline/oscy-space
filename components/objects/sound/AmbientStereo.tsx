@@ -19,13 +19,7 @@ export default function AmbientSound(props) {
     <>
       {soundFile ? (
         <>
-          <Sound
-            url={soundFile}
-            autoLoad={true}
-            playStatus={state}
-            loop={true}
-            volume={100}
-          />
+          <audio src={soundFile} controls autoPlay />
           {console.log('played')}
         </>
       ) : (
