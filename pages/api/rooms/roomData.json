@@ -30,7 +30,7 @@
     "link": "/fpv-example"
   },
   {
-    "title": "🔄 Ambient Sound Stereo",
+    "title": "✅ Ambient Sound Stereo",
     "description": "A simple demo with an embedded stereo ambient sound file.",
     "link": "/ambient-sound-stereo"
   },
@@ -40,7 +40,7 @@
     "link": "/ambient-sound-8-channel-mp3"
   },
   {
-    "title": "🔄 Ambient 8 Channel Wav",
+    "title": "✅ Ambient 8 Channel Wav",
     "description": "A simple demo with a tweakable 8 channel wav ambient sound.",
     "link": "/ambient-sound-8-channel-wav"
   },
