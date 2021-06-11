@@ -16,6 +16,7 @@
     "@react-three/cannon": "^1.1.1",
     "@react-three/drei": "^4.3.3",
     "@react-three/fiber": "^6.1.2",
+    "file-loader": "^6.2.0",
     "next": "10.2.0",
     "nice-color-palettes": "^3.0.0",
     "react": "17.0.2",
