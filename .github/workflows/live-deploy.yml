@@ -1,9 +1,9 @@
-name: 'Deploy to Google Cloud Run'
+name: 'Deploy to Google Cloud Run: Live Server'
 
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   CLOUD_RUN_PROJECT_ID: ${{ secrets.CLOUD_RUN_PROJECT_NAME }}
