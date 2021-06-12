@@ -19,28 +19,29 @@ type GLTFResult = GLTF & {
     Gittertuer: THREE.Mesh
   }
   materials: {
+    lambert8: THREE.MeshStandardMaterial
     lambert5: THREE.MeshStandardMaterial
-    lambert6: THREE.MeshStandardMaterial
     lambert1: THREE.MeshStandardMaterial
     lambert4: THREE.MeshStandardMaterial
+    lambert6: THREE.MeshStandardMaterial
     lambert7: THREE.MeshStandardMaterial
   }
 }
 
-function TaminaDraco(props: JSX.IntrinsicElements['group']) {
+function TaminaStandard(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF(
-    '/Tamina_Draco_Textures.gltf'
+    '/Tamina_Export_Textures.gltf'
   ) as GLTFResult
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
         geometry={nodes.polySurface6.geometry}
-        material={nodes.polySurface6.material}
+        material={materials.lambert8}
       />
       <mesh
         geometry={nodes.polySurface3.geometry}
-        material={materials.lambert6}
+        material={materials.lambert5}
       />
       <mesh geometry={nodes.Floor.geometry} material={nodes.Floor.material} />
       <mesh
@@ -50,9 +51,9 @@ function TaminaDraco(props: JSX.IntrinsicElements['group']) {
       <mesh geometry={nodes.Wall_Left.geometry} material={materials.lambert4} />
       <mesh
         geometry={nodes.WoodPlanks1.geometry}
-        material={materials.lambert7}
+        material={materials.lambert6}
       />
-      <mesh geometry={nodes.Bridge.geometry} material={nodes.Bridge.material} />
+      <mesh geometry={nodes.Bridge.geometry} material={materials.lambert7} />
       <mesh
         geometry={nodes.Gittertuer.geometry}
         material={nodes.Gittertuer.material}
@@ -61,12 +62,12 @@ function TaminaDraco(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-export default function TaminaDracoScene() {
+export default function TaminaStandardScene() {
   return (
     <Canvas className='bg-black'>
       <Suspense fallback={null}>
         <Environment preset='forest' background />
-        <TaminaDraco />
+        <TaminaStandard />
       </Suspense>
       <FlyControls dragToLook={true} movementSpeed={300.0} rollSpeed={0.005} />
       <OrbitControls />

@@ -55,9 +55,9 @@
     "link": "/unreal-scene"
   },
   {
-    "title": "❌ Maya GLTF Without Draco",
+    "title": "✅ Maya GLTF Without Draco",
     "description": "Imported GLTF scene from Maya converted via gltfjsx, with textures and no Draco.",
-    "isNotDone": true
+    "link": "/tamina-standard"
   },
   {
     "title": "✅ Maya GLTF With Draco",
