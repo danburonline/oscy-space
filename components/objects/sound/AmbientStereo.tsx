@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Sound from 'react-sound'
 
 export default function AmbientSound(props) {
   const [soundFile, setSoundFile] = useState('')
@@ -8,16 +9,22 @@ export default function AmbientSound(props) {
       'https://storage.googleapis.com/oscy-cdn/ambientStereoSound.wav'
     )
   }, [])
+
+  let playPause = Sound.status.PAUSED
+
+  if(props.state) {
+    playPause = Sound.status.PLAYING
+  }else{
+    playPause = Sound.status.PAUSED
+  }
+
   return (
-    <>
-      {soundFile ? (
-        <>
-          <audio src={soundFile} controls autoPlay />
-          {console.log('played')}
-        </>
-      ) : (
-        console.log("didn't play")
-      )}
-    </>
+    <Sound
+      url={soundFile}
+      playStatus={playPause}
+      volume={100}
+      autoLoad={true}
+      loop={true}
+    />
   )
 }
