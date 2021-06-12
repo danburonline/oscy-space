@@ -60,9 +60,9 @@
     "isNotDone": true
   },
   {
-    "title": "🔄 Maya GLTF With Draco",
+    "title": "✅ Maya GLTF With Draco",
     "description": "Imported GLTF scene from Maya converted via gltfjsx, with textures and Draco.",
-    "link": "/maya-draco-gltf-scene"
+    "link": "/tamina-draco"
   },
   {
     "title": "❌ Non-Convex Mesh Collider",
