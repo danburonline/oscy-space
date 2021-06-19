@@ -21,8 +21,7 @@ const usePlayerControls = () => {
     forward: false,
     backward: false,
     left: false,
-    right: false,
-    jump: false
+    right: false
   })
   useEffect(() => {
     // Init the event listener to the document at the first page render
@@ -51,7 +50,7 @@ export const Player = (props: playerProps) => {
     type: 'Dynamic',
     position: props.position || [10, 0, 0] // Default player position
   }))
-  const { forward, backward, left, right, jump } = usePlayerControls()
+  const { forward, backward, left, right } = usePlayerControls()
   const { camera } = useThree()
   const velocity = useRef([0, 0, 0])
 
@@ -67,15 +66,15 @@ export const Player = (props: playerProps) => {
       .multiplyScalar(SPEED)
       .applyEuler(camera.rotation)
     api.velocity.set(direction.x, velocity.current[1], direction.z)
-    if (
-      jump &&
-      // @ts-ignore
-      velocity.current[1].toFixed(3) < 0.05 &&
-      // @ts-ignore
-      velocity.current[1].toFixed(2) >= 0
-    ) {
-      api.velocity.set(velocity.current[0], 10, velocity.current[2])
-    }
+    // if (
+    //   jump &&
+    //   // @ts-ignore
+    //   velocity.current[1].toFixed(3) < 0.05 &&
+    //   // @ts-ignore
+    //   velocity.current[1].toFixed(2) >= 0
+    // ) {
+    //   api.velocity.set(velocity.current[0], 10, velocity.current[2])
+    // }
   })
   return <mesh ref={ref} />
 }

@@ -1,5 +1,5 @@
 import { Canvas, useLoader } from '@react-three/fiber'
-import { Sky, PointerLockControls } from '@react-three/drei'
+import { Sky, PointerLockControls, Loader } from '@react-three/drei'
 import { Suspense, useMemo } from 'react'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
 import {
@@ -31,8 +31,14 @@ function toConvexProps(bufferGeometry) {
   const geo = new Geometry().fromBufferGeometry(bufferGeometry)
   // Merge duplicate vertices resulting from glTF export.
   // Cannon assumes contiguous, closed meshes to work
-  // geo.mergeVertices()
-  return [geo.vertices.map((v) => [v.x, v.y, v.z]), geo.faces.map((f) => [f.a, f.b, f.c]), []]; // prettier-ignore
+  geo.mergeVertices()
+  // TODO Do this with WASM?
+  // TODO Get rid of console warnings and errors
+  return [
+    geo.vertices.map(v => [v.x, v.y, v.z]),
+    geo.faces.map(f => [f.a, f.b, f.c]),
+    []
+  ]
 }
 
 type ForestGroundType = GLTF & {
@@ -104,17 +110,20 @@ function ForestFoliage(props: JSX.IntrinsicElements['group']) {
 
 export default function ForestMeshCollider() {
   return (
-    <Canvas className='bg-black' camera={{ position: [0, 1, 5] }}>
-      <Suspense fallback={null}>
-        <Physics gravity={[0, -30, 0]}>
-          <ForestGround />
-          <ForestFoliage />
-          <Player position={[-20, 1, 20]} />
-          <Ground />
-        </Physics>
-      </Suspense>
-      <PointerLockControls />
-      <Sky sunPosition={[100, 10, 100]} />
-    </Canvas>
+    <>
+      <Canvas className='bg-black' camera={{ position: [0, 1, 5] }}>
+        <Suspense fallback={null}>
+          <Physics gravity={[0, -30, 0]}>
+            <ForestGround />
+            <ForestFoliage />
+            <Player position={[-20, 1, 20]} />
+            <Ground />
+          </Physics>
+        </Suspense>
+        <PointerLockControls />
+        <Sky sunPosition={[100, 10, 100]} />
+      </Canvas>
+      <Loader />
+    </>
   )
 }
