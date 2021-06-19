@@ -1,6 +1,6 @@
 import { Canvas, useLoader } from '@react-three/fiber'
 import { Sky, PointerLockControls } from '@react-three/drei'
-import { Suspense } from 'react'
+import { Suspense, useMemo } from 'react'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
 import {
   Physics,
@@ -8,17 +8,16 @@ import {
   usePlane,
   useConvexPolyhedron
 } from '@react-three/cannon'
+import { Geometry } from 'three-stdlib'
 
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { Player } from '../objects/complex/DynamicPlayer'
+import { Player } from '../objects/complex/AdjustedPlayer'
 
 function Ground() {
-  const [ref] = usePlane(() => ({
-    rotation: [-Math.PI / 2, 0, 0]
-  }))
+  const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0] }))
 
   return (
     <mesh ref={ref}>
@@ -26,6 +25,14 @@ function Ground() {
       <meshBasicMaterial color='grey' wireframe />
     </mesh>
   )
+}
+
+function toConvexProps(bufferGeometry) {
+  const geo = new Geometry().fromBufferGeometry(bufferGeometry)
+  // Merge duplicate vertices resulting from glTF export.
+  // Cannon assumes contiguous, closed meshes to work
+  // geo.mergeVertices()
+  return [geo.vertices.map((v) => [v.x, v.y, v.z]), geo.faces.map((f) => [f.a, f.b, f.c]), []]; // prettier-ignore
 }
 
 type ForestGroundType = GLTF & {
@@ -42,9 +49,16 @@ function ForestGround(props: JSX.IntrinsicElements['group']) {
     '/models/split-forest/Environment_ground.gltf'
   ) as ForestGroundType
 
+  const geo = useMemo(
+    () => toConvexProps(nodes.Environment_ground.geometry),
+    [nodes]
+  )
+  // @ts-ignore
   const [ref] = useConvexPolyhedron(() => ({
-    mass: 1,
-    type: 'Kinematic'
+    mass: 100,
+    type: 'Kinematic',
+    args: geo,
+    position: [-10.51, 0, -48.04]
   }))
 
   return (
@@ -95,7 +109,7 @@ export default function ForestMeshCollider() {
         <Physics gravity={[0, -30, 0]}>
           <ForestGround />
           <ForestFoliage />
-          <Player />
+          <Player position={[-20, 1, 20]} />
           <Ground />
         </Physics>
       </Suspense>
