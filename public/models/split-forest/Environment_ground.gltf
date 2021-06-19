@@ -1,0 +1,163 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "babylon.js glTF exporter for Autodesk Maya 2018 v20210607.3"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "Beleuchtung_Spot"
+    },
+    {
+      "mesh": 0,
+      "translation": [
+        -10.5145855,
+        0,
+        -48.03896
+      ],
+      "name": "Environment_ground",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "TANGENT": 2,
+            "NORMAL": 3,
+            "TEXCOORD_0": 4,
+            "TEXCOORD_1": 5
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "TANGENT": 1,
+                "NORMAL": 2,
+                "TEXCOORD_0": 3,
+                "TEXCOORD_1": 4
+              }
+            }
+          }
+        }
+      ],
+      "name": "Environment_ground"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 13074,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 8716,
+      "max": [
+        61.02979970688813,
+        5.740767739374695,
+        57.036638983878845
+      ],
+      "min": [
+        -0.02979970688812897,
+        -1.381362206888129,
+        -0.02979970688812897
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 8716,
+      "type": "VEC4",
+      "name": "accessorTangents"
+    },
+    {
+      "componentType": 5126,
+      "count": 8716,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 8716,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5126,
+      "count": 8716,
+      "type": "VEC2",
+      "name": "accessorUV2s"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 141666
+    }
+  ],
+  "buffers": [
+    {
+      "name": "Environment_ground",
+      "byteLength": 141668,
+      "uri": "Environment_ground.bin"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.450053632
+      },
+      "name": "x1024",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
