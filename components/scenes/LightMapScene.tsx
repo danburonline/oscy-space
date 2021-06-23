@@ -1,7 +1,6 @@
 import { Canvas, useLoader } from '@react-three/fiber'
-import { Sky, PointerLockControls, Loader } from '@react-three/drei'
+import { Sky, PointerLockControls, Loader, useTexture } from '@react-three/drei'
 import { Suspense, useMemo } from 'react'
-import { TextureLoader } from 'three/src/loaders/TextureLoader'
 import {
   Physics,
   useBox,
@@ -15,17 +14,6 @@ import * as THREE from 'three'
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { Player } from '../objects/complex/AdjustedPlayer'
-
-function Ground() {
-  const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0] }))
-
-  return (
-    <mesh ref={ref}>
-      <planeBufferGeometry args={[100, 100, 100, 100]} />
-      <meshBasicMaterial color='grey' wireframe />
-    </mesh>
-  )
-}
 
 function toConvexProps(bufferGeometry) {
   const geo = new Geometry().fromBufferGeometry(bufferGeometry)
@@ -52,16 +40,14 @@ type ForestGroundType = GLTF & {
 }
 
 function ForestGround(props: JSX.IntrinsicElements['group']) {
-  const { nodes: lowPolyNodes } = useGLTF(
-    '/models/split-forest/Environment_ground_CM.gltf'
-  ) as ForestGroundType
+  const texture = useTexture('/models/lightmap-forest/terrain-texture.png')
 
   const { nodes } = useGLTF(
     '/models/split-forest/Environment_ground.gltf'
   ) as ForestGroundType
 
   const geo = useMemo(
-    () => toConvexProps(lowPolyNodes.Environment_ground.geometry),
+    () => toConvexProps(nodes.Environment_ground.geometry),
     [nodes]
   )
   // @ts-ignore
@@ -79,35 +65,30 @@ function ForestGround(props: JSX.IntrinsicElements['group']) {
         geometry={nodes.Environment_ground.geometry}
         position={[-10.51, 0, -48.04]}
       >
-        <meshBasicMaterial color='black' wireframe />
+        <meshStandardMaterial map={texture}/>
       </mesh>
     </group>
   )
 }
 
-type ForestFoliageType = GLTF & {
+type ForestFoliageWithTextureProps = GLTF & {
   nodes: {
-    Eibe_Foliage: THREE.Mesh
+    Eibe_Foliage_grp: THREE.Mesh
   }
   materials: {
-    phong1: THREE.MeshStandardMaterial
+    phong1: THREE.MeshBasicMaterial
   }
 }
 
-function ForestFoliage(props: JSX.IntrinsicElements['group']) {
+export function ForestFoliageWithTexture(props: JSX.IntrinsicElements['group']) {
+  const texture = useTexture('/models/lightmap-forest/Bark_type_1.png')
+
   const group = useRef<THREE.Group>()
-  const { nodes } = useGLTF(
-    '/models/split-forest/Eibe_Foliage.gltf'
-  ) as ForestFoliageType
-
-  const [colorMap] = useLoader(TextureLoader, [
-    '/models/split-forest/Bark_type_1.png'
-  ])
-
+  const { nodes } = useGLTF('/models/lightmap-forest/Eibe_Foliage_grp.gltf') as ForestFoliageWithTextureProps
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Eibe_Foliage.geometry} position={[6.65, 0, -7.01]}>
-        <meshBasicMaterial map={colorMap} />
+      <mesh geometry={nodes.Eibe_Foliage_grp.geometry} position={[9.71, 0, 13.47]}>
+        <meshStandardMaterial map={texture}/>
       </mesh>
     </group>
   )
@@ -120,11 +101,11 @@ export default function ForestMeshCollider() {
         <Suspense fallback={null}>
           <Physics gravity={[0, -30, 0]}>
             <ForestGround />
-            <ForestFoliage />
-            <Player position={[-20, 1, 20]} />
-            <Ground />
+            <ForestFoliageWithTexture />
+            <Player position={[0, 1, 0]} />
           </Physics>
         </Suspense>
+        <ambientLight intensity={1} />
         <PointerLockControls />
         <Sky sunPosition={[100, 10, 100]} />
       </Canvas>

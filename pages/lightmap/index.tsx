@@ -9,7 +9,7 @@ const LightMapScene = dynamic(
   }
 )
 
-export default function ForestMeshColliderScene() {
+export default function LightMap() {
   return (
     <div className='h-screen'>
       <LightMapScene />
