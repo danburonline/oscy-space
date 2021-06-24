@@ -1,12 +1,7 @@
 import { Canvas, useLoader } from '@react-three/fiber'
 import { Sky, PointerLockControls, Loader, useTexture } from '@react-three/drei'
 import { Suspense, useMemo } from 'react'
-import {
-  Physics,
-  useBox,
-  usePlane,
-  useConvexPolyhedron
-} from '@react-three/cannon'
+import { Physics, useConvexPolyhedron } from '@react-three/cannon'
 import { Geometry } from 'three-stdlib'
 
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
@@ -52,7 +47,7 @@ function ForestGround(props: JSX.IntrinsicElements['group']) {
   )
   // @ts-ignore
   const [ref] = useConvexPolyhedron(() => ({
-    mass: 100,
+    mass: 1,
     type: 'Kinematic',
     args: geo,
     position: [-10.51, 0, -48.04]
@@ -65,7 +60,7 @@ function ForestGround(props: JSX.IntrinsicElements['group']) {
         geometry={nodes.Environment_ground.geometry}
         position={[-10.51, 0, -48.04]}
       >
-        <meshStandardMaterial map={texture}/>
+        <meshStandardMaterial map={texture} />
       </mesh>
     </group>
   )
@@ -80,15 +75,37 @@ type ForestFoliageWithTextureProps = GLTF & {
   }
 }
 
-export function ForestFoliageWithTexture(props: JSX.IntrinsicElements['group']) {
+export function ForestFoliageWithTexture(
+  props: JSX.IntrinsicElements['group']
+) {
   const texture = useTexture('/models/lightmap-forest/Bark_type_1.png')
+  const lightMap = useTexture('/models/lightmap-forest/tree-lightmap.png')
 
   const group = useRef<THREE.Group>()
-  const { nodes } = useGLTF('/models/lightmap-forest/Eibe_Foliage_grp.gltf') as ForestFoliageWithTextureProps
+  const { nodes } = useGLTF(
+    '/models/lightmap-forest/Eibe_Foliage_grp.gltf'
+  ) as ForestFoliageWithTextureProps
+
+  lightMap.flipY = false
+  texture.flipY = false
+
+  const uv1Array = nodes.Eibe_Foliage_grp.geometry.getAttribute('uv').array
+  const uv2Array = nodes.Eibe_Foliage_grp.geometry.getAttribute('uv2').array
+
+  console.log('UV1: ' + uv1Array)
+  console.log('UV2: ' + uv2Array)
+
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Eibe_Foliage_grp.geometry} position={[9.71, 0, 13.47]}>
-        <meshStandardMaterial map={texture}/>
+      <mesh
+        geometry={nodes.Eibe_Foliage_grp.geometry}
+        position={[9.71, 0, 13.47]}
+      >
+        <meshStandardMaterial
+          map={texture}
+          lightMap={lightMap}
+          lightMapIntensity={100}
+        />
       </mesh>
     </group>
   )
