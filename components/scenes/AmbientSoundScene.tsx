@@ -18,7 +18,7 @@ export default function FpvExample() {
   return (
     <>
     <Canvas camera={{ position: [0, 1, 5] }} className='bg-black'>
-      <PointerLockControls />
+      <PointerLockControls selector='#pointerLockButton'/>
       <Sky sunPosition={[100, 10, 100]} />
       <ambientLight intensity={0.3} />
       <pointLight castShadow intensity={0.8} position={[100, 100, 100]} />
