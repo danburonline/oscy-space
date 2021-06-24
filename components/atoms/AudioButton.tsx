@@ -1,8 +1,15 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faVolumeUp } from '@fortawesome/free-solid-svg-icons'
+import { faVolumeMute } from '@fortawesome/free-solid-svg-icons'
+
 export default function BackHomeButton(props) {
-  let buttonText = props.state ?  'Turn audio off' : 'Turn audio on'
+  const audioButtonOn = <FontAwesomeIcon icon={faVolumeUp} />
+  const audioButtonOff = <FontAwesomeIcon icon={faVolumeMute} />
+  let buttonText = props.state ?  audioButtonOn : audioButtonOff
+  let titleText = props.state ?  'Turn audio off' : 'Turn audio on'
 
   return (
-    <button onClick={props.onClick}
+    <button title={titleText} onClick={props.onClick}
       className='absolute bottom-0 right-0 z-10 flex items-center justify-center p-3 m-3 text-white transition-colors ease-in-out bg-blue-600 rounded-md cursor-pointer duration-350 hover:bg-blue-800'
     >
       {buttonText}
