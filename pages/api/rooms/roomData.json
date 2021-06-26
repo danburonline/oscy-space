@@ -70,9 +70,9 @@
     "link": "/forest-mesh-collider"
   },
   {
-    "title": "❌ Lightmap Scene",
+    "title": "🔄 Lightmap Scene",
     "description": "A block-in scene to demonstrate pre-baked lightmaps, UVs and texture compressions/optimisations.",
-    "isNotDone": true
+    "link": "/lightmap"
   },
   {
     "title": "❌ Forest & Tamina Block-Ins",

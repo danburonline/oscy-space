@@ -14,7 +14,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [10, 0, -10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/r.wav',
+    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/r.wav',
     name: 'r',
     rotation: 0
   },
@@ -24,7 +24,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [10, 0, 10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/rs.wav',
+    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/rs.wav',
     name: 'rs',
     rotation: Math.PI
   },
@@ -35,7 +35,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [10, 10, -10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/hr.wav',
+    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/hr.wav',
     name: 'hr',
     rotation: 0
   },
@@ -46,7 +46,8 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [10, 10, 10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/hrs.wav',
+    filePath:
+      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/hrs.wav',
     name: 'hrs',
     rotation: Math.PI
   },
@@ -57,7 +58,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [-10, 0, -10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/l.wav',
+    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/l.wav',
     name: 'l',
     rotation: 0
   },
@@ -68,7 +69,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [-10, 0, 10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/ls.wav',
+    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/ls.wav',
     name: 'ls',
     rotation: Math.PI
   },
@@ -79,7 +80,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [-10, 10, -10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/hl.wav',
+    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/hl.wav',
     name: 'hl',
     rotation: 0
   },
@@ -89,7 +90,8 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [-10, 10, 10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/hls.wav',
+    filePath:
+      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/hls.wav',
     name: 'hls',
     rotation: Math.PI
   }

@@ -6,15 +6,15 @@ export default function AmbientSound(props) {
 
   useEffect(() => {
     setSoundFile(
-      'https://storage.googleapis.com/oscy-cdn/ambientStereoSound.wav'
+      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/03%20proof%20of%20concept_ortf3d_8.0%20to%20stereo_kurz.wav'
     )
   }, [])
 
   let playPause = Sound.status.PAUSED
 
-  if(props.state) {
+  if (props.state) {
     playPause = Sound.status.PLAYING
-  }else{
+  } else {
     playPause = Sound.status.PAUSED
   }
 
@@ -22,7 +22,7 @@ export default function AmbientSound(props) {
     <Sound
       url={soundFile}
       playStatus={playPause}
-      volume={100}
+      volume={30}
       autoLoad={true}
       loop={true}
     />
