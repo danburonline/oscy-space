@@ -8,7 +8,6 @@ const LightMapScene = dynamic(
     ssr: false
   }
 )
-
 export default function LightMap() {
   return (
     <div className='h-screen'>

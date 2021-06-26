@@ -1,8 +1,13 @@
+// @ts-nocheck
+import { useState } from 'react'
 import { Canvas, useLoader } from '@react-three/fiber'
 import { Sky, PointerLockControls, Loader, useTexture } from '@react-three/drei'
 import { Suspense, useMemo } from 'react'
 import { Physics, useConvexPolyhedron } from '@react-three/cannon'
 import { Geometry } from 'three-stdlib'
+import AmbientSoundObject from '../objects/sound/AmbientSoundObject'
+import AudioButton from '../atoms/AudioButton'
+import AmbientStereo from '../../components/objects/sound/AmbientStereo'
 
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
@@ -24,6 +29,55 @@ function toConvexProps(bufferGeometry) {
     []
   ]
 }
+
+const soundObjects = [
+  {
+    id: 1,
+    x: 10,
+    y: 10,
+    z: -10,
+    position: [10, 0, 10],
+    filePath:
+      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/end%20proof%20of%20concept.mp3',
+    name: 'a',
+    rotation: 0
+  },
+  {
+    id: 2,
+    x: 10,
+    y: 15,
+    z: 15,
+    position: [10, 0, 10],
+    filePath:
+      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/end%20proof%20of%20concept_1.mp3',
+    name: 'b',
+    rotation: Math.PI
+  },
+  ,
+  {
+    id: 3,
+    x: 10,
+    y: 10,
+    z: -15,
+    position: [10, 10, 10],
+    filePath:
+      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/end%20proof%20of%20concept_2.mp3',
+    name: 'c',
+    rotation: 0
+  },
+  ,
+  {
+    id: 4,
+    x: 10,
+    y: 10,
+    z: 10,
+    position: [10, 10, 10],
+    filePath:
+      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/end%20proof%20of%20concept_3.mp3',
+    name: 'd',
+    rotation: Math.PI
+  }
+]
 
 type ForestGroundType = GLTF & {
   nodes: {
@@ -60,7 +114,7 @@ function ForestGround(props: JSX.IntrinsicElements['group']) {
         geometry={nodes.Environment_ground.geometry}
         position={[-10.51, 0, -48.04]}
       >
-        <meshStandardMaterial map={texture} />
+        <meshStandardMaterial map={texture} wireframe={true} />
       </mesh>
     </group>
   )
@@ -112,6 +166,8 @@ export function ForestFoliageWithTexture(
 }
 
 export default function ForestMeshCollider() {
+  const [audioState, setAudioState] = useState(false)
+
   return (
     <>
       <Canvas className='bg-black' camera={{ position: [0, 1, 5] }}>
@@ -125,7 +181,13 @@ export default function ForestMeshCollider() {
         <ambientLight intensity={1} />
         <PointerLockControls />
         <Sky sunPosition={[100, 10, 100]} />
+        <AmbientSoundObject soundObjects={soundObjects} state={audioState} />
       </Canvas>
+      <AudioButton
+        state={audioState}
+        onClick={() => setAudioState(!audioState)}
+      />
+      <AmbientStereo state={audioState} />
       <Loader />
     </>
   )
