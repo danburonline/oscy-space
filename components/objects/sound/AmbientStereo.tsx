@@ -6,15 +6,15 @@ export default function AmbientSound(props) {
 
   useEffect(() => {
     setSoundFile(
-      'https://storage.googleapis.com/oscy-cdn/ambientStereoSound.wav'
+      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/ambientStereoSound.wav'
     )
   }, [])
 
   let playPause = Sound.status.PAUSED
 
-  if(props.state) {
+  if (props.state) {
     playPause = Sound.status.PLAYING
-  }else{
+  } else {
     playPause = Sound.status.PAUSED
   }
 
