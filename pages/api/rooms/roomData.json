@@ -75,13 +75,13 @@
     "link": "/lightmap"
   },
   {
-    "title": "❌ Forest & Tamina Block-Ins",
-    "description": "Both block-in scenes, optimised, with audio, and FPV controls and dynamic scene loading.",
-    "isNotDone": true
+    "title": "🔄 Tamina Block-In",
+    "description": "The Tamina block-in scene, optimised, with audio, and FPV controls and collisions",
+    "link": "/final-tamina-blockin"
   },
   {
-    "title": "❌ WebXR Controls",
-    "description": "Both block-in scenes as before but with optional/opt-in virtual reality/WebXR controls.",
+    "title": "🔄 Forest Block-In",
+    "description": "The Forest block-in scene, optimised, with audio, and FPV controls and collisions",
     "isNotDone": true
   },
   {
