@@ -298,7 +298,7 @@ export default function FinalTaminaScene() {
           </Physics>
         </Suspense>
         <ambientLight intensity={1} />
-        <PointerLockControls />
+        <PointerLockControls selector='#pointerLockButton' />
         <Sky sunPosition={[100, 10, 100]} />
       </Canvas>
       <Loader />
