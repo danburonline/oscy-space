@@ -293,7 +293,7 @@ export default function FinalTaminaScene() {
           <Physics allowSleep={true} gravity={[0, -30, 0]}>
             <FinalTamina position={[0, -14, 0]} />
             <Collider />
-            <Player position={[8, -3, 0]} />
+            <Player position={[7.5, -7, 0]} />
             <Ground />
           </Physics>
         </Suspense>
