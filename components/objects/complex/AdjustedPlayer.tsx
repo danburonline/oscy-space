@@ -8,7 +8,7 @@ type playerProps = {
 }
 
 export const Player = (props: playerProps) => {
-  const SPEED = 4
+  const SPEED = 3
   const keys = {
     KeyW: 'forward',
     KeyS: 'backward',
@@ -22,7 +22,8 @@ export const Player = (props: playerProps) => {
   const sideVector = new THREE.Vector3()
 
   const [ref, api] = useSphere(() => ({
-    mass: 1,
+    args: 0.75,
+    mass: 10,
     type: 'Dynamic',
     // sleepSpeedLimit: 4,
     // sleepTimeLimit: 4,
@@ -42,13 +43,11 @@ export const Player = (props: playerProps) => {
       // Init the event listener to the document at the first page render
       const handleKeyDown = e => {
         api.allowSleep.set(false)
-        console.log('SHOULD BE FALSE')
         setMovement(m => ({ ...m, [moveFieldByKey(e.code)]: true }))
       }
 
       const handleKeyUp = e => {
         api.allowSleep.set(true)
-        console.log('SHOULD BE TRUE')
         setMovement(m => ({ ...m, [moveFieldByKey(e.code)]: false }))
       }
 

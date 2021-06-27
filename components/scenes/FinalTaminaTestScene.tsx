@@ -269,7 +269,7 @@ export function Collider(props: JSX.IntrinsicElements['group']) {
 
   // @ts-ignore
   const [ref] = useConvexPolyhedron(() => ({
-    mass: 1,
+    mass: 100,
     type: 'Kinematic',
     args: geo,
     position: [0, -14, 0],
