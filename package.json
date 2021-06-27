@@ -13,6 +13,9 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@react-three/cannon": "^1.1.1",
     "@react-three/drei": "^4.3.3",
     "@react-three/fiber": "^6.1.2",

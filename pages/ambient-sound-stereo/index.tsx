@@ -3,6 +3,9 @@ import dynamic from 'next/dynamic'
 import BackHomeButton from '../../components/atoms/BackHomeButton'
 import AmbientStereo from '../../components/objects/sound/AmbientStereo'
 import AudioButton from '../../components/atoms/AudioButton'
+import FullScreenButton from '../../components/atoms/FullScreenButton'
+import PointerLockButton from '../../components/atoms/PointerLockButton'
+import MobileBlocker from '../../components/utils/mobileBlocker'
 import { useState } from 'react'
 
 const AmbientSoundScene = dynamic(
@@ -17,10 +20,8 @@ export default function FpvExample() {
 
   return (
     <>
-      <h1 className='absolute top-0 right-0 z-10 pr-2'>
-        Click on the screen to activate pointer lock controls
-      </h1>
-      <div className='h-screen'>
+      <MobileBlocker />
+      <div id={'webGL'} className='h-screen'>
         <AmbientSoundScene />
         <BackHomeButton />
         <Stats />
@@ -29,6 +30,8 @@ export default function FpvExample() {
           state={audioState}
           onClick={() => setAudioState(!audioState)}
         />
+        <FullScreenButton />
+        <PointerLockButton />
       </div>
     </>
   )
