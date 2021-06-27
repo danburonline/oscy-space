@@ -15,10 +15,24 @@ import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Geometry } from 'three-stdlib'
 import { Player } from '../objects/complex/AdjustedPlayer'
 
+function toConvexProps(bufferGeometry) {
+  const geo = new Geometry().fromBufferGeometry(bufferGeometry)
+  // Merge duplicate vertices resulting from glTF export.
+  // Cannon assumes contiguous, closed meshes to work
+  geo.mergeVertices()
+  // TODO Do this with WASM?
+  // TODO Get rid of console warnings and errors
+  return [
+    geo.vertices.map(v => [v.x, v.y, v.z]),
+    geo.faces.map(f => [f.a, f.b, f.c]),
+    []
+  ]
+}
+
 function Ground() {
   const [ref] = usePlane(() => ({
     rotation: [-Math.PI / 2, 0, 0],
-    position: [0, -8.5, 0]
+    position: [0, -8, 0]
   }))
 
   return (
@@ -29,53 +43,39 @@ function Ground() {
   )
 }
 
-function toConvexProps(bufferGeometry) {
-  const geo = new Geometry().fromBufferGeometry(bufferGeometry)
-  // Merge duplicate vertices resulting from glTF export.
-  // Cannon assumes contiguous, closed meshes to work
-  // geo.mergeVertices()
-  // TODO Do this with WASM?
-  // TODO Get rid of console warnings and errors
-  return [
-    geo.vertices.map(v => [v.x, v.y, v.z]),
-    geo.faces.map(f => [f.a, f.b, f.c]),
-    []
-  ]
-}
-
-type FinalTaminaMeshColliderProps = GLTF & {
+type TestColliderProps = GLTF & {
   nodes: {
-    tamina_collider: THREE.Mesh
+    Suzanne: THREE.Mesh
   }
-  materials: {
-    lambert1: THREE.MeshStandardMaterial
-  }
+  materials: {}
 }
 
-function FinalTaminaMeshCollider(props: JSX.IntrinsicElements['group']) {
+export function TestCollider(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
-
   const { nodes } = useGLTF(
-    '/final-tamina-draco/tamina_collider.gltf'
-  ) as FinalTaminaMeshColliderProps
+    '/final-tamina-draco/test-collider.gltf'
+  ) as TestColliderProps
 
-  const geo = useMemo(
-    () => toConvexProps(nodes.tamina_collider.geometry),
-    [nodes]
-  )
+  const geo = useMemo(() => toConvexProps(nodes.Suzanne.geometry), [nodes])
 
   // @ts-ignore
   const [ref] = useConvexPolyhedron(() => ({
     mass: 1,
     type: 'Kinematic',
-    args: geo
+    args: geo,
+    position: [10, -8, 25],
+    scale: [4.47, 4.47, 4.47]
   }))
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh ref={ref} geometry={nodes.tamina_collider.geometry}>
-        <meshBasicMaterial color='black' wireframe />
-      </mesh>
+      <mesh
+        ref={ref}
+        geometry={nodes.Suzanne.geometry}
+        material={nodes.Suzanne.material}
+        position={[10, -8, 25]}
+        scale={[1, 1, 1]}
+      />
     </group>
   )
 }
@@ -334,10 +334,10 @@ export default function FinalTaminaScene() {
     <>
       <Canvas className='bg-black' camera={{ position: [11, -7, 36] }}>
         <Suspense fallback={null}>
-          <Physics gravity={[0, 0, 0]}>
+          <Physics gravity={[0, -30, 0]}>
             <FinalTamina />
-            <FinalTaminaMeshCollider scale={10} />
-            <Player position={[11, -7, 36]} />
+            <TestCollider />
+            <Player position={[11, -5, 36]} />
             <Ground />
           </Physics>
         </Suspense>
