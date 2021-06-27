@@ -21,13 +21,24 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Collider"
+            "name" : "Collider",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.009999999776482582,
+                0.009999999776482582,
+                0.009999999776482582
+            ]
         }
     ],
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "M_TrimSheet_TEST.003",
+            "name" : "M_TrimSheet_TEST",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.5,
@@ -42,7 +53,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Mesh.002",
+            "name" : "Mesh",
             "primitives" : [
                 {
                     "attributes" : {
@@ -70,45 +81,45 @@
     "accessors" : [
         {
             "componentType" : 5126,
-            "count" : 1642,
+            "count" : 3592,
             "max" : [
                 13.6402587890625,
-                8.790407180786133,
-                8.87506103515625
+                8.87506103515625,
+                -5.809326171875
             ],
             "min" : [
                 -2.62603759765625,
-                5.809326648712158,
-                -49.97705078125
+                -49.97705078125,
+                -8.7904052734375
             ],
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 1642,
+            "count" : 3592,
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 1642,
+            "count" : 3592,
             "type" : "VEC2"
         },
         {
             "componentType" : 5123,
-            "count" : 2706,
+            "count" : 8568,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 8973,
+            "byteLength" : 16867,
             "byteOffset" : 0
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 8976,
+            "byteLength" : 16868,
             "uri" : "Collider.bin"
         }
     ]

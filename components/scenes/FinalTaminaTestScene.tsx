@@ -272,7 +272,8 @@ export function Collider(props: JSX.IntrinsicElements['group']) {
     mass: 1,
     type: 'Kinematic',
     args: geo,
-    position: [0, -14, 0]
+    position: [0, -14, 0],
+    rotation: [Math.PI / 2, 0, 0]
   }))
 
   return (
@@ -292,7 +293,7 @@ export default function FinalTaminaScene() {
           <Physics allowSleep={true} gravity={[0, -30, 0]}>
             <FinalTamina position={[0, -14, 0]} />
             <Collider />
-            <Player position={[8, 0, 0]} />
+            <Player position={[8, -3, 0]} />
             <Ground />
           </Physics>
         </Suspense>
