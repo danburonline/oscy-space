@@ -2,12 +2,7 @@ import { Canvas, useLoader } from '@react-three/fiber'
 import { Sky, PointerLockControls, Loader } from '@react-three/drei'
 import { Suspense, useMemo } from 'react'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
-import {
-  Physics,
-  useBox,
-  usePlane,
-  useConvexPolyhedron
-} from '@react-three/cannon'
+import { Physics, usePlane, useConvexPolyhedron } from '@react-three/cannon'
 import { Geometry } from 'three-stdlib'
 
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
@@ -59,9 +54,10 @@ function ForestGround(props: JSX.IntrinsicElements['group']) {
     () => toConvexProps(nodes.Environment_ground.geometry),
     [nodes]
   )
+
   // @ts-ignore
   const [ref] = useConvexPolyhedron(() => ({
-    mass: 100,
+    mass: 1,
     type: 'Kinematic',
     args: geo,
     position: [-10.51, 0, -48.04]
