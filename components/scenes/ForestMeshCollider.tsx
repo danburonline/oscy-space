@@ -2,12 +2,7 @@ import { Canvas, useLoader } from '@react-three/fiber'
 import { Sky, PointerLockControls, Loader } from '@react-three/drei'
 import { Suspense, useMemo } from 'react'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
-import {
-  Physics,
-  useBox,
-  usePlane,
-  useConvexPolyhedron
-} from '@react-three/cannon'
+import { Physics, usePlane, useConvexPolyhedron } from '@react-three/cannon'
 import { Geometry } from 'three-stdlib'
 
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
@@ -59,9 +54,10 @@ function ForestGround(props: JSX.IntrinsicElements['group']) {
     () => toConvexProps(nodes.Environment_ground.geometry),
     [nodes]
   )
+
   // @ts-ignore
   const [ref] = useConvexPolyhedron(() => ({
-    mass: 100,
+    mass: 1,
     type: 'Kinematic',
     args: geo,
     position: [-10.51, 0, -48.04]
@@ -113,11 +109,11 @@ export default function ForestMeshCollider() {
     <>
       <Canvas className='bg-black' camera={{ position: [0, 1, 5] }}>
         <Suspense fallback={null}>
-          <Physics gravity={[0, -30, 0]}>
+          <Physics allowSleep={true} gravity={[0, -30, 0]}>
             <ForestGround />
             <ForestFoliage />
-            <Player position={[-20, 1, 20]} />
-            <Ground />
+            <Player position={[0, 1, 0]} />
+            {/* <Ground /> */}
           </Physics>
         </Suspense>
         <PointerLockControls />

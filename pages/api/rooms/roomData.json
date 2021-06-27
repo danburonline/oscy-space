@@ -75,13 +75,13 @@
     "link": "/lightmap"
   },
   {
-    "title": "🔄 Tamina Block-In",
-    "description": "The Tamina block-in scene, optimised, with audio, and FPV controls and collisions",
-    "link": "/final-tamina-blockin"
+    "title": "🔄 Tamina Scene",
+    "description": "The Tamina work in progress scene, optimised, with test audio, Draco,  FPV controls and collision meshes.",
+    "link": "/final-tamina-scene"
   },
   {
-    "title": "🔄 Forest Block-In",
-    "description": "The Forest block-in scene, optimised, with audio, and FPV controls and collisions",
+    "title": "❌ Forest Scene",
+    "description": "The Forest work in progress scene, optimised, with test audio, Draco, FPV controls and collision meshes.",
     "isNotDone": true
   },
   {

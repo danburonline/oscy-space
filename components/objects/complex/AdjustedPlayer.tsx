@@ -3,7 +3,11 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useSphere } from '@react-three/cannon'
 import { useThree, useFrame } from '@react-three/fiber'
 
-const SPEED = 4
+type playerProps = {
+  position?: number[]
+}
+
+const SPEED = 3
 const keys = {
   KeyW: 'forward',
   KeyS: 'backward',
@@ -25,10 +29,16 @@ const usePlayerControls = () => {
   })
   useEffect(() => {
     // Init the event listener to the document at the first page render
-    const handleKeyDown = e =>
+    const handleKeyDown = e => {
+      // api.allowSleep.set(false)
       setMovement(m => ({ ...m, [moveFieldByKey(e.code)]: true }))
-    const handleKeyUp = e =>
+    }
+
+    const handleKeyUp = e => {
+      // api.allowSleep.set(true)
       setMovement(m => ({ ...m, [moveFieldByKey(e.code)]: false }))
+    }
+
     document.addEventListener('keydown', handleKeyDown)
     document.addEventListener('keyup', handleKeyUp)
     return () => {
@@ -40,16 +50,18 @@ const usePlayerControls = () => {
   return movement
 }
 
-type playerProps = {
-  position?: number[]
-}
-
 export const Player = (props: playerProps) => {
   const [ref, api] = useSphere(() => ({
-    mass: 1,
+    args: 1,
+    mass: 10,
     type: 'Dynamic',
+    // sleepSpeedLimit: 4,
+    // sleepTimeLimit: 4,
+    // sleepTimeLimit: 5,
+    allowSleep: false,
     position: props.position || [10, 0, 0] // Default player position
   }))
+
   const { forward, backward, left, right } = usePlayerControls()
   const { camera } = useThree()
   const velocity = useRef([0, 0, 0])
@@ -66,15 +78,6 @@ export const Player = (props: playerProps) => {
       .multiplyScalar(SPEED)
       .applyEuler(camera.rotation)
     api.velocity.set(direction.x, velocity.current[1], direction.z)
-    // if (
-    //   jump &&
-    //   // @ts-ignore
-    //   velocity.current[1].toFixed(3) < 0.05 &&
-    //   // @ts-ignore
-    //   velocity.current[1].toFixed(2) >= 0
-    // ) {
-    //   api.velocity.set(velocity.current[0], 10, velocity.current[2])
-    // }
   })
   return <mesh ref={ref} />
 }
