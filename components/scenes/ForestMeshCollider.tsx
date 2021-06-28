@@ -113,7 +113,6 @@ export default function ForestMeshCollider() {
             <ForestGround />
             <ForestFoliage />
             <Player position={[0, 1, 0]} />
-            {/* <Ground /> */}
           </Physics>
         </Suspense>
         <PointerLockControls />

@@ -172,7 +172,7 @@ export default function ForestMeshCollider() {
     <>
       <Canvas className='bg-black' camera={{ position: [0, 1, 5] }}>
         <Suspense fallback={null}>
-          <Physics gravity={[0, -30, 0]}>
+          <Physics gravity={[0, -30, 0]} allowSleep={true}>
             <ForestGround />
             <ForestFoliageWithTexture />
             <Player position={[0, 1, 0]} />
