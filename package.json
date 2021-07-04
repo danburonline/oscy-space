@@ -21,6 +21,7 @@
     "@react-three/fiber": "^6.1.2",
     "audio-decode": "^1.4.0",
     "audio-lena": "^2.1.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "file-loader": "^6.2.0",
     "next": "10.2.0",
     "nice-color-palettes": "^3.0.0",

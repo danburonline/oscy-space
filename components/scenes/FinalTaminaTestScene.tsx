@@ -2,9 +2,10 @@ import { Canvas } from '@react-three/fiber'
 import { Sky, PointerLockControls, Loader } from '@react-three/drei'
 import { Suspense, useMemo } from 'react'
 import { Physics, usePlane, useConvexPolyhedron } from '@react-three/cannon'
+import { geo } from '../objects/data/tamina-mesh-collision'
 
 import * as THREE from 'three'
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Geometry } from 'three-stdlib'
@@ -236,20 +237,6 @@ export function FinalTamina(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-function toConvexProps(bufferGeometry) {
-  const geo = new Geometry().fromBufferGeometry(bufferGeometry)
-  // Merge duplicate vertices resulting from glTF export.
-  // Cannon assumes contiguous, closed meshes to work
-  geo.mergeVertices()
-  // TODO Do this with WASM?
-  // TODO Get rid of console warnings and errors
-  return [
-    geo.vertices.map(v => [v.x, v.y, v.z]),
-    geo.faces.map(f => [f.a, f.b, f.c]),
-    []
-  ]
-}
-
 type ColliderProps = GLTF & {
   nodes: {
     Collider: THREE.Mesh
@@ -265,14 +252,15 @@ export function Collider(props: JSX.IntrinsicElements['group']) {
     '/final-tamina-draco/Collider_v2.gltf'
   ) as ColliderProps
 
-  const geo = useMemo(() => toConvexProps(nodes.Collider.geometry), [nodes])
+  // The needed geometry is loaded from a pre-calculated file
+  // const geo = useMemo(() => toConvexProps(nodes.Collider.geometry), [nodes])
 
   // @ts-ignore
   const [ref] = useConvexPolyhedron(() => ({
     mass: 100,
     type: 'Kinematic',
-    args: geo,
-    position: [0, -14, 0]
+    position: [0, -14, 0],
+    args: geo
   }))
 
   return (
