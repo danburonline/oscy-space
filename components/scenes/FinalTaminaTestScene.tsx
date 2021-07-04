@@ -2,9 +2,10 @@ import { Canvas } from '@react-three/fiber'
 import { Sky, PointerLockControls, Loader } from '@react-three/drei'
 import { Suspense, useMemo } from 'react'
 import { Physics, usePlane, useConvexPolyhedron } from '@react-three/cannon'
+import { geo } from '../objects/data/tamina-mesh-collision'
 
 import * as THREE from 'three'
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Geometry } from 'three-stdlib'
@@ -241,44 +242,34 @@ type ColliderProps = GLTF & {
     Collider: THREE.Mesh
   }
   materials: {
-    ['M_TrimSheet_TEST.003']: THREE.MeshStandardMaterial
+    lambert1: THREE.MeshStandardMaterial
   }
-}
-
-function toConvexProps(bufferGeometry) {
-  const geo = new Geometry().fromBufferGeometry(bufferGeometry)
-  // Merge duplicate vertices resulting from glTF export.
-  // Cannon assumes contiguous, closed meshes to work
-  geo.mergeVertices()
-  // TODO Do this with WASM?
-  // TODO Get rid of console warnings and errors
-  return [
-    geo.vertices.map(v => [v.x, v.y, v.z]),
-    geo.faces.map(f => [f.a, f.b, f.c]),
-    []
-  ]
 }
 
 export function Collider(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
-  const { nodes } = useGLTF(
-    '/final-tamina-draco/Collider.gltf'
+  const { nodes, materials } = useGLTF(
+    '/final-tamina-draco/Collider_v2.gltf'
   ) as ColliderProps
 
-  const geo = useMemo(() => toConvexProps(nodes.Collider.geometry), [nodes])
+  // The needed geometry is loaded from a pre-calculated file
+  // const geo = useMemo(() => toConvexProps(nodes.Collider.geometry), [nodes])
 
   // @ts-ignore
   const [ref] = useConvexPolyhedron(() => ({
     mass: 100,
     type: 'Kinematic',
-    args: geo,
     position: [0, -14, 0],
-    rotation: [Math.PI / 2, 0, 0]
+    args: geo
   }))
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh ref={ref} geometry={nodes.Collider.geometry}>
+      <mesh
+        ref={ref}
+        geometry={nodes.Collider.geometry}
+        material={materials.lambert1}
+      >
         <meshBasicMaterial color={'black'} wireframe={true} />
       </mesh>
     </group>
