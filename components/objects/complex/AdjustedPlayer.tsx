@@ -12,14 +12,14 @@ export const Player = (props: playerProps) => {
     args: 1,
     mass: 1,
     type: 'Dynamic',
-    sleepSpeedLimit: 4,
+    sleepSpeedLimit: 1,
     // sleepTimeLimit: 4,
     sleepTimeLimit: 0,
     allowSleep: true,
     position: props.position || [10, 0, 0] // Default player position
   }))
 
-  const SPEED = 5
+  const SPEED = 3
   const keys = {
     KeyW: 'forward',
     KeyS: 'backward',
