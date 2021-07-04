@@ -236,15 +236,6 @@ export function FinalTamina(props: JSX.IntrinsicElements['group']) {
   )
 }
 
-type ColliderProps = GLTF & {
-  nodes: {
-    Collider: THREE.Mesh
-  }
-  materials: {
-    ['M_TrimSheet_TEST.003']: THREE.MeshStandardMaterial
-  }
-}
-
 function toConvexProps(bufferGeometry) {
   const geo = new Geometry().fromBufferGeometry(bufferGeometry)
   // Merge duplicate vertices resulting from glTF export.
@@ -259,10 +250,19 @@ function toConvexProps(bufferGeometry) {
   ]
 }
 
+type ColliderProps = GLTF & {
+  nodes: {
+    Collider: THREE.Mesh
+  }
+  materials: {
+    lambert1: THREE.MeshStandardMaterial
+  }
+}
+
 export function Collider(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
-  const { nodes } = useGLTF(
-    '/final-tamina-draco/Collider.gltf'
+  const { nodes, materials } = useGLTF(
+    '/final-tamina-draco/Collider_v2.gltf'
   ) as ColliderProps
 
   const geo = useMemo(() => toConvexProps(nodes.Collider.geometry), [nodes])
@@ -272,13 +272,16 @@ export function Collider(props: JSX.IntrinsicElements['group']) {
     mass: 100,
     type: 'Kinematic',
     args: geo,
-    position: [0, -14, 0],
-    rotation: [Math.PI / 2, 0, 0]
+    position: [0, -14, 0]
   }))
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh ref={ref} geometry={nodes.Collider.geometry}>
+      <mesh
+        ref={ref}
+        geometry={nodes.Collider.geometry}
+        material={materials.lambert1}
+      >
         <meshBasicMaterial color={'black'} wireframe={true} />
       </mesh>
     </group>

@@ -12,7 +12,7 @@ export const Player = (props: playerProps) => {
     args: 1,
     mass: 1,
     type: 'Dynamic',
-    sleepSpeedLimit: 1,
+    sleepSpeedLimit: 3,
     // sleepTimeLimit: 4,
     sleepTimeLimit: 0,
     allowSleep: true,
