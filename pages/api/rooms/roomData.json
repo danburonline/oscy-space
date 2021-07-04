@@ -70,23 +70,23 @@
     "link": "/forest-mesh-collider"
   },
   {
-    "title": "🔄 Lightmap Scene",
-    "description": "A block-in scene to demonstrate pre-baked lightmaps, UVs and texture compressions/optimisations.",
+    "title": "✅ Lightmap Scene",
+    "description": "An attempt to demonstrate pre-baked lightmaps, UVs and texture compressions/optimisations (not working).",
     "link": "/lightmap"
   },
   {
-    "title": "🔄 Tamina Scene",
+    "title": "✅ Tamina Test Scene",
     "description": "The Tamina work in progress scene, optimised, with test audio, Draco,  FPV controls and collision meshes.",
     "link": "/final-tamina-scene"
   },
   {
-    "title": "❌ Forest Scene",
-    "description": "The Forest work in progress scene, optimised, with test audio, Draco, FPV controls and collision meshes.",
+    "title": "🔄 Dynamic Audio Placement",
+    "description": "A scene dedicated for the audio engineers to manually place sound objects in the scene.",
     "isNotDone": true
   },
   {
-    "title": "❌ Dynamic Audio Placement",
-    "description": "A scene dedicated for the audio engineers to manually place sound objects in the scene.",
+    "title": "❌ Work in Progress Testing",
+    "description": "This page is dedicated to test several things encapsulated from the staging/main version of Oscy Space.",
     "isNotDone": true
   }
 ]
