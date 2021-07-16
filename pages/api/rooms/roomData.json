@@ -78,15 +78,5 @@
     "title": "✅ Tamina Test Scene",
     "description": "The Tamina work in progress scene, optimised, with test audio, Draco,  FPV controls and collision meshes.",
     "link": "/final-tamina-scene"
-  },
-  {
-    "title": "🔄 Dynamic Audio Placement",
-    "description": "A scene dedicated for the audio engineers to manually place sound objects in the scene.",
-    "isNotDone": true
-  },
-  {
-    "title": "❌ Work in Progress Testing",
-    "description": "This page is dedicated to test several things encapsulated from the staging/main version of Oscy Space.",
-    "isNotDone": true
   }
 ]
