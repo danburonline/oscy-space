@@ -1,8 +1,6 @@
 # Oscy Space
 
-> **_⚠️ Currently in development_**
-
-Oscy Space is an immersive 3D virtual reality environment with spatial audio allowing users to explore interesting natural scenes from Switzerland via the WebXR API.
+Oscy Space is the project name for two experimental and immersive spatial audio proof of concepts implemented with React-Three-Fiber, where people can explore interesting nature scenes from Switzerland.
 
 ## Branching and Continuous Deployment
 
