@@ -1,25 +1,33 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  DocumentInitialProps
+} from 'next/document'
 
 class CustomDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <Html lang='en'>
         <Head>
           <meta
             name='description'
-            // TODO Create a meta description for Oscy Space
-            content='Oscy Space description coming soon'
+            content='Oscy Space is an experimental and immersive spatial audio proof of concept implemented with React-Three-Fiber, where people can explore two interesting nature scenes from Switzerland.'
           />
           <link rel='icon' href='/favicon.ico' />
-          <link as='font' href='https://fonts.gstatic.com' />
+          <link as='font' rel='preconnect' href='https://fonts.gstatic.com' />
           <link
-            href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap'
             rel='stylesheet'
+            href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=optional'
           />
         </Head>
         <body>
