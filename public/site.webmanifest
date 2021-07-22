@@ -1,6 +1,6 @@
 {
-  "name": "Oscy Space — Immersive Audio",
-  "short_name": "Oscy Space",
+  "name": "Oscy Space",
+  "short_name": "Oscy",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#001749",
   "background_color": "#ffffff",
   "display": "standalone"
 }
