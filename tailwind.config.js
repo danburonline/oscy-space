@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   purge: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -23,7 +24,7 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     fontFamily: {
-      sans: ['Open Sans', 'sans-serif']
+      sans: ['utile', 'sans-serif']
     },
     cursor: {
       auto: 'auto',
