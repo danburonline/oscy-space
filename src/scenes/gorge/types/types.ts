@@ -50,3 +50,14 @@ export type StorageAssetsProps = GLTF & {
     ['M_Props.001']: THREE.MeshStandardMaterial
   }
 }
+
+export type RoomElementsProps = GLTF & {
+  nodes: {
+    Roof001: THREE.Mesh
+    Walls001: THREE.Mesh
+  }
+  materials: {
+    M_Roof: THREE.MeshStandardMaterial
+    M_Walls: THREE.MeshStandardMaterial
+  }
+}
