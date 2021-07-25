@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import React, { useRef, useMemo } from 'react'
+import { useRef, useMemo } from 'react'
 import { extend, useThree, useLoader, useFrame } from '@react-three/fiber'
 import { Water } from 'three-stdlib'
 

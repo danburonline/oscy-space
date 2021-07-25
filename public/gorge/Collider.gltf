@@ -6,9 +6,7 @@
   "scene": 0,
   "scenes": [
     {
-      "nodes": [
-        0
-      ]
+      "nodes": [0]
     }
   ],
   "nodes": [
@@ -56,16 +54,8 @@
     {
       "componentType": 5126,
       "count": 1194,
-      "max": [
-        5.518227263605278,
-        4.1701787385461655,
-        0.9996983220322448
-      ],
-      "min": [
-        -9.186813672032242,
-        -0.13521469003224232,
-        -61.125309672032245
-      ],
+      "max": [5.518227263605278, 4.1701787385461655, 0.9996983220322448],
+      "min": [-9.186813672032242, -0.13521469003224232, -61.125309672032245],
       "type": "VEC3",
       "name": "accessorPositions"
     },
@@ -105,29 +95,16 @@
   "materials": [
     {
       "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.5,
-          0.5,
-          0.5,
-          1
-        ],
+        "baseColorFactor": [0.5, 0.5, 0.5, 1],
         "metallicFactor": 0,
         "roughnessFactor": 0.450053632
       },
       "name": "lambert1",
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
+      "emissiveFactor": [0, 0, 0],
       "alphaMode": "OPAQUE",
       "doubleSided": false
     }
   ],
-  "extensionsRequired": [
-    "KHR_draco_mesh_compression"
-  ],
-  "extensionsUsed": [
-    "KHR_draco_mesh_compression"
-  ]
+  "extensionsRequired": ["KHR_draco_mesh_compression"],
+  "extensionsUsed": ["KHR_draco_mesh_compression"]
 }
