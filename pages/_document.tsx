@@ -19,10 +19,6 @@ class CustomDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <meta
-            name='description'
-            content='Oscy Space is an experimental and immersive spatial audio proof of concept implemented with React-Three-Fiber, where people can explore two interesting nature scenes from Switzerland.'
-          />
           <link rel='stylesheet' href='https://use.typekit.net/tyv2nzp.css' />
           <link
             rel='apple-touch-icon'
