@@ -6,9 +6,7 @@
   "scene": 0,
   "scenes": [
     {
-      "nodes": [
-        0
-      ]
+      "nodes": [0]
     }
   ],
   "nodes": [
@@ -46,16 +44,8 @@
       "bufferView": 1,
       "componentType": 5126,
       "count": 817,
-      "max": [
-        5.572501,
-        4.126518,
-        0.96937865
-      ],
-      "min": [
-        -9.067165,
-        -0.104895264,
-        -65.95002
-      ],
+      "max": [5.572501, 4.126518, 0.96937865],
+      "min": [-9.067165, -0.104895264, -65.95002],
       "type": "VEC3",
       "name": "accessorPositions"
     },
@@ -119,12 +109,7 @@
   "materials": [
     {
       "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.5,
-          0.5,
-          0.5,
-          1.0
-        ],
+        "baseColorFactor": [0.5, 0.5, 0.5, 1.0],
         "metallicFactor": 0.0,
         "roughnessFactor": 0.450053632
       },

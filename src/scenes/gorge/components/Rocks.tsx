@@ -7,7 +7,7 @@ export default function Rocks(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/Rocks.gltf') as RocksProps
+  const { nodes, materials } = useGLTF('/gorge/models/Rocks.gltf') as RocksProps
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh

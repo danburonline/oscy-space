@@ -7,7 +7,7 @@ export default function Lamps(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/Lamps.gltf') as LampsProps
+  const { nodes, materials } = useGLTF('/gorge/models/Lamps.gltf') as LampsProps
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh

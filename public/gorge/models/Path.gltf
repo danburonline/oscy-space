@@ -1,272 +1,238 @@
 {
-    "asset" : {
-        "generator" : "Khronos glTF Blender I/O v0.9.36",
-        "version" : "2.0"
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v0.9.36",
+    "version": "2.0"
+  },
+  "extensionsUsed": ["KHR_draco_mesh_compression"],
+  "extensionsRequired": ["KHR_draco_mesh_compression"],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [2]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Path.001"
     },
-    "extensionsUsed" : [
-        "KHR_draco_mesh_compression"
-    ],
-    "extensionsRequired" : [
-        "KHR_draco_mesh_compression"
-    ],
-    "scene" : 0,
-    "scenes" : [
-        {
-            "name" : "Scene",
-            "nodes" : [
-                2
-            ]
-        }
-    ],
-    "nodes" : [
-        {
-            "mesh" : 0,
-            "name" : "Path.001"
+    {
+      "children": [0],
+      "name": "Path"
+    },
+    {
+      "children": [1],
+      "name": "RootNode"
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_TrimSheet.001",
+      "normalTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
         },
-        {
-            "children" : [
-                0
-            ],
-            "name" : "Path"
-        },
-        {
-            "children" : [
-                1
-            ],
-            "name" : "RootNode"
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
         }
-    ],
-    "materials" : [
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Path.001",
+      "primitives": [
         {
-            "name" : "M_TrimSheet.001",
-            "normalTexture" : {
-                "index" : 0,
-                "texCoord" : 0
-            },
-            "occlusionTexture" : {
-                "index" : 1,
-                "texCoord" : 0
-            },
-            "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 2,
-                    "texCoord" : 0
-                },
-                "metallicRoughnessTexture" : {
-                    "index" : 1,
-                    "texCoord" : 0
-                }
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
             }
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
         }
-    ],
-    "meshes" : [
-        {
-            "name" : "Path.001",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 0,
-                        "NORMAL" : 1,
-                        "TEXCOORD_0" : 2
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 0,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 3,
-                    "material" : 0,
-                    "mode" : 4
-                },
-                {
-                    "attributes" : {
-                        "POSITION" : 4,
-                        "NORMAL" : 5,
-                        "TEXCOORD_0" : 6
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 1,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 7,
-                    "material" : 0,
-                    "mode" : 4
-                },
-                {
-                    "attributes" : {
-                        "POSITION" : 8,
-                        "NORMAL" : 9,
-                        "TEXCOORD_0" : 10
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 2,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 11,
-                    "material" : 0,
-                    "mode" : 4
-                }
-            ]
-        }
-    ],
-    "textures" : [
-        {
-            "source" : 0
-        },
-        {
-            "source" : 1
-        },
-        {
-            "source" : 2
-        }
-    ],
-    "images" : [
-        {
-            "mimeType" : "image/png",
-            "name" : "M_TrimSheet_normal",
-            "uri" : "M_TrimSheet_normal.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "M_TrimSheet_occlusionRoughnessMetallic",
-            "uri" : "M_TrimSheet_occlusionRoughnessMetallic.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "M_TrimSheet_baseColor",
-            "uri" : "M_TrimSheet_baseColor.png"
-        }
-    ],
-    "accessors" : [
-        {
-            "componentType" : 5126,
-            "count" : 65534,
-            "max" : [
-                9.467144966125488,
-                4.062990188598633,
-                0.9829466342926025
-            ],
-            "min" : [
-                -10.015680313110352,
-                -4.762381076812744,
-                -65.96685028076172
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 65534,
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 65534,
-            "type" : "VEC2"
-        },
-        {
-            "componentType" : 5123,
-            "count" : 81867,
-            "type" : "SCALAR"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 4792,
-            "max" : [
-                5.622589111328125,
-                3.0715091228485107,
-                -17.939002990722656
-            ],
-            "min" : [
-                -2.9313735961914062,
-                -0.07162443548440933,
-                -51.92236328125
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 4792,
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 4792,
-            "type" : "VEC2"
-        },
-        {
-            "componentType" : 5123,
-            "count" : 6150,
-            "type" : "SCALAR"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 3,
-            "max" : [
-                -2.683551549911499,
-                2.2990477085113525,
-                -19.010425567626953
-            ],
-            "min" : [
-                -2.835834503173828,
-                2.2813944816589355,
-                -19.09423828125
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 3,
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 3,
-            "type" : "VEC2"
-        },
-        {
-            "componentType" : 5123,
-            "count" : 3,
-            "type" : "SCALAR"
-        }
-    ],
-    "bufferViews" : [
-        {
-            "buffer" : 0,
-            "byteLength" : 685454,
-            "byteOffset" : 0
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 54057,
-            "byteOffset" : 685456
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 171,
-            "byteOffset" : 739516
-        }
-    ],
-    "buffers" : [
-        {
-            "byteLength" : 739688,
-            "uri" : "Path.bin"
-        }
-    ]
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "M_TrimSheet_normal",
+      "uri": "M_TrimSheet_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_TrimSheet_occlusionRoughnessMetallic",
+      "uri": "M_TrimSheet_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_TrimSheet_baseColor",
+      "uri": "M_TrimSheet_baseColor.png"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5126,
+      "count": 65534,
+      "max": [9.467144966125488, 4.062990188598633, 0.9829466342926025],
+      "min": [-10.015680313110352, -4.762381076812744, -65.96685028076172],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 65534,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 65534,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 81867,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 4792,
+      "max": [5.622589111328125, 3.0715091228485107, -17.939002990722656],
+      "min": [-2.9313735961914062, -0.07162443548440933, -51.92236328125],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 4792,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 4792,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 6150,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 3,
+      "max": [-2.683551549911499, 2.2990477085113525, -19.010425567626953],
+      "min": [-2.835834503173828, 2.2813944816589355, -19.09423828125],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 3,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 3,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 3,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 685454,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 54057,
+      "byteOffset": 685456
+    },
+    {
+      "buffer": 0,
+      "byteLength": 171,
+      "byteOffset": 739516
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 739688,
+      "uri": "Path.bin"
+    }
+  ]
 }

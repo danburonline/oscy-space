@@ -1,272 +1,245 @@
 {
-    "asset" : {
-        "generator" : "Khronos glTF Blender I/O v0.9.36",
-        "version" : "2.0"
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v0.9.36",
+    "version": "2.0"
+  },
+  "extensionsUsed": ["KHR_draco_mesh_compression"],
+  "extensionsRequired": ["KHR_draco_mesh_compression"],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [3]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Storage_Assets.001"
     },
-    "extensionsUsed" : [
-        "KHR_draco_mesh_compression"
-    ],
-    "extensionsRequired" : [
-        "KHR_draco_mesh_compression"
-    ],
-    "scene" : 0,
-    "scenes" : [
-        {
-            "name" : "Scene",
-            "nodes" : [
-                3
-            ]
+    {
+      "mesh": 1,
+      "name": "Storage_Assets.002"
+    },
+    {
+      "children": [0, 1],
+      "name": "Storage_Assets"
+    },
+    {
+      "children": [2],
+      "name": "RootNode"
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_CratesBarrels.001",
+      "normalTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
         }
-    ],
-    "nodes" : [
-        {
-            "mesh" : 0,
-            "name" : "Storage_Assets.001"
+      }
+    },
+    {
+      "name": "M_Props.001",
+      "normalTexture": {
+        "index": 3,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 4,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5,
+          "texCoord": 0
         },
-        {
-            "mesh" : 1,
-            "name" : "Storage_Assets.002"
-        },
-        {
-            "children" : [
-                0,
-                1
-            ],
-            "name" : "Storage_Assets"
-        },
-        {
-            "children" : [
-                2
-            ],
-            "name" : "RootNode"
+        "metallicRoughnessTexture": {
+          "index": 4,
+          "texCoord": 0
         }
-    ],
-    "materials" : [
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Storage_Assets.002",
+      "primitives": [
         {
-            "name" : "M_CratesBarrels.001",
-            "normalTexture" : {
-                "index" : 0,
-                "texCoord" : 0
-            },
-            "occlusionTexture" : {
-                "index" : 1,
-                "texCoord" : 0
-            },
-            "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 2,
-                    "texCoord" : 0
-                },
-                "metallicRoughnessTexture" : {
-                    "index" : 1,
-                    "texCoord" : 0
-                }
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
             }
-        },
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Storage_Assets.003",
+      "primitives": [
         {
-            "name" : "M_Props.001",
-            "normalTexture" : {
-                "index" : 3,
-                "texCoord" : 0
-            },
-            "occlusionTexture" : {
-                "index" : 4,
-                "texCoord" : 0
-            },
-            "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 5,
-                    "texCoord" : 0
-                },
-                "metallicRoughnessTexture" : {
-                    "index" : 4,
-                    "texCoord" : 0
-                }
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
             }
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
         }
-    ],
-    "meshes" : [
-        {
-            "name" : "Storage_Assets.002",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 0,
-                        "NORMAL" : 1,
-                        "TEXCOORD_0" : 2
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 0,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 3,
-                    "material" : 0,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Storage_Assets.003",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 4,
-                        "NORMAL" : 5,
-                        "TEXCOORD_0" : 6
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 1,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 7,
-                    "material" : 1,
-                    "mode" : 4
-                }
-            ]
-        }
-    ],
-    "textures" : [
-        {
-            "source" : 0
-        },
-        {
-            "source" : 1
-        },
-        {
-            "source" : 2
-        },
-        {
-            "source" : 3
-        },
-        {
-            "source" : 4
-        },
-        {
-            "source" : 5
-        }
-    ],
-    "images" : [
-        {
-            "mimeType" : "image/png",
-            "name" : "M_CratesBarrels_normal",
-            "uri" : "M_CratesBarrels_normal.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "M_CratesBarrels_occlusionRoughnessMetallic",
-            "uri" : "M_CratesBarrels_occlusionRoughnessMetallic.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "M_CratesBarrels_baseColor",
-            "uri" : "M_CratesBarrels_baseColor.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "M_Props_normal",
-            "uri" : "M_Props_normal.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "M_Props_occlusionRoughnessMetallic",
-            "uri" : "M_Props_occlusionRoughnessMetallic.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "M_Props_baseColor",
-            "uri" : "M_Props_baseColor.png"
-        }
-    ],
-    "accessors" : [
-        {
-            "componentType" : 5126,
-            "count" : 31016,
-            "max" : [
-                7.1851396560668945,
-                1.76715886592865,
-                -49.77668380737305
-            ],
-            "min" : [
-                4.344563961029053,
-                0.0723956748843193,
-                -51.81099319458008
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 31016,
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 31016,
-            "type" : "VEC2"
-        },
-        {
-            "componentType" : 5123,
-            "count" : 41316,
-            "type" : "SCALAR"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 8579,
-            "max" : [
-                6.513760089874268,
-                1.355279803276062,
-                -48.676971435546875
-            ],
-            "min" : [
-                4.522050380706787,
-                0.04845628887414932,
-                -51.441566467285156
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 8579,
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 8579,
-            "type" : "VEC2"
-        },
-        {
-            "componentType" : 5123,
-            "count" : 16476,
-            "type" : "SCALAR"
-        }
-    ],
-    "bufferViews" : [
-        {
-            "buffer" : 0,
-            "byteLength" : 369592,
-            "byteOffset" : 0
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 107454,
-            "byteOffset" : 369592
-        }
-    ],
-    "buffers" : [
-        {
-            "byteLength" : 477048,
-            "uri" : "StorageAssets.bin"
-        }
-    ]
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    },
+    {
+      "source": 3
+    },
+    {
+      "source": 4
+    },
+    {
+      "source": 5
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "M_CratesBarrels_normal",
+      "uri": "M_CratesBarrels_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_CratesBarrels_occlusionRoughnessMetallic",
+      "uri": "M_CratesBarrels_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_CratesBarrels_baseColor",
+      "uri": "M_CratesBarrels_baseColor.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Props_normal",
+      "uri": "M_Props_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Props_occlusionRoughnessMetallic",
+      "uri": "M_Props_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Props_baseColor",
+      "uri": "M_Props_baseColor.png"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5126,
+      "count": 31016,
+      "max": [7.1851396560668945, 1.76715886592865, -49.77668380737305],
+      "min": [4.344563961029053, 0.0723956748843193, -51.81099319458008],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 31016,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 31016,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 41316,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 8579,
+      "max": [6.513760089874268, 1.355279803276062, -48.676971435546875],
+      "min": [4.522050380706787, 0.04845628887414932, -51.441566467285156],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 8579,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 8579,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 16476,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 369592,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 107454,
+      "byteOffset": 369592
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 477048,
+      "uri": "StorageAssets.bin"
+    }
+  ]
 }

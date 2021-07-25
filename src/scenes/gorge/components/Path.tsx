@@ -7,7 +7,7 @@ export default function Path(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes } = useGLTF('/Path.gltf') as PathProps
+  const { nodes } = useGLTF('/gorge/models/Path.gltf') as PathProps
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
