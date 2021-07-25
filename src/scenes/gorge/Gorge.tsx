@@ -36,12 +36,9 @@ const Gorge = (): JSX.Element => {
           </Physics>
           <Water />
         </Suspense>
-
-        {/* Controls */}
         <PointerLockControls />
-
-        {/* Lighting */}
         <Lighting />
+        <color attach='background' args={['black']} />
       </Canvas>
       <Loader />
     </>

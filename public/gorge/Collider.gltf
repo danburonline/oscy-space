@@ -6,7 +6,9 @@
   "scene": 0,
   "scenes": [
     {
-      "nodes": [0]
+      "nodes": [
+        0
+      ]
     }
   ],
   "nodes": [
@@ -26,7 +28,19 @@
             "TEXCOORD_0": 4
           },
           "indices": 0,
-          "material": 0
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "TANGENT": 1,
+                "NORMAL": 2,
+                "TEXCOORD_0": 3
+              }
+            }
+          }
         }
       ],
       "name": "Collider"
@@ -34,40 +48,42 @@
   ],
   "accessors": [
     {
-      "bufferView": 0,
       "componentType": 5123,
-      "count": 1410,
+      "count": 2724,
       "type": "SCALAR",
       "name": "accessorIndices"
     },
     {
-      "bufferView": 1,
       "componentType": 5126,
-      "count": 817,
-      "max": [5.572501, 4.126518, 0.96937865],
-      "min": [-9.067165, -0.104895264, -65.95002],
+      "count": 1194,
+      "max": [
+        5.518227263605278,
+        4.1701787385461655,
+        0.9996983220322448
+      ],
+      "min": [
+        -9.186813672032242,
+        -0.13521469003224232,
+        -61.125309672032245
+      ],
       "type": "VEC3",
       "name": "accessorPositions"
     },
     {
-      "bufferView": 2,
       "componentType": 5126,
-      "count": 817,
+      "count": 1194,
       "type": "VEC4",
       "name": "accessorTangents"
     },
     {
-      "bufferView": 1,
-      "byteOffset": 9804,
       "componentType": 5126,
-      "count": 817,
+      "count": 1194,
       "type": "VEC3",
       "name": "accessorNormals"
     },
     {
-      "bufferView": 3,
       "componentType": 5126,
-      "count": 817,
+      "count": 1194,
       "type": "VEC2",
       "name": "accessorUVs"
     }
@@ -75,45 +91,43 @@
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 2820,
-      "name": "bufferViewScalar"
-    },
-    {
-      "buffer": 0,
-      "byteOffset": 2820,
-      "byteLength": 19608,
-      "byteStride": 12,
-      "name": "bufferViewFloatVec3"
-    },
-    {
-      "buffer": 0,
-      "byteOffset": 22428,
-      "byteLength": 13072,
-      "byteStride": 16,
-      "name": "bufferViewFloatVec4"
-    },
-    {
-      "buffer": 0,
-      "byteOffset": 35500,
-      "byteLength": 6536,
-      "byteStride": 8,
-      "name": "bufferViewFloatVec2"
+      "byteOffset": 0,
+      "byteLength": 24119
     }
   ],
   "buffers": [
     {
-      "uri": "Collider.bin",
-      "byteLength": 42036
+      "name": "Collider",
+      "byteLength": 24120,
+      "uri": "Collider.bin"
     }
   ],
   "materials": [
     {
       "pbrMetallicRoughness": {
-        "baseColorFactor": [0.5, 0.5, 0.5, 1.0],
-        "metallicFactor": 0.0,
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0,
         "roughnessFactor": 0.450053632
       },
-      "name": "lambert1"
+      "name": "lambert1",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
     }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
   ]
 }
