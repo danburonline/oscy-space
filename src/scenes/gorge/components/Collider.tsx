@@ -9,7 +9,7 @@ export default function Collider(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes } = useGLTF('/gorge/models/Collider.gltf') as ColliderProps
+  const { nodes } = useGLTF('/gorge/Collider.gltf') as ColliderProps
 
   const geo = useMemo(() => toConvexProps(nodes.Collider.geometry), [nodes])
 

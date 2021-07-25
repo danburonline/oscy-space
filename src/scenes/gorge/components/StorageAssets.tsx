@@ -8,7 +8,7 @@ export default function StorageAssets(
 ): JSX.Element {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF(
-    '/gorge/models/StorageAssets.gltf'
+    '/gorge/StorageAssets.gltf'
   ) as StorageAssetsProps
   return (
     <group ref={group} {...props} dispose={null}>
