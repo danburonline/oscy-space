@@ -1,7 +1,6 @@
 export default function Lighting(): JSX.Element {
   return (
     <>
-      <ambientLight intensity={0.15} />
       <pointLight
         position={[-1.342, 0.914, -5.404]}
         intensity={1}

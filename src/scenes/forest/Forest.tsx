@@ -29,14 +29,14 @@ const Forest = (): JSX.Element => {
           >
             <Player />
             <Collider />
-            <BaseRock />
-            <Beeches />
-            <EnvironmentGround />
-            <FoliageGrp />
             <Ground />
-            <Ladders />
-            <WallRock />
           </Physics>
+          <BaseRock />
+          <Beeches />
+          <EnvironmentGround />
+          <FoliageGrp />
+          <Ladders />
+          <WallRock />
         </Suspense>
         <PointerLockControls />
         <Lighting />

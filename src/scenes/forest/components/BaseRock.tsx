@@ -3,7 +3,6 @@ import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import type { BaseRockProps } from '../types/types'
 
-// TODO Material doesn't work
 export default function BaseRock(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {

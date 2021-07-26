@@ -1,4 +1,5 @@
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
+import * as THREE from 'three'
 
 export type BaseRockProps = GLTF & {
   nodes: {

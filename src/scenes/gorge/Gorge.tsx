@@ -29,13 +29,13 @@ const Gorge = (): JSX.Element => {
           >
             <Player />
             <Collider />
-            <Lamps />
             <Path />
-            <Rocks />
-            <StorageAssets />
-            <RoomElements />
             <Ground />
           </Physics>
+          <Rocks />
+          <Lamps />
+          <StorageAssets />
+          <RoomElements />
           <Water />
         </Suspense>
         <PointerLockControls />

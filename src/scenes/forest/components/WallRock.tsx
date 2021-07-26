@@ -3,7 +3,6 @@ import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import type { WallRockProps } from '../types/types'
 
-// TODO Material doesn't work
 export default function WallRock(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
@@ -15,7 +14,7 @@ export default function WallRock(
         <mesh
           geometry={nodes.Wall_Rock_grp001.geometry}
           material={materials.Wall_Rock}
-        />
+        ></mesh>
       </group>
     </group>
   )
