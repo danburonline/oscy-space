@@ -1,4 +1,4 @@
-import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
+import type { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
 
 export type ColliderProps = GLTF & {

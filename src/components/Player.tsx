@@ -2,10 +2,7 @@ import * as THREE from 'three'
 import { useEffect, useRef, useState } from 'react'
 import { useSphere } from '@react-three/cannon'
 import { useThree, useFrame } from '@react-three/fiber'
-
-type PlayerProps = {
-  position?: number[]
-}
+import type { PlayerProps } from '../types/types'
 
 export const Player = (props: PlayerProps): JSX.Element => {
   const [ref, api] = useSphere(() => ({

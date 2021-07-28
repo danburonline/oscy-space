@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
 import Sound from 'react-sound'
-
-type AmbientStereoSoundProps = {
-  audioIsPlaying: boolean
-  soundFileUrl: string
-}
+import type { AmbientStereoSoundProps } from '../types/types'
 
 export default function AmbientStereoSound(
   props: AmbientStereoSoundProps
