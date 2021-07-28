@@ -65,3 +65,12 @@ export type WallRockProps = GLTF & {
     Wall_Rock: THREE.MeshStandardMaterial
   }
 }
+
+export type RoofWallProps = GLTF & {
+  nodes: {
+    Dach_Wand1_1: THREE.Mesh
+  }
+  materials: {
+    Wand_Dach: THREE.MeshStandardMaterial
+  }
+}

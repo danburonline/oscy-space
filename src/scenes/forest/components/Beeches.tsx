@@ -14,6 +14,7 @@ export default function Beeches(
         <mesh
           geometry={nodes.Beeches_grp_Beech_Leaves_L448001.geometry}
           material={materials['Beech_Leaves_L1.001']}
+          material-side={THREE.DoubleSide}
         />
         <mesh
           geometry={nodes.Beeches_grp_Beech_Leaves_L448002.geometry}

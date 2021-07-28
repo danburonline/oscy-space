@@ -21,20 +21,13 @@ export default function Collider(
   const [ref] = useConvexPolyhedron(() => ({
     mass: 1,
     type: 'Kinematic',
-    args: geo,
-    position: [0, 0.07, 0]
+    args: geo
   }))
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh
-        ref={ref}
-        geometry={nodes.Environment_Path_CM.geometry}
-        position={[0, 0.07, 0]}
-        // TODO Remove the scale once the collider is scaled by Elias
-        scale={[7.15, 7.15, 7.15]}
-      >
-        <meshBasicMaterial visible={true} wireframe={true} color={'red'} />
+      <mesh ref={ref} geometry={nodes.Environment_Path_CM.geometry}>
+        <meshBasicMaterial visible={false} />
       </mesh>
     </group>
   )

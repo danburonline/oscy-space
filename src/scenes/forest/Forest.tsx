@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import { Loader, PointerLockControls } from '@react-three/drei'
+import { Loader, PointerLockControls, Stars } from '@react-three/drei'
 import { Suspense } from 'react'
 import { Physics } from '@react-three/cannon'
 import { Player } from '../../components/organisms/Player'
@@ -13,6 +13,7 @@ import FoliageGrp from '../../scenes/forest/components/FoliageGrp'
 import Ladders from '../../scenes/forest/components/Ladders'
 import WallRock from '../../scenes/forest/components/WallRock'
 import Lighting from './components/Lighting'
+import RoofWall from './components/RoofWall'
 
 const Forest = (): JSX.Element => {
   return (
@@ -37,9 +38,11 @@ const Forest = (): JSX.Element => {
           <FoliageGrp />
           <Ladders />
           <WallRock />
+          <RoofWall />
         </Suspense>
         <PointerLockControls />
         <Lighting />
+        <Stars fade={true} count={7500} />
         <color attach='background' args={['black']} />
       </Canvas>
       <Loader />

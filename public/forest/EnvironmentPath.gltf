@@ -7,12 +7,7 @@
   "scenes": [{ "nodes": [0] }],
   "nodes": [
     { "children": [1], "name": "meshes_fin" },
-    {
-      "mesh": 0,
-      "translation": [0.0, 0.071481064, 0.0],
-      "scale": [7.15210247, 7.15210247, 7.15210247],
-      "name": "Environment_Path_CM"
-    }
+    { "mesh": 0, "name": "Environment_Path_CM" }
   ],
   "meshes": [
     {
@@ -35,67 +30,67 @@
     {
       "bufferView": 0,
       "componentType": 5123,
-      "count": 4440,
+      "count": 5418,
       "type": "SCALAR",
       "name": "accessorIndices"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 1334,
-      "max": [6.429374, 0.735303462, 0.9077253],
-      "min": [-0.3901828, -0.047100503, -5.88388729],
+      "count": 1622,
+      "max": [45.9835434, 5.258966, 6.492144],
+      "min": [-2.79062748, -0.33686763, -42.08216],
       "type": "VEC3",
       "name": "accessorPositions"
     },
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 1334,
+      "count": 1622,
       "type": "VEC4",
       "name": "accessorTangents"
     },
     {
       "bufferView": 1,
-      "byteOffset": 16008,
+      "byteOffset": 19464,
       "componentType": 5126,
-      "count": 1334,
+      "count": 1622,
       "type": "VEC3",
       "name": "accessorNormals"
     },
     {
       "bufferView": 3,
       "componentType": 5126,
-      "count": 1334,
+      "count": 1622,
       "type": "VEC2",
       "name": "accessorUVs"
     }
   ],
   "bufferViews": [
-    { "buffer": 0, "byteLength": 8880, "name": "bufferViewScalar" },
+    { "buffer": 0, "byteLength": 10836, "name": "bufferViewScalar" },
     {
       "buffer": 0,
-      "byteOffset": 8880,
-      "byteLength": 32016,
+      "byteOffset": 10836,
+      "byteLength": 38928,
       "byteStride": 12,
       "name": "bufferViewFloatVec3"
     },
     {
       "buffer": 0,
-      "byteOffset": 40896,
-      "byteLength": 21344,
+      "byteOffset": 49764,
+      "byteLength": 25952,
       "byteStride": 16,
       "name": "bufferViewFloatVec4"
     },
     {
       "buffer": 0,
-      "byteOffset": 62240,
-      "byteLength": 10672,
+      "byteOffset": 75716,
+      "byteLength": 12976,
       "byteStride": 8,
       "name": "bufferViewFloatVec2"
     }
   ],
-  "buffers": [{ "uri": "EnvironmentPath.bin", "byteLength": 72912 }],
+  "buffers": [{ "uri": "EnvironmentPath.bin", "byteLength": 88692 }],
   "materials": [
     {
       "pbrMetallicRoughness": {

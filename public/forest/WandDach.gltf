@@ -1,0 +1,160 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 426,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 213,
+      "max": [5084.11962890625, 1439.69226074219, 671.53955078125],
+      "min": [-300.581787109375, -41.650634765625, -4274.0859375],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 213,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 213,
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "generator": "Substance Painter 7.1.1",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1704,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2556,
+      "byteOffset": 1704,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2556,
+      "byteOffset": 4260,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1704,
+      "byteOffset": 6816,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 8520,
+      "uri": "WandDach.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "Wand_Dach_baseColor.png"
+    },
+    {
+      "uri": "Wand_Dach_occlusionRoughnessMetallic.png"
+    },
+    {
+      "uri": "Wand_Dach_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "OPAQUE",
+      "name": "Wand_Dach",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Dach_Wand1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 2,
+            "POSITION": 1,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [1],
+      "name": "RootNode"
+    },
+    {
+      "children": [2],
+      "name": "meshes_fin"
+    },
+    {
+      "children": [3],
+      "name": "Dach_Wand1"
+    },
+    {
+      "mesh": 0,
+      "name": "Dach_Wand1"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9985,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [0]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
