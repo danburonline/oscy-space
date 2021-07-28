@@ -9,41 +9,33 @@
   "scenes": [
     {
       "name": "Scene",
-      "nodes": [6]
+      "nodes": [5]
     }
   ],
   "nodes": [
     {
       "mesh": 0,
-      "name": "EibeCremineGRP.001"
+      "name": "EibeCremineGrp.001"
     },
     {
       "mesh": 1,
-      "name": "EibeCremineGRP.002"
+      "name": "EibeCremineGrp.002"
     },
     {
       "children": [0, 1],
-      "name": "EibeCremineGRP",
-      "scale": [
-        0.009999999776482582, 0.009999999776482582, 0.009999999776482582
-      ]
+      "name": "EibeCremineGrp"
     },
     {
       "children": [2],
-      "name": "EibeCremine"
-    },
-    {
-      "children": [3],
       "name": "Eibe_Cremine"
     },
     {
-      "children": [4],
+      "children": [3],
       "name": "meshes_fin"
     },
     {
-      "children": [5],
-      "name": "RootNode",
-      "rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
+      "children": [4],
+      "name": "RootNode"
     }
   ],
   "materials": [
@@ -70,7 +62,7 @@
       }
     },
     {
-      "name": "EibeCremine2",
+      "name": "EibeCremine1",
       "normalTexture": {
         "index": 3,
         "texCoord": 0
@@ -93,7 +85,7 @@
   ],
   "meshes": [
     {
-      "name": "EibeCremineGRP",
+      "name": "EibeCremineGrp",
       "primitives": [
         {
           "attributes": {
@@ -118,7 +110,7 @@
       ]
     },
     {
-      "name": "EibeCremineGRP.001",
+      "name": "EibeCremineGrp.001",
       "primitives": [
         {
           "attributes": {
@@ -181,58 +173,58 @@
     },
     {
       "mimeType": "image/png",
-      "name": "EibeCremine2_normal",
-      "uri": "EibeCremine2_normal.png"
+      "name": "EibeCremine1_normal",
+      "uri": "EibeCremine1_normal.png"
     },
     {
       "mimeType": "image/png",
-      "name": "EibeCremine2_occlusionRoughnessMetallic",
-      "uri": "EibeCremine2_occlusionRoughnessMetallic.png"
+      "name": "EibeCremine1_occlusionRoughnessMetallic",
+      "uri": "EibeCremine1_occlusionRoughnessMetallic.png"
     },
     {
       "mimeType": "image/png",
-      "name": "EibeCremine2_baseColor",
-      "uri": "EibeCremine2_baseColor.png"
+      "name": "EibeCremine1_baseColor",
+      "uri": "EibeCremine1_baseColor.png"
     }
   ],
   "accessors": [
     {
       "componentType": 5126,
-      "count": 1126,
-      "max": [289.50628662109375, 340.37249755859375, -211.67291259765625],
-      "min": [-386.19287109375, -158.5361328125, -546.918212890625],
+      "count": 2922,
+      "max": [11.215337753295898, 12.552120208740234, -21.442182540893555],
+      "min": [4.117753028869629, 6.009154319763184, -27.8232479095459],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 1126,
+      "count": 2922,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 1126,
+      "count": 2922,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 1146,
+      "count": 2982,
       "type": "SCALAR"
     },
     {
       "componentType": 5126,
-      "count": 1642,
-      "max": [293.6239929199219, 264.99969482421875, 22.959381103515625],
-      "min": [-331.3362731933594, -192.80616760253906, -894.5220947265625],
+      "count": 1635,
+      "max": [10.527746200561523, 12.837645530700684, -22.18313980102539],
+      "min": [4.20033073425293, 3.662830114364624, -27.095104217529297],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 1642,
+      "count": 1635,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 1642,
+      "count": 1635,
       "type": "VEC2"
     },
     {
@@ -244,18 +236,18 @@
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 16516,
+      "byteLength": 42381,
       "byteOffset": 0
     },
     {
       "buffer": 0,
-      "byteLength": 23340,
-      "byteOffset": 16516
+      "byteLength": 23241,
+      "byteOffset": 42384
     }
   ],
   "buffers": [
     {
-      "byteLength": 39856,
+      "byteLength": 65628,
       "uri": "EibeCremine.bin"
     }
   ]

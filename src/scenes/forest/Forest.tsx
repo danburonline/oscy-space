@@ -23,7 +23,7 @@ const Forest = (): JSX.Element => {
         <Suspense fallback={null}>
           <Physics
             allowSleep={true}
-            gravity={[0, -10, 0]}
+            gravity={[0, -20, 0]}
             tolerance={0.0001}
             size={10}
             broadphase={'SAP'}

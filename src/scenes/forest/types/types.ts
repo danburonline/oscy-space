@@ -77,11 +77,11 @@ export type RoofWallProps = GLTF & {
 
 export type EibeProps = GLTF & {
   nodes: {
-    EibeCremineGRP001: THREE.Mesh
-    EibeCremineGRP002: THREE.Mesh
+    EibeCremineGrp001: THREE.Mesh
+    EibeCremineGrp002: THREE.Mesh
   }
   materials: {
     Yew_leaves: THREE.MeshStandardMaterial
-    EibeCremine2: THREE.MeshStandardMaterial
+    EibeCremine1: THREE.MeshStandardMaterial
   }
 }
