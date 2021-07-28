@@ -1,0 +1,100 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v0.9.36",
+    "version": "2.0"
+  },
+  "extensionsUsed": ["KHR_draco_mesh_compression"],
+  "extensionsRequired": ["KHR_draco_mesh_compression"],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [1]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "EnvironmentPath"
+    },
+    {
+      "children": [0],
+      "name": "meshes_fin",
+      "rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
+    }
+  ],
+  "materials": [
+    {
+      "name": "lambert1.007",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [0.5, 0.5, 0.5, 1],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.4500536322593689
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "EnvironmentPath",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5126,
+      "count": 2661,
+      "max": [46.20048141479492, 6.651819229125977, 1.598413348197937],
+      "min": [-3.031998634338379, -42.08216094970703, -5.635019779205322],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 2661,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 2661,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 5418,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 35542,
+      "byteOffset": 0
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 35544,
+      "uri": "EnvironmentPath.bin"
+    }
+  ]
+}

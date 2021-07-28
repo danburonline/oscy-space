@@ -1,0 +1,251 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v0.9.36",
+    "version": "2.0"
+  },
+  "extensionsUsed": ["KHR_draco_mesh_compression"],
+  "extensionsRequired": ["KHR_draco_mesh_compression"],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [4]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Beeches_grp_Beech_Leaves_L448.001"
+    },
+    {
+      "mesh": 1,
+      "name": "Beeches_grp_Beech_Leaves_L448.002"
+    },
+    {
+      "children": [0, 1],
+      "name": "Beeches_grp_Beech_Leaves_L448"
+    },
+    {
+      "children": [2],
+      "name": "Beeches_grp1"
+    },
+    {
+      "children": [3],
+      "name": "RootNode",
+      "rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "name": "Beech_Leaves_L1.001",
+      "normalTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
+        }
+      }
+    },
+    {
+      "name": "M_Baum",
+      "normalTexture": {
+        "index": 3,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 4,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5,
+          "texCoord": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 4,
+          "texCoord": 0
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Beeches_grp_Beech_Leaves_L448",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Beeches_grp_Beech_Leaves_L448.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    },
+    {
+      "source": 3
+    },
+    {
+      "source": 4
+    },
+    {
+      "source": 5
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "Beech_Leaves_L1_normal",
+      "uri": "Beech_Leaves_L1_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Beech_Leaves_L1_occlusionRoughnessMetallic",
+      "uri": "Beech_Leaves_L1_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Beech_Leaves_L1_baseColor",
+      "uri": "Beech_Leaves_L1_baseColor.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Baum_normal",
+      "uri": "M_Baum_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Baum_occlusionRoughnessMetallic",
+      "uri": "M_Baum_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Baum_baseColor",
+      "uri": "M_Baum_baseColor.png"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5126,
+      "count": 8920,
+      "max": [41.48301315307617, 4.2587890625, -2.0331459045410156],
+      "min": [-1.8582897186279297, -32.09702682495117, -9.544934272766113],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 8920,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 8920,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 12744,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 15012,
+      "max": [41.007041931152344, 3.6979637145996094, 0.8393853306770325],
+      "min": [-1.2047326564788818, -31.710582733154297, -9.397645950317383],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 15012,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 15012,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 59040,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 123808,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 190855,
+      "byteOffset": 123808
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 314664,
+      "uri": "Beeches.bin"
+    }
+  ]
+}

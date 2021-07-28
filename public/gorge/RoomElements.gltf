@@ -1,0 +1,249 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v0.9.36",
+    "version": "2.0"
+  },
+  "extensionsUsed": ["KHR_draco_mesh_compression"],
+  "extensionsRequired": ["KHR_draco_mesh_compression"],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [4]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Roof.001"
+    },
+    {
+      "children": [0],
+      "name": "Roof"
+    },
+    {
+      "mesh": 1,
+      "name": "Walls.001"
+    },
+    {
+      "children": [2],
+      "name": "Walls"
+    },
+    {
+      "children": [1, 3],
+      "name": "RootNode"
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_Roof",
+      "normalTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
+        }
+      }
+    },
+    {
+      "name": "M_Walls",
+      "normalTexture": {
+        "index": 3,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 4,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5,
+          "texCoord": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 4,
+          "texCoord": 0
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Roof",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Walls",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    },
+    {
+      "source": 3
+    },
+    {
+      "source": 4
+    },
+    {
+      "source": 5
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "M_Roof_normal",
+      "uri": "M_Roof_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Roof_occlusionRoughnessMetallic",
+      "uri": "M_Roof_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Roof_baseColor",
+      "uri": "M_Roof_baseColor.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Walls_normal",
+      "uri": "M_Walls_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Walls_occlusionRoughnessMetallic",
+      "uri": "M_Walls_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "M_Walls_baseColor",
+      "uri": "M_Walls_baseColor.png"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5126,
+      "count": 5210,
+      "max": [-0.7117528915405273, 24.05954360961914, 0.9727863073348999],
+      "min": [-24.088958740234375, 21.7463436126709, -61.0930061340332],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 5210,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 5210,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 5364,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 30,
+      "max": [9.513076782226562, 23.31731414794922, 0.9727862477302551],
+      "min": [-24.088958740234375, -5.4315619468688965, -61.09302520751953],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 30,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 30,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 30,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 51576,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 560,
+      "byteOffset": 51576
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 52136,
+      "uri": "RoomElements.bin"
+    }
+  ]
+}
