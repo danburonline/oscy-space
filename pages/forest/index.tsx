@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import Head from 'next/head'
-import AmbientStereoSound from '../../src/components/molecules/AmbientStereoSound'
+import AmbientStereoSound from '../../src/components/AmbientStereoSound'
 
 const ForestScene = dynamic(() => import('../../src/scenes/forest/Forest'), {
   ssr: false

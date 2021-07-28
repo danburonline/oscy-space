@@ -5,7 +5,7 @@ import { Water } from 'three-stdlib'
 
 extend({ Water })
 
-export default function TaminaWater(): JSX.Element {
+export default function GorgeWater(): JSX.Element {
   const ref = useRef()
   const gl = useThree(state => state.gl)
   const waterNormals = useLoader(
