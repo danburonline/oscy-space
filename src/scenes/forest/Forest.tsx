@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import { Loader, PointerLockControls, Stars } from '@react-three/drei'
+import { Loader, PointerLockControls, Stars, Stats } from '@react-three/drei'
 import { Suspense } from 'react'
 import { Physics } from '@react-three/cannon'
 import { Player } from '../../components/Player'
@@ -46,6 +46,7 @@ const Forest = (): JSX.Element => {
         <Lighting />
         <Stars fade={true} count={7500} />
         <color attach='background' args={['black']} />
+        <Stats />
       </Canvas>
       <Loader />
     </>

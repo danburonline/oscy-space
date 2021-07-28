@@ -9,7 +9,7 @@ type PlayerProps = {
 
 export const Player = (props: PlayerProps): JSX.Element => {
   const [ref, api] = useSphere(() => ({
-    args: 1,
+    args: 0.5,
     mass: 1,
     type: 'Dynamic',
     sleepSpeedLimit: 1,
@@ -18,7 +18,7 @@ export const Player = (props: PlayerProps): JSX.Element => {
     position: props.position || [0, 1, 0] // Default player position
   }))
 
-  const SPEED = 1.5
+  const SPEED = 1.75
   const keys = {
     KeyW: 'forward',
     KeyS: 'backward',
@@ -74,7 +74,7 @@ export const Player = (props: PlayerProps): JSX.Element => {
   )
 
   useFrame(() => {
-    camera.position.copy(ref.current.position)
+    camera.position.copy(ref.current.position).y += 1 // Heighten the player view a little to make it feel human
     frontVector.set(0, 0, Number(backward) - Number(forward))
     sideVector.set(Number(left) - Number(right), 0, 0)
     direction

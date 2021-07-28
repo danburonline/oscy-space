@@ -1,302 +1,262 @@
 {
-    "asset" : {
-        "generator" : "Khronos glTF Blender I/O v0.9.36",
-        "version" : "2.0"
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v0.9.36",
+    "version": "2.0"
+  },
+  "extensionsUsed": ["KHR_draco_mesh_compression"],
+  "extensionsRequired": ["KHR_draco_mesh_compression"],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [6]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "EibeCremineGRP.001"
     },
-    "extensionsUsed" : [
-        "KHR_draco_mesh_compression"
-    ],
-    "extensionsRequired" : [
-        "KHR_draco_mesh_compression"
-    ],
-    "scene" : 0,
-    "scenes" : [
-        {
-            "name" : "Scene",
-            "nodes" : [
-                6
-            ]
+    {
+      "mesh": 1,
+      "name": "EibeCremineGRP.002"
+    },
+    {
+      "children": [0, 1],
+      "name": "EibeCremineGRP",
+      "scale": [
+        0.009999999776482582, 0.009999999776482582, 0.009999999776482582
+      ]
+    },
+    {
+      "children": [2],
+      "name": "EibeCremine"
+    },
+    {
+      "children": [3],
+      "name": "Eibe_Cremine"
+    },
+    {
+      "children": [4],
+      "name": "meshes_fin"
+    },
+    {
+      "children": [5],
+      "name": "RootNode",
+      "rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "name": "Yew_leaves",
+      "normalTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2,
+          "texCoord": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1,
+          "texCoord": 0
         }
-    ],
-    "nodes" : [
-        {
-            "mesh" : 0,
-            "name" : "EibeCremineGRP.001"
+      }
+    },
+    {
+      "name": "EibeCremine2",
+      "normalTexture": {
+        "index": 3,
+        "texCoord": 0
+      },
+      "occlusionTexture": {
+        "index": 4,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5,
+          "texCoord": 0
         },
-        {
-            "mesh" : 1,
-            "name" : "EibeCremineGRP.002"
-        },
-        {
-            "children" : [
-                0,
-                1
-            ],
-            "name" : "EibeCremineGRP",
-            "scale" : [
-                0.009999999776482582,
-                0.009999999776482582,
-                0.009999999776482582
-            ]
-        },
-        {
-            "children" : [
-                2
-            ],
-            "name" : "EibeCremine"
-        },
-        {
-            "children" : [
-                3
-            ],
-            "name" : "Eibe_Cremine"
-        },
-        {
-            "children" : [
-                4
-            ],
-            "name" : "meshes_fin"
-        },
-        {
-            "children" : [
-                5
-            ],
-            "name" : "RootNode",
-            "rotation" : [
-                0.7071068286895752,
-                0,
-                0,
-                0.7071067094802856
-            ]
+        "metallicRoughnessTexture": {
+          "index": 4,
+          "texCoord": 0
         }
-    ],
-    "materials" : [
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "EibeCremineGRP",
+      "primitives": [
         {
-            "alphaMode" : "BLEND",
-            "name" : "Yew_leaves",
-            "normalTexture" : {
-                "index" : 0,
-                "texCoord" : 0
-            },
-            "occlusionTexture" : {
-                "index" : 1,
-                "texCoord" : 0
-            },
-            "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 2,
-                    "texCoord" : 0
-                },
-                "metallicRoughnessTexture" : {
-                    "index" : 1,
-                    "texCoord" : 0
-                }
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
             }
-        },
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "EibeCremineGRP.001",
+      "primitives": [
         {
-            "name" : "EibeCremine2",
-            "normalTexture" : {
-                "index" : 3,
-                "texCoord" : 0
-            },
-            "occlusionTexture" : {
-                "index" : 4,
-                "texCoord" : 0
-            },
-            "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 5,
-                    "texCoord" : 0
-                },
-                "metallicRoughnessTexture" : {
-                    "index" : 4,
-                    "texCoord" : 0
-                }
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
             }
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
         }
-    ],
-    "meshes" : [
-        {
-            "name" : "EibeCremineGRP",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 0,
-                        "NORMAL" : 1,
-                        "TEXCOORD_0" : 2
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 0,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 3,
-                    "material" : 0,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "EibeCremineGRP.001",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 4,
-                        "NORMAL" : 5,
-                        "TEXCOORD_0" : 6
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 1,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 7,
-                    "material" : 1,
-                    "mode" : 4
-                }
-            ]
-        }
-    ],
-    "textures" : [
-        {
-            "source" : 0
-        },
-        {
-            "source" : 1
-        },
-        {
-            "source" : 2
-        },
-        {
-            "source" : 3
-        },
-        {
-            "source" : 4
-        },
-        {
-            "source" : 5
-        }
-    ],
-    "images" : [
-        {
-            "mimeType" : "image/png",
-            "name" : "Yew_leaves_normal",
-            "uri" : "Yew_leaves_normal.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "Yew_leaves_occlusionRoughnessMetallic",
-            "uri" : "Yew_leaves_occlusionRoughnessMetallic.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "Yew_leaves_baseColor",
-            "uri" : "Yew_leaves_baseColor.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "EibeCremine2_normal",
-            "uri" : "EibeCremine2_normal.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "EibeCremine2_occlusionRoughnessMetallic",
-            "uri" : "EibeCremine2_occlusionRoughnessMetallic.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "EibeCremine2_baseColor",
-            "uri" : "EibeCremine2_baseColor.png"
-        }
-    ],
-    "accessors" : [
-        {
-            "componentType" : 5126,
-            "count" : 1126,
-            "max" : [
-                289.50628662109375,
-                340.37249755859375,
-                -211.67291259765625
-            ],
-            "min" : [
-                -386.19287109375,
-                -158.5361328125,
-                -546.918212890625
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 1126,
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 1126,
-            "type" : "VEC2"
-        },
-        {
-            "componentType" : 5123,
-            "count" : 1146,
-            "type" : "SCALAR"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 1642,
-            "max" : [
-                293.6239929199219,
-                264.99969482421875,
-                22.959381103515625
-            ],
-            "min" : [
-                -331.3362731933594,
-                -192.80616760253906,
-                -894.5220947265625
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 1642,
-            "type" : "VEC3"
-        },
-        {
-            "componentType" : 5126,
-            "count" : 1642,
-            "type" : "VEC2"
-        },
-        {
-            "componentType" : 5123,
-            "count" : 6912,
-            "type" : "SCALAR"
-        }
-    ],
-    "bufferViews" : [
-        {
-            "buffer" : 0,
-            "byteLength" : 16516,
-            "byteOffset" : 0
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 23340,
-            "byteOffset" : 16516
-        }
-    ],
-    "buffers" : [
-        {
-            "byteLength" : 39856,
-            "uri" : "EibeCremine.bin"
-        }
-    ]
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    },
+    {
+      "source": 1
+    },
+    {
+      "source": 2
+    },
+    {
+      "source": 3
+    },
+    {
+      "source": 4
+    },
+    {
+      "source": 5
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "Yew_leaves_normal",
+      "uri": "Yew_leaves_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Yew_leaves_occlusionRoughnessMetallic",
+      "uri": "Yew_leaves_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "Yew_leaves_baseColor",
+      "uri": "Yew_leaves_baseColor.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "EibeCremine2_normal",
+      "uri": "EibeCremine2_normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "EibeCremine2_occlusionRoughnessMetallic",
+      "uri": "EibeCremine2_occlusionRoughnessMetallic.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "EibeCremine2_baseColor",
+      "uri": "EibeCremine2_baseColor.png"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5126,
+      "count": 1126,
+      "max": [289.50628662109375, 340.37249755859375, -211.67291259765625],
+      "min": [-386.19287109375, -158.5361328125, -546.918212890625],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1126,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1126,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 1146,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 1642,
+      "max": [293.6239929199219, 264.99969482421875, 22.959381103515625],
+      "min": [-331.3362731933594, -192.80616760253906, -894.5220947265625],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1642,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 1642,
+      "type": "VEC2"
+    },
+    {
+      "componentType": 5123,
+      "count": 6912,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 16516,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 23340,
+      "byteOffset": 16516
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 39856,
+      "uri": "EibeCremine.bin"
+    }
+  ]
 }

@@ -1,104 +1,100 @@
 {
   "asset": {
-    "version": "2.0",
-    "generator": "babylon.js glTF exporter for Autodesk Maya 2018 v20210607.3"
+    "generator": "Khronos glTF Blender I/O v0.9.36",
+    "version": "2.0"
   },
+  "extensionsUsed": ["KHR_draco_mesh_compression"],
+  "extensionsRequired": ["KHR_draco_mesh_compression"],
   "scene": 0,
-  "scenes": [{ "nodes": [0] }],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [1]
+    }
+  ],
   "nodes": [
-    { "children": [1], "name": "meshes_fin" },
-    { "mesh": 0, "name": "Environment_Path_CM" }
+    {
+      "mesh": 0,
+      "name": "EnvironmentPath"
+    },
+    {
+      "children": [0],
+      "name": "meshes_fin",
+      "rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
+    }
+  ],
+  "materials": [
+    {
+      "name": "lambert1.007",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [0.5, 0.5, 0.5, 1],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.4500536322593689
+      }
+    }
   ],
   "meshes": [
     {
+      "name": "EnvironmentPath",
       "primitives": [
         {
           "attributes": {
-            "POSITION": 1,
-            "TANGENT": 2,
-            "NORMAL": 3,
-            "TEXCOORD_0": 4
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
           },
-          "indices": 0,
-          "material": 0
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
         }
-      ],
-      "name": "Environment_Path_CM"
+      ]
     }
   ],
   "accessors": [
     {
-      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2661,
+      "max": [46.20048141479492, 6.651819229125977, 1.598413348197937],
+      "min": [-3.031998634338379, -42.08216094970703, -5.635019779205322],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 2661,
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 2661,
+      "type": "VEC2"
+    },
+    {
       "componentType": 5123,
       "count": 5418,
-      "type": "SCALAR",
-      "name": "accessorIndices"
-    },
-    {
-      "bufferView": 1,
-      "componentType": 5126,
-      "count": 1622,
-      "max": [45.9835434, 5.258966, 6.492144],
-      "min": [-2.79062748, -0.33686763, -42.08216],
-      "type": "VEC3",
-      "name": "accessorPositions"
-    },
-    {
-      "bufferView": 2,
-      "componentType": 5126,
-      "count": 1622,
-      "type": "VEC4",
-      "name": "accessorTangents"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 19464,
-      "componentType": 5126,
-      "count": 1622,
-      "type": "VEC3",
-      "name": "accessorNormals"
-    },
-    {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 1622,
-      "type": "VEC2",
-      "name": "accessorUVs"
+      "type": "SCALAR"
     }
   ],
   "bufferViews": [
-    { "buffer": 0, "byteLength": 10836, "name": "bufferViewScalar" },
     {
       "buffer": 0,
-      "byteOffset": 10836,
-      "byteLength": 38928,
-      "byteStride": 12,
-      "name": "bufferViewFloatVec3"
-    },
-    {
-      "buffer": 0,
-      "byteOffset": 49764,
-      "byteLength": 25952,
-      "byteStride": 16,
-      "name": "bufferViewFloatVec4"
-    },
-    {
-      "buffer": 0,
-      "byteOffset": 75716,
-      "byteLength": 12976,
-      "byteStride": 8,
-      "name": "bufferViewFloatVec2"
+      "byteLength": 35542,
+      "byteOffset": 0
     }
   ],
-  "buffers": [{ "uri": "EnvironmentPath.bin", "byteLength": 88692 }],
-  "materials": [
+  "buffers": [
     {
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [0.5, 0.5, 0.5, 1.0],
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.450053632
-      },
-      "name": "lambert1"
+      "byteLength": 35544,
+      "uri": "EnvironmentPath.bin"
     }
   ]
 }
