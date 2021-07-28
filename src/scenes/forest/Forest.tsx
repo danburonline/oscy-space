@@ -14,6 +14,7 @@ import Ladders from '../../scenes/forest/components/Ladders'
 import WallRock from '../../scenes/forest/components/WallRock'
 import Lighting from './components/Lighting'
 import RoofWall from './components/RoofWall'
+import Eibe from './components/Eibe'
 
 const Forest = (): JSX.Element => {
   return (
@@ -39,6 +40,7 @@ const Forest = (): JSX.Element => {
           <Ladders />
           <WallRock />
           <RoofWall />
+          <Eibe />
         </Suspense>
         <PointerLockControls />
         <Lighting />
