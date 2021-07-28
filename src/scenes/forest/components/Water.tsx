@@ -5,7 +5,7 @@ import { Water } from 'three-stdlib'
 
 extend({ Water })
 
-export default function GorgeWater(): JSX.Element {
+export default function ForestWater(): JSX.Element {
   const ref = useRef()
   const gl = useThree(state => state.gl)
   const waterNormals = useLoader(
@@ -13,7 +13,7 @@ export default function GorgeWater(): JSX.Element {
     '/textures/water-normal.jpeg'
   )
   waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping
-  const geom = useMemo(() => new THREE.PlaneGeometry(85, 30), [])
+  const geom = useMemo(() => new THREE.PlaneGeometry(9, 10), [])
   const config = useMemo(
     () => ({
       textureWidth: 512,
@@ -22,7 +22,7 @@ export default function GorgeWater(): JSX.Element {
       sunDirection: new THREE.Vector3(),
       sunColor: 0xfbb879,
       waterColor: 0x001e1b,
-      distortionScale: 3,
+      distortionScale: 1,
       fog: false,
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
@@ -45,7 +45,7 @@ export default function GorgeWater(): JSX.Element {
       args={[geom, config]}
       rotation-x={-Math.PI / 2}
       rotation-z={-Math.PI / 2}
-      position={[-12, -4, -25]}
+      position={[5, 0, -40]}
     />
   )
 }
