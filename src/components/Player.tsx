@@ -15,7 +15,7 @@ export const Player = (props: PlayerProps): JSX.Element => {
     position: props.position || [0, 1, 0] // Default player position
   }))
 
-  const SPEED = 2.5
+  const SPEED = 5
   const keys = {
     KeyW: 'forward',
     KeyS: 'backward',

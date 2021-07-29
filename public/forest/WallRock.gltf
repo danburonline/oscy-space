@@ -37,7 +37,7 @@
   ],
   "materials": [
     {
-      "name": "Wall_Rock",
+      "name": "WallRockMaterial",
       "normalTexture": {
         "index": 0,
         "texCoord": 0
@@ -99,54 +99,54 @@
   "images": [
     {
       "mimeType": "image/png",
-      "name": "Wall_Rock_normal",
-      "uri": "Wall_Rock_normal.png"
+      "name": "WallRockMaterial_normal",
+      "uri": "WallRockMaterial_normal.png"
     },
     {
       "mimeType": "image/png",
-      "name": "Wall_Rock_occlusionRoughnessMetallic",
-      "uri": "Wall_Rock_occlusionRoughnessMetallic.png"
+      "name": "WallRockMaterial_occlusionRoughnessMetallic",
+      "uri": "WallRockMaterial_occlusionRoughnessMetallic.png"
     },
     {
       "mimeType": "image/png",
-      "name": "Wall_Rock_baseColor",
-      "uri": "Wall_Rock_baseColor.png"
+      "name": "WallRockMaterial_baseColor",
+      "uri": "WallRockMaterial_baseColor.png"
     }
   ],
   "accessors": [
     {
       "componentType": 5126,
-      "count": 5208,
+      "count": 4991,
       "max": [52.01548767089844, 11.068965911865234, 6.097308158874512],
       "min": [-7.736254692077637, -47.13985061645508, -10.020719528198242],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 5208,
+      "count": 4991,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 5208,
+      "count": 4991,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 23904,
+      "count": 22908,
       "type": "SCALAR"
     }
   ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 73395,
+      "byteLength": 70375,
       "byteOffset": 0
     }
   ],
   "buffers": [
     {
-      "byteLength": 73396,
+      "byteLength": 70376,
       "uri": "WallRock.bin"
     }
   ]

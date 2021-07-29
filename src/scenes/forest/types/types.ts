@@ -59,7 +59,7 @@ export type WallRockProps = GLTF & {
     Wall_Rock_grp001: THREE.Mesh
   }
   materials: {
-    Wall_Rock: THREE.MeshStandardMaterial
+    WallRockMaterial: THREE.MeshStandardMaterial
   }
 }
 
