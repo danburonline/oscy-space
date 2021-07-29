@@ -11,9 +11,8 @@ export default function RoofWall(
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
-        geometry={nodes.Dach_Wand1_1.geometry}
-        material={materials.Wand_Dach}
-        scale={[0.01, 0.01, 0.01]}
+        geometry={nodes.Dach_Wand1001.geometry}
+        material={materials.WandDach}
       />
     </group>
   )

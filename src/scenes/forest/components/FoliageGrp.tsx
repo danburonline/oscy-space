@@ -12,16 +12,10 @@ export default function FoliageGrp(
   ) as FoliageGrpProps
   return (
     <group ref={group} {...props} dispose={null}>
-      <group
-        position={[-76.2, 0, -55.08]}
-        rotation={[Math.PI / 2, 0, 0]}
-        scale={[0.01, 0.01, 0.01]}
-      >
-        <mesh
-          geometry={nodes.FoliageInstancedStaticMeshComponent_5001.geometry}
-          material={materials['Foliage.009']}
-        />
-      </group>
+      <mesh
+        geometry={nodes.FoliageGrp001.geometry}
+        material={materials.Foliage}
+      />
     </group>
   )
 }

@@ -21,17 +21,15 @@ export default function Collider(
   const [ref] = useConvexPolyhedron(() => ({
     mass: 1,
     type: 'Kinematic',
-    args: geo,
-    rotation: [Math.PI / 2, 0, 0]
+    args: geo
+    // rotation: [Math.PI / 2, 0, 0]
   }))
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <group>
-        <mesh ref={ref} geometry={nodes.EnvironmentPath.geometry}>
-          <meshBasicMaterial visible={false} />
-        </mesh>
-      </group>
+      <mesh ref={ref} geometry={nodes.EnvironmentPath.geometry}>
+        <meshBasicMaterial visible={false} />
+      </mesh>
     </group>
   )
 }

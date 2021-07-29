@@ -15,16 +15,11 @@
   "nodes": [
     {
       "mesh": 0,
-      "name": "FoliageInstancedStaticMeshComponent_5.001"
+      "name": "FoliageGrp.001"
     },
     {
       "children": [0],
-      "name": "FoliageInstancedStaticMeshComponent_5",
-      "rotation": [0.7071068286895752, 0, 0, 0.7071067094802856],
-      "scale": [0.00950009934604168, 0.00950009934604168, 0.00950009934604168],
-      "translation": [
-        -76.19584655761719, 7.399886271741707e-6, -55.075531005859375
-      ]
+      "name": "FoliageGrp"
     },
     {
       "children": [1],
@@ -34,7 +29,7 @@
   "materials": [
     {
       "alphaMode": "BLEND",
-      "name": "Foliage.009",
+      "name": "Foliage",
       "normalTexture": {
         "index": 0,
         "texCoord": 0
@@ -57,7 +52,7 @@
   ],
   "meshes": [
     {
-      "name": "FoliageInstancedStaticMeshComponent_5.007",
+      "name": "FoliageGrp",
       "primitives": [
         {
           "attributes": {
@@ -113,37 +108,37 @@
   "accessors": [
     {
       "componentType": 5126,
-      "count": 20692,
-      "max": [12609.494140625, 6231.88134765625, 101.50315856933594],
-      "min": [7609.95556640625, 1633.0322265625, -481.7587890625],
+      "count": 12430,
+      "max": [45.68182373046875, 4.836448669433594, 5.294679641723633],
+      "min": [-3.3627660274505615, -1.015029788017273, -38.259544372558594],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 20692,
+      "count": 12430,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 20692,
+      "count": 12430,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 41466,
+      "count": 17808,
       "type": "SCALAR"
     }
   ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 270908,
+      "byteLength": 167889,
       "byteOffset": 0
     }
   ],
   "buffers": [
     {
-      "byteLength": 270908,
+      "byteLength": 167892,
       "uri": "FoliageGrp.bin"
     }
   ]

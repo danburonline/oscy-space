@@ -50,6 +50,13 @@ export default function Lighting(): JSX.Element {
         distance={12}
         position={[10.069, 6.654, -22.59]}
       />
+      <pointLight
+        intensity={0.75}
+        decay={2}
+        color={'#5470AF'}
+        distance={10}
+        position={[20.612, 3.731, -29.494]}
+      />
     </>
   )
 }

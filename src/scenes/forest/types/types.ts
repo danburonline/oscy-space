@@ -35,16 +35,16 @@ export type ColliderProps = GLTF & {
     EnvironmentPath: THREE.Mesh
   }
   materials: {
-    ['lambert1.007']: THREE.MeshStandardMaterial
+    ['lambert1.003']: THREE.MeshStandardMaterial
   }
 }
 
 export type FoliageGrpProps = GLTF & {
   nodes: {
-    FoliageInstancedStaticMeshComponent_5001: THREE.Mesh
+    FoliageGrp001: THREE.Mesh
   }
   materials: {
-    ['Foliage.009']: THREE.MeshStandardMaterial
+    Foliage: THREE.MeshStandardMaterial
   }
 }
 
@@ -68,10 +68,10 @@ export type WallRockProps = GLTF & {
 
 export type RoofWallProps = GLTF & {
   nodes: {
-    Dach_Wand1_1: THREE.Mesh
+    Dach_Wand1001: THREE.Mesh
   }
   materials: {
-    Wand_Dach: THREE.MeshStandardMaterial
+    WandDach: THREE.MeshStandardMaterial
   }
 }
 
@@ -83,5 +83,14 @@ export type EibeProps = GLTF & {
   materials: {
     Yew_leaves: THREE.MeshStandardMaterial
     EibeCremine1: THREE.MeshStandardMaterial
+  }
+}
+
+export type MushroomProps = GLTF & {
+  nodes: {
+    Pilze001: THREE.Mesh
+  }
+  materials: {
+    PilzeMaterial: THREE.MeshStandardMaterial
   }
 }
