@@ -34,9 +34,6 @@ export type ColliderProps = GLTF & {
   nodes: {
     EnvironmentPath: THREE.Mesh
   }
-  materials: {
-    ['lambert1.003']: THREE.MeshStandardMaterial
-  }
 }
 
 export type FoliageGrpProps = GLTF & {

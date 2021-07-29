@@ -22,7 +22,6 @@ export default function Collider(
     mass: 1,
     type: 'Kinematic',
     args: geo
-    // rotation: [Math.PI / 2, 0, 0]
   }))
 
   return (
