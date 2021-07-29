@@ -91,3 +91,12 @@ export type MushroomProps = GLTF & {
     PilzeMaterial: THREE.MeshStandardMaterial
   }
 }
+
+export type DoorProps = GLTF & {
+  nodes: {
+    Door001: THREE.Mesh
+  }
+  materials: {
+    DoorMaterial: THREE.MeshStandardMaterial
+  }
+}
