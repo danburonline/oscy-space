@@ -34,9 +34,6 @@ export type ColliderProps = GLTF & {
   nodes: {
     EnvironmentPath: THREE.Mesh
   }
-  materials: {
-    ['lambert1.003']: THREE.MeshStandardMaterial
-  }
 }
 
 export type FoliageGrpProps = GLTF & {
@@ -62,7 +59,7 @@ export type WallRockProps = GLTF & {
     Wall_Rock_grp001: THREE.Mesh
   }
   materials: {
-    Wall_Rock: THREE.MeshStandardMaterial
+    WallRockMaterial: THREE.MeshStandardMaterial
   }
 }
 
@@ -92,5 +89,14 @@ export type MushroomProps = GLTF & {
   }
   materials: {
     PilzeMaterial: THREE.MeshStandardMaterial
+  }
+}
+
+export type DoorProps = GLTF & {
+  nodes: {
+    Door001: THREE.Mesh
+  }
+  materials: {
+    DoorMaterial: THREE.MeshStandardMaterial
   }
 }

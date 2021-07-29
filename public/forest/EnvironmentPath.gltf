@@ -20,7 +20,7 @@
   ],
   "materials": [
     {
-      "name": "lambert1.003",
+      "name": "lambert1.009",
       "pbrMetallicRoughness": {
         "baseColorFactor": [0.5, 0.5, 0.5, 1],
         "metallicFactor": 0,
@@ -30,7 +30,7 @@
   ],
   "meshes": [
     {
-      "name": "EnvironmentPath.003",
+      "name": "EnvironmentPath.008",
       "primitives": [
         {
           "attributes": {
@@ -58,37 +58,37 @@
   "accessors": [
     {
       "componentType": 5126,
-      "count": 6296,
-      "max": [46.20048141479492, 6.841542720794678, 6.651819705963135],
-      "min": [-3.031998634338379, -1.5984114408493042, -39.73112869262695],
+      "count": 3238,
+      "max": [46.20048141479492, 7.346923828125, 6.651819705963135],
+      "min": [-3.031998634338379, -1.4586541652679443, -39.73112869262695],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 6296,
+      "count": 3238,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 6296,
+      "count": 3238,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 10524,
+      "count": 5910,
       "type": "SCALAR"
     }
   ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 78536,
+      "byteLength": 43801,
       "byteOffset": 0
     }
   ],
   "buffers": [
     {
-      "byteLength": 78536,
+      "byteLength": 43804,
       "uri": "EnvironmentPath.bin"
     }
   ]

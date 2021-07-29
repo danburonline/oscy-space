@@ -11,6 +11,7 @@ export default function RoofWall(
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
+        position={[0, -0.35, 0]}
         geometry={nodes.Dach_Wand1001.geometry}
         material={materials.WandDach}
       />

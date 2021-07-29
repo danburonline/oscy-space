@@ -2,8 +2,6 @@ import { Canvas } from '@react-three/fiber'
 import { Loader, PointerLockControls, Stars, Stats } from '@react-three/drei'
 import { Suspense } from 'react'
 import { Physics } from '@react-three/cannon'
-import { Player } from '../../components/Player'
-import { Ground } from '../../components/Ground'
 
 import Collider from '../../scenes/forest/components/Collider'
 import BaseRock from '../../scenes/forest/components/BaseRock'
@@ -12,11 +10,14 @@ import EnvironmentGround from '../../scenes/forest/components/EnvironmentGround'
 import FoliageGrp from '../../scenes/forest/components/FoliageGrp'
 import Ladders from '../../scenes/forest/components/Ladders'
 import WallRock from '../../scenes/forest/components/WallRock'
+import { Player } from '../../components/Player'
+import { Ground } from '../../components/Ground'
 import Lighting from './components/Lighting'
 import RoofWall from './components/RoofWall'
 import Eibe from './components/Eibe'
 import Water from './components/Water'
 import Mushrooms from './components/Mushrooms'
+import Door from './components/Door'
 
 const Forest = (): JSX.Element => {
   return (
@@ -44,6 +45,7 @@ const Forest = (): JSX.Element => {
           <RoofWall />
           <Eibe />
           <Water />
+          <Door />
           <Mushrooms />
         </Suspense>
         <PointerLockControls />
