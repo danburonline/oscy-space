@@ -9,13 +9,13 @@ export const Player = (props: PlayerProps): JSX.Element => {
     args: 0.5,
     mass: 1,
     type: 'Dynamic',
-    sleepSpeedLimit: 2,
+    sleepSpeedLimit: 2.5,
     sleepTimeLimit: 0,
     allowSleep: true,
     position: props.position || [0, 1, 0] // Default player position
   }))
 
-  const SPEED = 5
+  const SPEED = 2.5
   const keys = {
     KeyW: 'forward',
     KeyS: 'backward',
