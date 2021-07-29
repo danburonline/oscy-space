@@ -85,3 +85,12 @@ export type EibeProps = GLTF & {
     EibeCremine1: THREE.MeshStandardMaterial
   }
 }
+
+export type MushroomProps = GLTF & {
+  nodes: {
+    Pilze001: THREE.Mesh
+  }
+  materials: {
+    PilzeMaterial: THREE.MeshStandardMaterial
+  }
+}

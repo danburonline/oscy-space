@@ -16,6 +16,7 @@ import Lighting from './components/Lighting'
 import RoofWall from './components/RoofWall'
 import Eibe from './components/Eibe'
 import Water from './components/Water'
+import Mushrooms from './components/Mushrooms'
 
 const Forest = (): JSX.Element => {
   return (
@@ -43,6 +44,7 @@ const Forest = (): JSX.Element => {
           <RoofWall />
           <Eibe />
           <Water />
+          <Mushrooms />
         </Suspense>
         <PointerLockControls />
         <Lighting />
