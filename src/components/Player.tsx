@@ -6,7 +6,7 @@ import type { PlayerProps } from '../types/types'
 
 export const Player = (props: PlayerProps): JSX.Element => {
   const [ref, api] = useSphere(() => ({
-    args: 0.4,
+    args: 0.5,
     mass: 1,
     type: 'Dynamic',
     sleepSpeedLimit: 2,
@@ -71,7 +71,7 @@ export const Player = (props: PlayerProps): JSX.Element => {
   )
 
   useFrame(() => {
-    camera.position.copy(ref.current.position).y += 1.1 // Heighten the player view a little to make it feel human
+    camera.position.copy(ref.current.position).y += 1 // Heighten the player view a little to make it feel human
     frontVector.set(0, 0, Number(backward) - Number(forward))
     sideVector.set(Number(left) - Number(right), 0, 0)
     direction
