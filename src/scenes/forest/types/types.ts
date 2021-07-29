@@ -35,7 +35,7 @@ export type ColliderProps = GLTF & {
     EnvironmentPath: THREE.Mesh
   }
   materials: {
-    ['lambert1.007']: THREE.MeshStandardMaterial
+    ['lambert1.003']: THREE.MeshStandardMaterial
   }
 }
 

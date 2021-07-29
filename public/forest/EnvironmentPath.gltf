@@ -9,23 +9,18 @@
   "scenes": [
     {
       "name": "Scene",
-      "nodes": [1]
+      "nodes": [0]
     }
   ],
   "nodes": [
     {
       "mesh": 0,
       "name": "EnvironmentPath"
-    },
-    {
-      "children": [0],
-      "name": "meshes_fin",
-      "rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
     }
   ],
   "materials": [
     {
-      "name": "lambert1.007",
+      "name": "lambert1.003",
       "pbrMetallicRoughness": {
         "baseColorFactor": [0.5, 0.5, 0.5, 1],
         "metallicFactor": 0,
@@ -35,7 +30,7 @@
   ],
   "meshes": [
     {
-      "name": "EnvironmentPath",
+      "name": "EnvironmentPath.003",
       "primitives": [
         {
           "attributes": {
@@ -63,37 +58,37 @@
   "accessors": [
     {
       "componentType": 5126,
-      "count": 2661,
-      "max": [46.20048141479492, 6.651819229125977, 1.598413348197937],
-      "min": [-3.031998634338379, -42.08216094970703, -5.635019779205322],
+      "count": 6296,
+      "max": [46.20048141479492, 6.841542720794678, 6.651819705963135],
+      "min": [-3.031998634338379, -1.5984114408493042, -39.73112869262695],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 2661,
+      "count": 6296,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 2661,
+      "count": 6296,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 5418,
+      "count": 10524,
       "type": "SCALAR"
     }
   ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 35542,
+      "byteLength": 78536,
       "byteOffset": 0
     }
   ],
   "buffers": [
     {
-      "byteLength": 35544,
+      "byteLength": 78536,
       "uri": "EnvironmentPath.bin"
     }
   ]
