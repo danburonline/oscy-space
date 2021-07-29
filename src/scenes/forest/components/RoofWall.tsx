@@ -1,7 +1,7 @@
 import * as THREE from 'three'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { RoofWallProps } from '../types/types'
+import type { RoofWallProps } from '../types/types'
 
 export default function RoofWall(
   props: JSX.IntrinsicElements['group']

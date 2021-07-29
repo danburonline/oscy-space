@@ -41,10 +41,10 @@ export type ColliderProps = GLTF & {
 
 export type FoliageGrpProps = GLTF & {
   nodes: {
-    FoliageInstancedStaticMeshComponent_5001: THREE.Mesh
+    FoliageGrp001: THREE.Mesh
   }
   materials: {
-    ['Foliage.009']: THREE.MeshStandardMaterial
+    Foliage: THREE.MeshStandardMaterial
   }
 }
 
