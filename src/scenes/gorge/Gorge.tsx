@@ -13,6 +13,8 @@ import Rocks from '../../scenes/gorge/components/Rocks'
 import StorageAssets from '../../scenes/gorge/components/StorageAssets'
 import RoomElements from '../../scenes/gorge/components/RoomElements'
 import Lighting from './components/Lighting'
+import WaterRocks from './components/WaterRocks'
+import Grass from './components/Grass'
 
 const Gorge = (): JSX.Element => {
   return (
@@ -37,6 +39,8 @@ const Gorge = (): JSX.Element => {
           <StorageAssets />
           <RoomElements />
           <Water />
+          <WaterRocks />
+          <Grass />
         </Suspense>
         <PointerLockControls />
         <Lighting />

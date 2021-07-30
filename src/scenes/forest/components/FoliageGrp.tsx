@@ -15,6 +15,7 @@ export default function FoliageGrp(
       <mesh
         geometry={nodes.FoliageGrp001.geometry}
         material={materials.Foliage}
+        material-side={THREE.DoubleSide}
       />
     </group>
   )

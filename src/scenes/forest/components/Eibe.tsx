@@ -11,10 +11,12 @@ export default function Eibe(
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
+        castShadow
         geometry={nodes.EibeCremineGrp001.geometry}
         material={materials.Yew_leaves}
       />
       <mesh
+        castShadow
         geometry={nodes.EibeCremineGrp002.geometry}
         material={materials.EibeCremine1}
       />

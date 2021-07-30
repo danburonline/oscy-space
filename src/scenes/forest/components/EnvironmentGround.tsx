@@ -13,6 +13,7 @@ export default function EnvironmentGround(
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
+        receiveShadow
         geometry={nodes.Environment_ground_UV_low001.geometry}
         material={materials.GroundForest}
       />
