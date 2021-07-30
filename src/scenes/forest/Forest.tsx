@@ -69,7 +69,7 @@ const Forest = (): JSX.Element => {
         state={audioState}
         volume={5}
         soundFileUrl={
-          'https://storage.googleapis.com/oscy-cdn/alter%20baum_huitikon%20waldegg_stereo%20render_final_wav_mp3/01%20210729_wald_huitikon%20waldegg.wav'
+          'https://storage.googleapis.com/oscy-cdn/alter%20baum_huitikon%20waldegg_stereo%20render_final_wav_mp3/02%20210729_wald_huitikon%20waldegg.mp3'
         }
       />
       <AudioButton

@@ -19,12 +19,14 @@ import AmbientStereoSound from '../../components/AmbientStereoSound'
 import AudioButton from '../../components/AudioButton'
 import GorgeSoundArray from './utils/GorgeSoundArray'
 
+import FullScreenButton from '../../components/FullScreenButton'
+
 const Gorge = (): JSX.Element => {
   const [audioState, setAudioState] = useState(false)
 
   return (
     <>
-      <Canvas className='bg-black'>
+      <Canvas id='webGL' className='bg-black'>
         <Suspense fallback={null}>
           <Physics
             allowSleep={true}
@@ -49,23 +51,24 @@ const Gorge = (): JSX.Element => {
           soundObjects={GorgeSoundArray}
           state={audioState}
         />
-        <AmbientStereoSound
-          state={audioState}
-          // TODO Add the final ambient stereo sound URL from the audio engineers
-          soundFileUrl={
-            'https://storage.googleapis.com/oscy-cdn/proof_of_concept/r.wav'
-          }
-        />
         <PointerLockControls />
         <Lighting />
         <Stars fade={true} count={7500} />
         <color attach='background' args={['black']} />
         <Stats />
       </Canvas>
+      <AmbientStereoSound
+        state={audioState}
+        volume={5}
+        soundFileUrl={
+          'https://storage.googleapis.com/oscy-cdn/taminaschlucht/02%20210724_taminaschlucht_master.mp3'
+        }
+      />
       <AudioButton
         state={audioState}
         onClick={() => setAudioState(!audioState)}
       />
+      <FullScreenButton />
       <Loader />
     </>
   )

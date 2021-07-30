@@ -3,7 +3,7 @@ const soundObjects = [
     id: 1,
     x: 5,
     y: 0.3,
-    z: -41,
+    z: -42,
     position: [0, 0, 0],
     filePath:
       'https://storage.googleapis.com/oscy-cdn/alter%20baum_samples_assets/Loop_Alterbaum_FlisendesWasser.mp3',
@@ -17,9 +17,9 @@ const soundObjects = [
   },
   {
     id: 2,
-    x: 4,
+    x: 2.5,
     y: 0.4,
-    z: -40,
+    z: -40.5,
     position: [0, 0, 0],
     filePath:
       'https://storage.googleapis.com/oscy-cdn/alter%20baum_samples_assets/OS_AlterBaum_frosch.mp3',
@@ -33,9 +33,9 @@ const soundObjects = [
   },
   {
     id: 3,
-    x: 5,
+    x: 6.5,
     y: 0.4,
-    z: -40,
+    z: -41,
     position: [0, 0, 0],
     filePath:
       'https://storage.googleapis.com/oscy-cdn/alter%20baum_samples_assets/OS_AlterBaum_Frosch.2.mp3',
