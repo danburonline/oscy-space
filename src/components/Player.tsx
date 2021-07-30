@@ -15,6 +15,10 @@ export const Player = (props: PlayerProps): JSX.Element => {
     position: props.position || [0, 1, 0] // Default player position
   }))
 
+  const moveFieldByKey = key => keys[key]
+  const direction = new THREE.Vector3()
+  const frontVector = new THREE.Vector3()
+  const sideVector = new THREE.Vector3()
   const SPEED = 2.5
   const keys = {
     KeyW: 'forward',
@@ -23,10 +27,6 @@ export const Player = (props: PlayerProps): JSX.Element => {
     KeyD: 'right',
     Space: 'jump'
   }
-  const moveFieldByKey = key => keys[key]
-  const direction = new THREE.Vector3()
-  const frontVector = new THREE.Vector3()
-  const sideVector = new THREE.Vector3()
 
   const usePlayerControls = () => {
     const [movement, setMovement] = useState({

@@ -1,5 +1,11 @@
 import { Canvas } from '@react-three/fiber'
-import { Loader, PointerLockControls, Stars, Stats } from '@react-three/drei'
+import {
+  Loader,
+  PointerLockControls,
+  softShadows,
+  Stars,
+  Stats
+} from '@react-three/drei'
 import { Suspense } from 'react'
 import { Physics } from '@react-three/cannon'
 
@@ -19,10 +25,12 @@ import Water from './components/Water'
 import Mushrooms from './components/Mushrooms'
 import Door from './components/Door'
 
+softShadows()
+
 const Forest = (): JSX.Element => {
   return (
     <>
-      <Canvas className='bg-black'>
+      <Canvas shadows={true} className='bg-black'>
         <Suspense fallback={null}>
           <Physics
             allowSleep={true}

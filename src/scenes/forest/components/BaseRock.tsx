@@ -12,6 +12,7 @@ export default function BaseRock(
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
         <mesh
+          receiveShadow
           geometry={nodes.Base_Rock_grp001.geometry}
           material={materials.Base_Rock}
         />
