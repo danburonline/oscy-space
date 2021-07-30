@@ -6,7 +6,8 @@ export type PlayerProps = {
 }
 
 export type AmbientStereoSoundProps = {
-  audioIsPlaying: boolean
+  state: boolean
+  volume: number
   soundFileUrl: string
 }
 
@@ -19,11 +20,16 @@ export type SoundObject = {
   filePath: string
   name: string
   rotation: number
+  rolloffFactor: number
+  coneOuterGain: number
+  innerAngle: number
+  outerAngle: number
+  volume: number
 }
 
 export type AmbientPositionalSoundProps = {
   soundObjects: SoundObject[]
-  state: string
+  state: boolean
 }
 
 export type SoundObjectProps = {
@@ -32,7 +38,9 @@ export type SoundObjectProps = {
   volume: number
   rolloffFactor: number
   coneOuterGain: number
-  state: string
+  state: boolean
+  innerAngle: number
+  outerAngle: number
 }
 
 export type CollisionBoxProps = {

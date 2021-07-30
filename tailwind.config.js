@@ -3,10 +3,15 @@ module.exports = {
   purge: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}'
+    './src/**/*.{js,ts,jsx,tsx}'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      primary: '#001749',
+      hover: '#00287D'
+    }),
     screens: {
       sm: '640px',
       // => @media (min-width: 640px) { ... }
