@@ -55,7 +55,7 @@ export default function BackHomeButton(): JSX.Element {
       onClick={() => {
         toggleFullscreen()
       }}
-      className='absolute bottom-0 flex items-center justify-center p-3 m-3 text-white transition-colors ease-in-out bg-blue-600 rounded-md cursor-pointer z-99 right-11 duration-350 hover:bg-blue-800'
+      className='absolute bottom-0 flex items-center justify-center p-3 m-3 text-white transition-colors ease-in-out rounded-md cursor-pointer bg-primary z-99 right-11 duration-350 hover:bg-hover'
     >
       {buttonText}
     </button>

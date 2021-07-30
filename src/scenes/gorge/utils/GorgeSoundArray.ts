@@ -102,14 +102,14 @@ const soundObjects = [
     z: -38.25,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/Loop_Taminaschlucht_Lichtsound.mp3',
+      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/tamina%20strom_etienne_reaper.mp3',
     name: 'Lichtsound',
     rotation: 89.7,
     coneOuterGain: 1,
     innerAngle: 90,
     outerAngle: 180,
     rolloffFactor: 1,
-    volume: 0.2
+    volume: 1
   },
   {
     id: 8,
@@ -118,14 +118,14 @@ const soundObjects = [
     z: -20,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/Loop_Taminaschlucht_Lichtsound.mp3',
+      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/tamina%20strom_etienne_reaper.mp3',
     name: 'Lichtsound',
     rotation: 0.95,
     coneOuterGain: 1,
     innerAngle: 90,
     outerAngle: 180,
     rolloffFactor: 1,
-    volume: 0.2
+    volume: 1
   }
 ]
 

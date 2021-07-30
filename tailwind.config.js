@@ -7,6 +7,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      primary: '#001749',
+      hover: '#00287D'
+    }),
     screens: {
       sm: '640px',
       // => @media (min-width: 640px) { ... }

@@ -12,7 +12,7 @@ export default function BackHomeButton(props): JSX.Element {
     <button
       title={titleText}
       onClick={props.onClick}
-      className='absolute bottom-0 right-0 z-10 flex items-center justify-center p-3 m-3 text-white transition-colors ease-in-out bg-blue-600 rounded-md cursor-pointer duration-350 hover:bg-blue-800'
+      className='absolute bottom-0 right-0 z-10 flex items-center justify-center p-3 m-3 text-white transition-colors ease-in-out rounded-md cursor-pointer bg-primary duration-350 hover:bg-hover'
     >
       {buttonText}
     </button>
