@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import FullScreenButton from '../../src/components/FullScreenButton'
 
 const ForestScene = dynamic(() => import('../../src/scenes/forest/Forest'), {
   ssr: false
@@ -16,8 +17,9 @@ export default function ForestPage(): JSX.Element {
         />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <main className='h-screen'>
+      <main id='webGL' className='h-screen'>
         <ForestScene />
+        <FullScreenButton />
       </main>
     </>
   )

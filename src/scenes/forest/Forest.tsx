@@ -30,6 +30,8 @@ import AmbientPositionalSound from '../../components/AmbientPositionalSound'
 import ForestSoundArray from './utils/ForestSoundArray'
 import AudioButton from '../../components/AudioButton'
 
+import PointerLockButton from '../../components/PointerLockButton'
+
 softShadows()
 
 const Forest = (): JSX.Element => {
@@ -63,7 +65,7 @@ const Forest = (): JSX.Element => {
           <Door />
           <Mushrooms />
         </Suspense>
-        <PointerLockControls />
+        <PointerLockControls selector='#pointerLockButton' />
         <Lighting />
         <Stars fade={true} count={7500} />
         <color attach='background' args={['black']} />
@@ -84,6 +86,7 @@ const Forest = (): JSX.Element => {
         state={audioState}
         onClick={() => setAudioState(!audioState)}
       />
+      <PointerLockButton />
       <Loader />
     </>
   )

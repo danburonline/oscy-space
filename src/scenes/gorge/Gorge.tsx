@@ -21,14 +21,14 @@ import AmbientStereoSound from '../../components/AmbientStereoSound'
 import AudioButton from '../../components/AudioButton'
 import GorgeSoundArray from './utils/GorgeSoundArray'
 
-import FullScreenButton from '../../components/FullScreenButton'
+import PointerLockButton from '../../components/PointerLockButton'
 
 const Gorge = (): JSX.Element => {
   const [audioState, setAudioState] = useState(false)
 
   return (
     <>
-      <Canvas id='webGL' className='bg-black'>
+      <Canvas className='bg-black'>
         <Suspense fallback={null}>
           <Physics
             allowSleep={true}
@@ -55,7 +55,7 @@ const Gorge = (): JSX.Element => {
           soundObjects={GorgeSoundArray}
           state={audioState}
         />
-        <PointerLockControls />
+        <PointerLockControls selector='#pointerLockButton' />
         <Lighting />
         <Stars fade={true} count={7500} />
         <color attach='background' args={['black']} />
@@ -72,7 +72,7 @@ const Gorge = (): JSX.Element => {
         state={audioState}
         onClick={() => setAudioState(!audioState)}
       />
-      <FullScreenButton />
+      <PointerLockButton />
       <Loader />
     </>
   )
