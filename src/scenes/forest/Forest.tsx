@@ -6,7 +6,7 @@ import {
   Stars,
   Stats
 } from '@react-three/drei'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import { Physics } from '@react-three/cannon'
 
 import Collider from '../../scenes/forest/components/Collider'
@@ -25,9 +25,18 @@ import Water from './components/Water'
 import Mushrooms from './components/Mushrooms'
 import Door from './components/Door'
 
+import AmbientStereoSound from '../../components/AmbientStereoSound'
+import AmbientPositionalSound from '../../components/AmbientPositionalSound'
+import ForestSoundArray from './utils/ForestSoundArray'
+import AudioButton from '../../components/AudioButton'
+
+import PointerLockButton from '../../components/PointerLockButton'
+
 softShadows()
 
 const Forest = (): JSX.Element => {
+  const [audioState, setAudioState] = useState(false)
+
   return (
     <>
       <Canvas shadows={true} className='bg-black'>
@@ -56,12 +65,28 @@ const Forest = (): JSX.Element => {
           <Door />
           <Mushrooms />
         </Suspense>
-        <PointerLockControls />
+        <PointerLockControls selector='#pointerLockButton' />
         <Lighting />
         <Stars fade={true} count={7500} />
         <color attach='background' args={['black']} />
+        <AmbientPositionalSound
+          state={audioState}
+          soundObjects={ForestSoundArray}
+        />
         <Stats />
       </Canvas>
+      <AmbientStereoSound
+        state={audioState}
+        volume={5}
+        soundFileUrl={
+          'https://storage.googleapis.com/oscy-cdn/alter%20baum_huitikon%20waldegg_stereo%20render_final_wav_mp3/02%20210729_wald_huitikon%20waldegg.mp3'
+        }
+      />
+      <AudioButton
+        state={audioState}
+        onClick={() => setAudioState(!audioState)}
+      />
+      <PointerLockButton />
       <Loader />
     </>
   )

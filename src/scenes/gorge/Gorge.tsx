@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import { Loader, PointerLockControls, Stars, Stats } from '@react-three/drei'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import { Physics } from '@react-three/cannon'
 import { Player } from '../../components/Player'
 import { Ground } from '../../components/Ground'
@@ -16,7 +16,16 @@ import Lighting from './components/Lighting'
 import WaterRocks from './components/WaterRocks'
 import Grass from './components/Grass'
 
+import AmbientPositionalAudio from '../../components/AmbientPositionalSound'
+import AmbientStereoSound from '../../components/AmbientStereoSound'
+import AudioButton from '../../components/AudioButton'
+import GorgeSoundArray from './utils/GorgeSoundArray'
+
+import PointerLockButton from '../../components/PointerLockButton'
+
 const Gorge = (): JSX.Element => {
+  const [audioState, setAudioState] = useState(false)
+
   return (
     <>
       <Canvas className='bg-black'>
@@ -42,12 +51,28 @@ const Gorge = (): JSX.Element => {
           <WaterRocks />
           <Grass />
         </Suspense>
-        <PointerLockControls />
+        <AmbientPositionalAudio
+          soundObjects={GorgeSoundArray}
+          state={audioState}
+        />
+        <PointerLockControls selector='#pointerLockButton' />
         <Lighting />
         <Stars fade={true} count={7500} />
         <color attach='background' args={['black']} />
         <Stats />
       </Canvas>
+      <AmbientStereoSound
+        state={audioState}
+        volume={5}
+        soundFileUrl={
+          'https://storage.googleapis.com/oscy-cdn/taminaschlucht/02%20210724_taminaschlucht_master.mp3'
+        }
+      />
+      <AudioButton
+        state={audioState}
+        onClick={() => setAudioState(!audioState)}
+      />
+      <PointerLockButton />
       <Loader />
     </>
   )

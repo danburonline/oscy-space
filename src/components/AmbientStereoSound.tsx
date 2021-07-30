@@ -1,23 +1,24 @@
-import { useEffect, useState } from 'react'
+// import { useState } from 'react'
 import Sound from 'react-sound'
 import type { AmbientStereoSoundProps } from '../types/types'
 
 export default function AmbientStereoSound(
   props: AmbientStereoSoundProps
 ): JSX.Element {
-  const [soundFile, setSoundFile] = useState('')
+  // const [playPosition, setPlayPosition] = useState({ start: 0 })
 
-  useEffect(() => {
-    setSoundFile(props.soundFileUrl)
-  }, [props.soundFileUrl])
+  // const changePlayPositionHandler = () => {
+  //   setPlayPosition({ start: 0 })
+  // }
 
   return (
     <Sound
-      url={soundFile}
-      playStatus={props.audioIsPlaying ? 'PLAYING' : 'PAUSED'}
-      volume={30}
-      autoLoad={true}
+      url={props.soundFileUrl}
+      playStatus={props.state ? 'PLAYING' : 'PAUSED'}
+      // position={playPosition.start}
+      volume={props.volume}
       loop={true}
+      // onFinishedPlaying={changePlayPositionHandler}
     />
   )
 }
