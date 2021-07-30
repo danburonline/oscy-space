@@ -21,13 +21,17 @@ export default function AmbientPositionalSound(
         position={[soundObject.x, soundObject.y, soundObject.z]}
         rotation={[0, soundObject.rotation, 0]}
       >
+        <sphereGeometry args={[0.1, 8, 8]} />
+        <meshStandardMaterial color='hotpink' wireframe />
         <SoundObject
           refs={audioRefs[index]}
-          volume={1}
-          rolloffFactor={1}
+          volume={soundObject.volume}
+          rolloffFactor={soundObject.rolloffFactor}
           url={soundObject.filePath}
           key={soundObject.id}
-          coneOuterGain={0}
+          coneOuterGain={soundObject.coneOuterGain}
+          innerAngle={soundObject.innerAngle}
+          outerAngle={soundObject.outerAngle}
           state={props.state}
         />
       </mesh>
