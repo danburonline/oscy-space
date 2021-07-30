@@ -7,7 +7,7 @@ export default function Rocks(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/gorge/WallRocks.gltf') as RocksProps
+  const { nodes, materials } = useGLTF('/gorge/RockWalls.gltf') as RocksProps
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
