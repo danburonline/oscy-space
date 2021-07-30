@@ -13,6 +13,7 @@ export default function WallRock(
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
         <mesh
+          receiveShadow
           geometry={nodes.Wall_Rock_grp001.geometry}
           material={materials.WallRockMaterial}
         />

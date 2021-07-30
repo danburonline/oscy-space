@@ -45,7 +45,7 @@ export default function GorgeWater(): JSX.Element {
       args={[geom, config]}
       rotation-x={-Math.PI / 2}
       rotation-z={-Math.PI / 2}
-      position={[-12, -4, -25]}
+      position={[-12, -5, -25]}
     />
   )
 }

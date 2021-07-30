@@ -19,6 +19,7 @@ export default function Beeches(
         <mesh
           geometry={nodes.Beeches_grp_Beech_Leaves_L448002.geometry}
           material={materials.M_Baum}
+          castShadow
         />
       </group>
     </group>

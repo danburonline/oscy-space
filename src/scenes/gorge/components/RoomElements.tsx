@@ -12,8 +12,14 @@ export default function RoomElements(
   ) as RoomElementsProps
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Roof001.geometry} material={materials.M_Roof} />
-      <mesh geometry={nodes.Walls001.geometry} material={materials.M_Walls} />
+      <mesh
+        geometry={nodes.RoomElements001.geometry}
+        material={materials.M_Roof}
+      />
+      <mesh
+        geometry={nodes.RoomElements002.geometry}
+        material={materials.M_Walls}
+      />
     </group>
   )
 }

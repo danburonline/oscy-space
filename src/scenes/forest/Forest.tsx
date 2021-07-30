@@ -1,5 +1,11 @@
 import { Canvas } from '@react-three/fiber'
-import { Loader, PointerLockControls, Stars, Stats } from '@react-three/drei'
+import {
+  Loader,
+  PointerLockControls,
+  softShadows,
+  Stars,
+  Stats
+} from '@react-three/drei'
 import { Suspense, useState } from 'react'
 import { Physics } from '@react-three/cannon'
 
@@ -24,12 +30,14 @@ import AmbientPositionalSound from '../../components/AmbientPositionalSound'
 import ForestSoundArray from './utils/ForestSoundArray'
 import AudioButton from '../../components/AudioButton'
 
+softShadows()
+
 const Forest = (): JSX.Element => {
   const [audioState, setAudioState] = useState(false)
 
   return (
     <>
-      <Canvas className='bg-black'>
+      <Canvas shadows={true} className='bg-black'>
         <Suspense fallback={null}>
           <Physics
             allowSleep={true}
