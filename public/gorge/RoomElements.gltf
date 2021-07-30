@@ -15,22 +15,22 @@
   "nodes": [
     {
       "mesh": 0,
-      "name": "Roof.001"
-    },
-    {
-      "children": [0],
-      "name": "Roof"
+      "name": "RoomElements.001"
     },
     {
       "mesh": 1,
-      "name": "Walls.001"
+      "name": "RoomElements.002"
+    },
+    {
+      "children": [0, 1],
+      "name": "RoomElements"
     },
     {
       "children": [2],
-      "name": "Walls"
+      "name": "Combined_for_Export"
     },
     {
-      "children": [1, 3],
+      "children": [3],
       "name": "RootNode"
     }
   ],
@@ -80,7 +80,7 @@
   ],
   "meshes": [
     {
-      "name": "Roof",
+      "name": "RoomElements",
       "primitives": [
         {
           "attributes": {
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "name": "Walls",
+      "name": "RoomElements.001",
       "primitives": [
         {
           "attributes": {
@@ -185,19 +185,19 @@
   "accessors": [
     {
       "componentType": 5126,
-      "count": 5210,
-      "max": [-0.7117528915405273, 24.05954360961914, 0.9727863073348999],
-      "min": [-24.088958740234375, 21.7463436126709, -61.0930061340332],
+      "count": 5184,
+      "max": [-0.7117522954940796, 24.05954360961914, 0.9727887511253357],
+      "min": [-24.088958740234375, 21.7463436126709, -61.48253631591797],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 5210,
+      "count": 5184,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 5210,
+      "count": 5184,
       "type": "VEC2"
     },
     {
@@ -207,42 +207,42 @@
     },
     {
       "componentType": 5126,
-      "count": 30,
-      "max": [9.513076782226562, 23.31731414794922, 0.9727862477302551],
-      "min": [-24.088958740234375, -5.4315619468688965, -61.09302520751953],
+      "count": 2110,
+      "max": [9.513077735900879, 23.31731414794922, 0.9440362453460693],
+      "min": [-24.08896255493164, -5.4315619468688965, -61.482547760009766],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 30,
+      "count": 2110,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 30,
+      "count": 2110,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 30,
+      "count": 5484,
       "type": "SCALAR"
     }
   ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 51576,
+      "byteLength": 51333,
       "byteOffset": 0
     },
     {
       "buffer": 0,
-      "byteLength": 560,
-      "byteOffset": 51576
+      "byteLength": 23584,
+      "byteOffset": 51336
     }
   ],
   "buffers": [
     {
-      "byteLength": 52136,
+      "byteLength": 74920,
       "uri": "RoomElements.bin"
     }
   ]
