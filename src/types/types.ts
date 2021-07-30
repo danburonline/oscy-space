@@ -34,3 +34,11 @@ export type SoundObjectProps = {
   coneOuterGain: number
   state: string
 }
+
+export type CollisionBoxProps = {
+  size: [height: number, width: number, depth: number]
+  position: [x: number, y: number, z: number]
+  scale: [x: number, y: number, z: number]
+  rotation: number[]
+  color: string
+}
