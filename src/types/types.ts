@@ -42,3 +42,16 @@ export type SoundObjectProps = {
   innerAngle: number
   outerAngle: number
 }
+
+export type CollisionBoxProps = {
+  size: [height: number, width: number, depth: number]
+  position: [x: number, y: number, z: number]
+  scale: [x: number, y: number, z: number]
+  rotation: number[]
+  color: string
+}
+
+export type AudioButtonProps = {
+  state: boolean
+  onClick: () => void
+}

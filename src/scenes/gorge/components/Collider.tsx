@@ -1,31 +1,17 @@
-import * as THREE from 'three'
-import { useRef, useMemo } from 'react'
-import { useGLTF } from '@react-three/drei'
-import { useConvexPolyhedron } from '@react-three/cannon'
-import type { ColliderProps } from '../types/types'
-import toConvexProps from '../../../utils/toConvexProps'
+import CollisionBox from '../../../components/CollisionBox'
+import gorgeColliderBoxesArray from '../utils/gorgeColliderBoxesArray'
 
-export default function Collider(
-  props: JSX.IntrinsicElements['group']
-): JSX.Element {
-  const group = useRef<THREE.Group>()
-  const { nodes } = useGLTF('/gorge/Collider.gltf') as ColliderProps
+export default function Collider(): JSX.Element {
+  const gorgeColliderBoxes = gorgeColliderBoxesArray.map(gorgeColliderBox => (
+    <CollisionBox
+      key={gorgeColliderBox.id}
+      size={gorgeColliderBox.size}
+      position={gorgeColliderBox.position}
+      scale={gorgeColliderBox.scale}
+      rotation={gorgeColliderBox.rotation}
+      color={gorgeColliderBox.color}
+    ></CollisionBox>
+  ))
 
-  const geo = useMemo(() => toConvexProps(nodes.Collider.geometry), [nodes])
-
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const [ref] = useConvexPolyhedron(() => ({
-    mass: 1,
-    type: 'Kinematic',
-    args: geo
-  }))
-
-  return (
-    <group ref={group} {...props} dispose={null}>
-      <mesh ref={ref} geometry={nodes.Collider.geometry}>
-        <meshBasicMaterial visible={false} />
-      </mesh>
-    </group>
-  )
+  return <>{gorgeColliderBoxes}</>
 }

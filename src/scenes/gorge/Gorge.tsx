@@ -19,7 +19,7 @@ import Grass from './components/Grass'
 import AmbientPositionalAudio from '../../components/AmbientPositionalSound'
 import AmbientStereoSound from '../../components/AmbientStereoSound'
 import AudioButton from '../../components/AudioButton'
-import GorgeSoundArray from './utils/GorgeSoundArray'
+import gorgeSoundArray from './utils/gorgeSoundArray'
 
 import PointerLockButton from '../../components/PointerLockButton'
 
@@ -52,7 +52,7 @@ const Gorge = (): JSX.Element => {
           <Grass />
         </Suspense>
         <AmbientPositionalAudio
-          soundObjects={GorgeSoundArray}
+          soundObjects={gorgeSoundArray}
           state={audioState}
         />
         <PointerLockControls selector='#pointerLockButton' />
@@ -63,7 +63,7 @@ const Gorge = (): JSX.Element => {
       </Canvas>
       <AmbientStereoSound
         state={audioState}
-        volume={5}
+        volume={40}
         soundFileUrl={
           'https://storage.googleapis.com/oscy-cdn/taminaschlucht/02%20210724_taminaschlucht_master.mp3'
         }
