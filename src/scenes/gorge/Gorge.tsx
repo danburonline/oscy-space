@@ -34,7 +34,7 @@ const Gorge = (): JSX.Element => {
             allowSleep={true}
             gravity={[0, -20, 0]}
             tolerance={0.0001}
-            size={3}
+            size={65}
             broadphase={'SAP'}
             iterations={10}
           >
