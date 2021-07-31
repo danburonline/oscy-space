@@ -13,40 +13,8 @@ const gorgeSoundArray = [
     innerAngle: 0,
     outerAngle: 0,
     rolloffFactor: 1,
-    volume: 0.6
+    volume: 0.7
   },
-  // {
-  //   id: 2,
-  //   x: -10,
-  //   y: -4,
-  //   z: -15,
-  //   position: [0, 0, 0],
-  //   filePath:
-  //     'https://storage.googleapis.com/oscy-cdn/taminaschlucht/Loop_TaminaSchlucht_Wasser_OhneTropfen.mp3',
-  //   name: 'Wasser_ohne_Tropfen',
-  //   rotation: 0,
-  //   coneOuterGain: 0,
-  //   innerAngle: 0,
-  //   outerAngle: 0,
-  //   rolloffFactor: 1,
-  //   volume: 0.2
-  // },
-  // {
-  //   id: 3,
-  //   x: -5,
-  //   y: -4,
-  //   z: -27,
-  //   position: [0, 0, 0],
-  //   filePath:
-  //     'https://storage.googleapis.com/oscy-cdn/taminaschlucht/Loop_TaminaSchlucht_Wasser_OhneTropfen.mp3',
-  //   name: 'Wasser_ohne_Tropfen',
-  //   rotation: 0,
-  //   coneOuterGain: 0,
-  //   innerAngle: 0,
-  //   outerAngle: 0,
-  //   rolloffFactor: 1,
-  //   volume: 0.2
-  // },
   {
     id: 4,
     x: -14,
@@ -61,7 +29,7 @@ const gorgeSoundArray = [
     innerAngle: 0,
     outerAngle: 0,
     rolloffFactor: 1,
-    volume: 0.2
+    volume: 0.7
   },
   {
     id: 5,
@@ -93,7 +61,7 @@ const gorgeSoundArray = [
     innerAngle: 0,
     outerAngle: 0,
     rolloffFactor: 1,
-    volume: 0.6
+    volume: 0.7
   },
   {
     id: 7,
