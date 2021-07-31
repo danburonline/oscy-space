@@ -63,7 +63,7 @@ const Gorge = (): JSX.Element => {
       </Canvas>
       <AmbientStereoSound
         state={audioState}
-        volume={5}
+        volume={40}
         soundFileUrl={
           'https://storage.googleapis.com/oscy-cdn/taminaschlucht/02%20210724_taminaschlucht_master.mp3'
         }
