@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVolumeUp } from '@fortawesome/free-solid-svg-icons'
 import { faVolumeMute } from '@fortawesome/free-solid-svg-icons'
+import type { AudioButtonProps } from '../types/types'
 
-export default function BackHomeButton(props): JSX.Element {
+export default function AudioButton(props: AudioButtonProps): JSX.Element {
   const audioButtonOn = <FontAwesomeIcon icon={faVolumeUp} />
   const audioButtonOff = <FontAwesomeIcon icon={faVolumeMute} />
   const buttonText = props.state ? audioButtonOn : audioButtonOff

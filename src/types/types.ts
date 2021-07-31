@@ -50,3 +50,8 @@ export type CollisionBoxProps = {
   rotation: number[]
   color: string
 }
+
+export type AudioButtonProps = {
+  state: boolean
+  onClick: () => void
+}
