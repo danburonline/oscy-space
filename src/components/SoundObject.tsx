@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react'
 import { useThree, useLoader } from '@react-three/fiber'
 import type { SoundObjectProps } from '../types/types'
 
-import { PositionalAudioHelper } from 'three/examples/jsm/helpers/PositionalAudioHelper.js'
-
 export default function SoundObject(props: SoundObjectProps): JSX.Element {
   const sound = props.refs
   const { camera } = useThree()
@@ -23,8 +21,6 @@ export default function SoundObject(props: SoundObjectProps): JSX.Element {
         props.outerAngle,
         props.coneOuterGain
       )
-      const helper = new PositionalAudioHelper(sound.current)
-      sound.current.add(helper)
     }
     sound.current.setLoop(true)
     sound.current.setVolume(props.volume)
