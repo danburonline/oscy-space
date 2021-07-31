@@ -44,11 +44,11 @@ export type SoundObjectProps = {
 }
 
 export type CollisionBoxProps = {
-  size: [height: number, width: number, depth: number]
   position: [x: number, y: number, z: number]
   scale: [x: number, y: number, z: number]
   rotation: number[]
-  color: string
+  size?: [height: number, width: number, depth: number]
+  color?: string
 }
 
 export type AudioButtonProps = {

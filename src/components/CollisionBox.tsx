@@ -16,7 +16,7 @@ export default function CollisionBox(props: CollisionBoxProps): JSX.Element {
       position={props.position}
       scale={props.scale}
     >
-      <meshBasicMaterial color={props.color} wireframe={true} />
+      <meshBasicMaterial color={props.color} wireframe={true} visible={false} />
     </Box>
   )
 }
