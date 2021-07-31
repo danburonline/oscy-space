@@ -1,12 +1,6 @@
 import type { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
 
-export type ColliderProps = GLTF & {
-  nodes: {
-    Collider: THREE.Mesh
-  }
-}
-
 export type LampsProps = GLTF & {
   nodes: {
     Lamps001: THREE.Mesh

@@ -1,4 +1,4 @@
-const soundObjects = [
+const gorgeSoundArray = [
   {
     id: 1,
     x: -10,
@@ -129,4 +129,4 @@ const soundObjects = [
   }
 ]
 
-export default soundObjects
+export default gorgeSoundArray

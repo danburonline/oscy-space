@@ -19,7 +19,7 @@ import Grass from './components/Grass'
 import AmbientPositionalAudio from '../../components/AmbientPositionalSound'
 import AmbientStereoSound from '../../components/AmbientStereoSound'
 import AudioButton from '../../components/AudioButton'
-import GorgeSoundArray from './utils/GorgeSoundArray'
+import gorgeSoundArray from './utils/gorgeSoundArray'
 
 import PointerLockButton from '../../components/PointerLockButton'
 
@@ -52,7 +52,7 @@ const Gorge = (): JSX.Element => {
           <Grass />
         </Suspense>
         <AmbientPositionalAudio
-          soundObjects={GorgeSoundArray}
+          soundObjects={gorgeSoundArray}
           state={audioState}
         />
         <PointerLockControls selector='#pointerLockButton' />
