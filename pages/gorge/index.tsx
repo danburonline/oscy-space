@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
+import MobileBlocker from '../../src/components/MobileBlocker'
 
 const GorgeScene = dynamic(() => import('../../src/scenes/gorge/Gorge'), {
   ssr: false
@@ -18,6 +19,7 @@ export default function GorgePage(): JSX.Element {
       </Head>
       <main id='webGL' className='h-screen'>
         <GorgeScene />
+        <MobileBlocker />
       </main>
     </>
   )
