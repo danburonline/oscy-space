@@ -24,6 +24,7 @@ import Eibe from './components/Eibe'
 import Water from './components/Water'
 import Mushrooms from './components/Mushrooms'
 import Door from './components/Door'
+import DoorPortals from './components/DoorPortals'
 
 import AmbientStereoSound from '../../components/AmbientStereoSound'
 import AmbientPositionalSound from '../../components/AmbientPositionalSound'
@@ -56,6 +57,7 @@ const Forest = (): JSX.Element => {
             <Player position={[0, 0.5, 0]} />
             <Collider />
             <Ground />
+            <DoorPortals />
           </Physics>
           <BaseRock />
           <Beeches />
