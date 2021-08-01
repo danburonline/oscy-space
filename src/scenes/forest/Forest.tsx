@@ -33,6 +33,7 @@ import AudioButton from '../../components/AudioButton'
 import PointerLockButton from '../../components/PointerLockButton'
 import BackHomeButton from '../../components/BackHomeButton'
 import GoToNextScene from '../../components/GoToNextSceneButton'
+import FullScreenButton from '../../../src/components/FullScreenButton'
 import { currentSiteEnum } from '../../types/types'
 
 softShadows()
@@ -93,6 +94,7 @@ const Forest = (): JSX.Element => {
       <BackHomeButton />
       <GoToNextScene currentSite={currentSiteEnum.FOREST} />
       <Loader />
+      <FullScreenButton />
     </>
   )
 }

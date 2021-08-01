@@ -25,6 +25,7 @@ import gorgeSoundArray from './utils/gorgeSoundArray'
 import PointerLockButton from '../../components/PointerLockButton'
 import BackHomeButton from '../../components/BackHomeButton'
 import GoToNextScene from '../../components/GoToNextSceneButton'
+import FullScreenButton from '../../../src/components/FullScreenButton'
 import { currentSiteEnum } from '../../types/types'
 
 const Gorge = (): JSX.Element => {
@@ -80,6 +81,7 @@ const Gorge = (): JSX.Element => {
       <BackHomeButton />
       <GoToNextScene currentSite={currentSiteEnum.GORGE} />
       <Loader />
+      <FullScreenButton />
     </>
   )
 }

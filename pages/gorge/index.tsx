@@ -1,6 +1,5 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
-import FullScreenButton from '../../src/components/FullScreenButton'
 
 const GorgeScene = dynamic(() => import('../../src/scenes/gorge/Gorge'), {
   ssr: false
@@ -19,7 +18,6 @@ export default function GorgePage(): JSX.Element {
       </Head>
       <main id='webGL' className='h-screen'>
         <GorgeScene />
-        <FullScreenButton />
       </main>
     </>
   )
