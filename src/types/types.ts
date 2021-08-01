@@ -55,3 +55,14 @@ export type AudioButtonProps = {
   state: boolean
   onClick: () => void
 }
+
+export enum currentSiteEnum {
+  // eslint-disable-next-line no-unused-vars
+  GORGE,
+  // eslint-disable-next-line no-unused-vars
+  FOREST
+}
+
+export type GoToNextSceneProps = {
+  currentSite: currentSiteEnum
+}

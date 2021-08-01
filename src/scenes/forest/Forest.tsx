@@ -31,6 +31,9 @@ import ForestSoundArray from './utils/ForestSoundArray'
 import AudioButton from '../../components/AudioButton'
 
 import PointerLockButton from '../../components/PointerLockButton'
+import BackHomeButton from '../../components/BackHomeButton'
+import GoToNextScene from '../../components/GoToNextScene'
+import { currentSiteEnum } from '../../types/types'
 
 softShadows()
 
@@ -87,6 +90,8 @@ const Forest = (): JSX.Element => {
         onClick={() => setAudioState(!audioState)}
       />
       <PointerLockButton />
+      <BackHomeButton />
+      <GoToNextScene currentSite={currentSiteEnum.FOREST} />
       <Loader />
     </>
   )
