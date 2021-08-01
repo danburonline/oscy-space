@@ -22,6 +22,9 @@ import AudioButton from '../../components/AudioButton'
 import gorgeSoundArray from './utils/gorgeSoundArray'
 
 import PointerLockButton from '../../components/PointerLockButton'
+import BackHomeButton from '../../components/BackHomeButton'
+import GoToNextScene from '../../components/GoToNextScene'
+import { currentSiteEnum } from '../../types/types'
 
 const Gorge = (): JSX.Element => {
   const [audioState, setAudioState] = useState(false)
@@ -73,6 +76,8 @@ const Gorge = (): JSX.Element => {
         onClick={() => setAudioState(!audioState)}
       />
       <PointerLockButton />
+      <BackHomeButton />
+      <GoToNextScene currentSite={currentSiteEnum.GORGE} />
       <Loader />
     </>
   )
