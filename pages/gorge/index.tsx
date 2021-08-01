@@ -11,7 +11,7 @@ export default function GorgePage(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Oscy Space – Tamina Gorge in Switzerland</title>
+        <title>Oscy Space — Tamina Gorge in Switzerland</title>
         <meta
           name='description'
           content='A scene in which you can visit the Tamina gorge of Switzerland in a web-based 3D environment.'

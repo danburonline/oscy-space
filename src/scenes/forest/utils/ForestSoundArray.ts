@@ -1,4 +1,4 @@
-const soundObjects = [
+const forestSoundArray = [
   {
     id: 1,
     x: 5,
@@ -49,4 +49,4 @@ const soundObjects = [
   // }
 ]
 
-export default soundObjects
+export default forestSoundArray

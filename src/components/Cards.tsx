@@ -1,22 +1,13 @@
-export type CardsProps = {
-  cards: CardProps[]
-}
-
-export type CardProps = {
-  title: string
-  description: string
-  link?: string
-  isNotDone?: boolean
-}
+import type { CardProps, CardsProps } from '../types/types'
 
 function Card(props: CardProps): JSX.Element {
   return (
     <a
-      className='flex flex-col self-center justify-center min-w-full p-8 text-white border rounded-md justify-self-center border-grey-600 hover:border-blue-600 hover:text-blue-600'
-      href={props.isNotDone ? '' : props.link}
+      className='flex flex-col self-center justify-center min-w-full p-8 text-black transition-shadow ease-in-out border rounded-md duration-250 justify-self-center border-grey-600 hover:shadow hover:text-blue-600'
+      href={props.link}
     >
       <h2 className='text-xl font-bold'>{props.title} &rarr;</h2>
-      <p className='text-grey'>{props.description}</p>
+      {props.description && <p className='text-primary'>{props.description}</p>}
     </a>
   )
 }

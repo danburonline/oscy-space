@@ -11,7 +11,7 @@ export default function ForestPage(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Oscy Space – Oldest Tree of Switzerland</title>
+        <title>Oscy Space — Oldest Tree of Switzerland</title>
         <meta
           name='description'
           content='A scene in which you can visit the oldest tree of Switzerland in a web-based 3D environment.'

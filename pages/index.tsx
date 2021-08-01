@@ -15,12 +15,7 @@ export default function Home(): JSX.Element {
       </Head>
       <section className='flex flex-col min-h-screen '>
         <main className='flex flex-col justify-center min-h-screen py-20'>
-          <Header
-            title='Welcome to'
-            subTitle={`Two experimental and immersive spatial audio proof of concept scenes implemented with React-Three-Fiber.`}
-            linkText='Oscy Space'
-            linkUrl='https://github.com/danburonline/oscy-space'
-          />
+          <Header />
           <Cards cards={roomData} />
         </main>
       </section>

@@ -1,26 +1,23 @@
 const roomData = [
   {
-    title: 'Tamina Gore',
+    title: 'Gorge Scene',
     description:
-      'Basic cube with orbit controls, react-three-fiber and leva controls.',
-    link: '/tamina'
+      'Our gorge in a room scene inspired by the Tamina gorge located in St. Gallen, Switzerland.',
+    link: '/gorge'
   },
   {
-    title: 'Wallis Forest',
-    description: 'Basic cube applied with physics from the cannon package.',
+    title: 'Forest Scene',
+    description:
+      'Our forest in a room scene inspired by the secret forest with the oldest tree in Switzerland.',
     link: '/forest'
   },
   {
     title: 'GitHub Source Code',
-    description:
-      'Little physics experiment using Cannon, animations and textures.',
-    link: '/physics-experiment'
+    link: 'https://github.com/danburonline/oscy-space'
   },
   {
-    title: 'Proof of Concept Version',
-    description:
-      'An imported model of a realistic brain mesh with materials and textures.',
-    link: '/imported-3d-object'
+    title: 'Playground Version',
+    link: 'https://poc.oscy.space'
   }
 ]
 
