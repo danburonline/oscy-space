@@ -4,14 +4,14 @@ const roomData = [
     description:
       'Our gorge in a room scene inspired by the Tamina gorge located in St. Gallen, Switzerland.',
     link: '/gorge',
-    imageSrc: "https://www.freecodecamp.org/news/content/images/2020/11/image-121.png"
+    imageSrc: '/imgs/gorge-thumbnail.jpg'
   },
   {
     title: 'Forest Scene',
     description:
       'Our forest in a room scene inspired by the secret forest with the oldest tree in Switzerland.',
     link: '/forest',
-    imageSrc: "https://www.freecodecamp.org/news/content/images/2020/11/image-121.png"
+    imageSrc: '/imgs/forest-thumbnail.jpg'
   },
   {
     title: 'GitHub Source Code',

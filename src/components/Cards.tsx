@@ -8,18 +8,18 @@ function Card(props: CardProps): JSX.Element {
     >
       {props.imageSrc && (
         <div
+          className={'rounded-t-md'}
           style={{
             backgroundImage: `url(${props.imageSrc})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             width: '100%',
-            height: '150px'
+            height: '250px'
           }}
         />
       )}
-
-      <h2 className='px-8 text-xl font-bold pt-7'>{props.title} &rarr;</h2>
+      <h2 className='px-8 text-xl font-bold pt-7'>{props.title}</h2>
       {props.description && (
         <p className='px-8 pt-2 text-primary'>{props.description}</p>
       )}
