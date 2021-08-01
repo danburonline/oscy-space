@@ -1,34 +1,19 @@
-import * as THREE from 'three'
-import { useRef, useMemo } from 'react'
-import type { ColliderProps } from '../types/types'
-import { useGLTF } from '@react-three/drei'
-import { useConvexPolyhedron } from '@react-three/cannon'
-import toConvexProps from '../../../utils/toConvexProps'
+import CollisionBox from '../../../components/CollisionBox'
+import forestColliderBoxesArray from '../utils/forestColliderBoxesArray'
 
-export default function Collider(
-  props: JSX.IntrinsicElements['group']
-): JSX.Element {
-  const group = useRef<THREE.Group>()
-  const { nodes } = useGLTF('/forest/EnvironmentPath.gltf') as ColliderProps
-
-  const geo = useMemo(
-    () => toConvexProps(nodes.EnvironmentPath.geometry),
-    [nodes]
+export default function Collider(): JSX.Element {
+  const forestColliderBoxes = forestColliderBoxesArray.map(
+    forestColliderBox => (
+      <CollisionBox
+        key={forestColliderBox.id}
+        size={forestColliderBox.size}
+        position={forestColliderBox.position}
+        scale={forestColliderBox.scale}
+        rotation={forestColliderBox.rotation}
+        color={forestColliderBox.color}
+      ></CollisionBox>
+    )
   )
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const [ref] = useConvexPolyhedron(() => ({
-    mass: 1,
-    type: 'Kinematic',
-    args: geo
-  }))
-
-  return (
-    <group ref={group} {...props} dispose={null}>
-      <mesh ref={ref} geometry={nodes.EnvironmentPath.geometry}>
-        <meshBasicMaterial visible={false} />
-      </mesh>
-    </group>
-  )
+  return <>{forestColliderBoxes}</>
 }
