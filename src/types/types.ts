@@ -75,3 +75,10 @@ export type DoorPortalProps = {
   color?: string
   onCollide: () => void
 }
+
+export type HeaderProps = {
+  title: string
+  linkText: string
+  linkUrl: string
+  subTitle: string
+}

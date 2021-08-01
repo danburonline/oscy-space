@@ -38,6 +38,11 @@ class CustomDocument extends Document {
             href='/favicon-16x16.png'
           />
           <link rel='manifest' href='/site.webmanifest' />
+          <style jsx global>{`
+            body {
+              background-color: #171717;
+            }
+          `}</style>
         </Head>
         <body>
           <Main />

@@ -6,7 +6,8 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       primary: '#001749',
-      hover: '#00287D'
+      hover: '#00287D',
+      dark: '#171717'
     }),
     screens: {
       sm: '640px',

@@ -18,11 +18,6 @@ export default function GorgePage(): JSX.Element {
         />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <style jsx>{`
-        body {
-          background: #171717;
-        }
-      `}</style>
       <Expire delay={5000} />
       <main id='webGL' className='h-screen'>
         <GorgeScene />
