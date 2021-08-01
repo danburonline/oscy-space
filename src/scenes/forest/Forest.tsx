@@ -3,8 +3,7 @@ import {
   Loader,
   PointerLockControls,
   softShadows,
-  Stars,
-  Stats
+  Stars
 } from '@react-three/drei'
 import { Suspense, useState } from 'react'
 import { Physics } from '@react-three/cannon'
@@ -79,7 +78,6 @@ const Forest = (): JSX.Element => {
           state={audioState}
           soundObjects={ForestSoundArray}
         />
-        <Stats />
       </Canvas>
       <AmbientStereoSound
         state={audioState}

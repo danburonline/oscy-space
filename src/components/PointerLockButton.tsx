@@ -22,9 +22,13 @@ export default function PointerLockButton(
     <>
       <div
         style={{ visibility: visibilityState }}
-        className='absolute z-30 inline-block text-white transform -translate-x-1/2 border-none w-max inset-1/2 top-1/3'
+        className='absolute z-30 inline-block text-center text-white transform -translate-x-1/2 border-none w-max inset-1/2 top-1/3'
       >
-        Click on the white dot to activate pointerlock controls
+        <p>Use the WASD keys to navigate through the scene.</p>
+        <p className='font-bold'>
+          Click on the white dot to activate pointer lock controls.
+        </p>
+        <p>Press ESC to exit.</p>
       </div>
       <button
         id={'pointerLockButton'}
