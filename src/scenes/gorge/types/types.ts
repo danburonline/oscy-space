@@ -12,12 +12,12 @@ export type LampsProps = GLTF & {
 
 export type PathProps = GLTF & {
   nodes: {
-    Path001_1: THREE.Mesh
-    Path001_2: THREE.Mesh
-    Path001_3: THREE.Mesh
+    Path_1: THREE.Mesh
+    Path_2: THREE.Mesh
+    Path_3: THREE.Mesh
   }
   materials: {
-    ['M_TrimSheet.001']: THREE.MeshStandardMaterial
+    M_TrimSheet: THREE.MeshStandardMaterial
   }
 }
 

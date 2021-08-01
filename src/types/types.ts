@@ -63,6 +63,15 @@ export enum currentSiteEnum {
   FOREST
 }
 
-export type GoToNextSceneProps = {
+export type GoToNextSceneButtonProps = {
   currentSite: currentSiteEnum
+}
+
+export type DoorPortalProps = {
+  position: [x: number, y: number, z: number]
+  scale: [x: number, y: number, z: number]
+  rotation: number[]
+  size?: [height: number, width: number, depth: number]
+  color?: string
+  onCollide: () => void
 }

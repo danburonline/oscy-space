@@ -2,7 +2,13 @@
 import React from 'react'
 import { useState } from 'react'
 
-export default function PointerLockButton(): JSX.Element {
+type PointerLockButtonProps = {
+  setAudioState: () => void
+}
+
+export default function PointerLockButton(
+  props: PointerLockButtonProps
+): JSX.Element {
   const [pointerLocked, setPointerLocked] = useState(false)
   const visibilityState = pointerLocked ? 'hidden' : 'visible'
 
@@ -23,9 +29,12 @@ export default function PointerLockButton(): JSX.Element {
       <button
         id={'pointerLockButton'}
         className={
-          'absolute h-5 w-5 bg-white z-30 select-none	cursor-crosshair transform -translate-x-1/2 -translate-y-1/2 text-white rounded-full inset-1/2'
+          'absolute h-5 w-5 bg-white z-30 select-none	cursor-pointer transform -translate-x-1/2 -translate-y-1/2 text-white rounded-full inset-1/2 hover:opacity-50'
         }
         style={{ visibility: visibilityState }}
+        onClick={() => {
+          props.setAudioState()
+        }}
       ></button>
     </>
   )

@@ -24,6 +24,7 @@ import Eibe from './components/Eibe'
 import Water from './components/Water'
 import Mushrooms from './components/Mushrooms'
 import Door from './components/Door'
+import DoorPortals from './components/DoorPortals'
 
 import AmbientStereoSound from '../../components/AmbientStereoSound'
 import AmbientPositionalSound from '../../components/AmbientPositionalSound'
@@ -32,7 +33,8 @@ import AudioButton from '../../components/AudioButton'
 
 import PointerLockButton from '../../components/PointerLockButton'
 import BackHomeButton from '../../components/BackHomeButton'
-import GoToNextScene from '../../components/GoToNextScene'
+import GoToNextScene from '../../components/GoToNextSceneButton'
+import FullScreenButton from '../../../src/components/FullScreenButton'
 import { currentSiteEnum } from '../../types/types'
 
 softShadows()
@@ -52,9 +54,10 @@ const Forest = (): JSX.Element => {
             broadphase={'SAP'}
             iterations={10}
           >
-            <Player />
+            <Player position={[0, 0.5, 0]} />
             <Collider />
             <Ground />
+            <DoorPortals />
           </Physics>
           <BaseRock />
           <Beeches />
@@ -89,10 +92,11 @@ const Forest = (): JSX.Element => {
         state={audioState}
         onClick={() => setAudioState(!audioState)}
       />
-      <PointerLockButton />
+      <PointerLockButton setAudioState={() => setAudioState(true)} />
       <BackHomeButton />
       <GoToNextScene currentSite={currentSiteEnum.FOREST} />
       <Loader />
+      <FullScreenButton />
     </>
   )
 }
