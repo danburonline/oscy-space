@@ -84,5 +84,5 @@ export type CardProps = {
   title: string
   description?: string
   link?: string
-  isNotDone?: boolean
+  imageSrc?: string
 }

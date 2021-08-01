@@ -3,11 +3,26 @@ import type { CardProps, CardsProps } from '../types/types'
 function Card(props: CardProps): JSX.Element {
   return (
     <a
-      className='flex flex-col self-center justify-center min-w-full p-8 text-black transition-shadow ease-in-out border rounded-md duration-250 justify-self-center border-grey-600 hover:shadow hover:text-blue-600'
+      className='flex flex-col self-center justify-center min-w-full pb-8 text-black transition-shadow ease-in-out border rounded-md duration-250 justify-self-center border-grey-600 hover:shadow hover:text-blue-600'
       href={props.link}
     >
-      <h2 className='text-xl font-bold'>{props.title} &rarr;</h2>
-      {props.description && <p className='text-primary'>{props.description}</p>}
+      {props.imageSrc && (
+        <div
+          style={{
+            backgroundImage: `url(${props.imageSrc})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            width: '100%',
+            height: '150px'
+          }}
+        />
+      )}
+
+      <h2 className='px-8 text-xl font-bold pt-7'>{props.title} &rarr;</h2>
+      {props.description && (
+        <p className='px-8 pt-2 text-primary'>{props.description}</p>
+      )}
     </a>
   )
 }
@@ -19,6 +34,7 @@ export default function Cards(props: CardsProps): JSX.Element {
       title={card.title}
       description={card.description}
       link={card.link}
+      imageSrc={card.imageSrc}
     />
   ))
 
