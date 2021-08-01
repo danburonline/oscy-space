@@ -90,7 +90,7 @@ const Forest = (): JSX.Element => {
         state={audioState}
         onClick={() => setAudioState(!audioState)}
       />
-      <PointerLockButton />
+      <PointerLockButton setAudioState={() => setAudioState(true)} />
       <BackHomeButton />
       <GoToNextScene currentSite={currentSiteEnum.FOREST} />
       <Loader />

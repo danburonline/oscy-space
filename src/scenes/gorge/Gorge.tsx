@@ -77,7 +77,7 @@ const Gorge = (): JSX.Element => {
         state={audioState}
         onClick={() => setAudioState(!audioState)}
       />
-      <PointerLockButton />
+      <PointerLockButton setAudioState={() => setAudioState(true)} />
       <BackHomeButton />
       <GoToNextScene currentSite={currentSiteEnum.GORGE} />
       <Loader />
