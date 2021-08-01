@@ -27,7 +27,7 @@ import DoorPortals from './components/DoorPortals'
 
 import AmbientStereoSound from '../../components/AmbientStereoSound'
 import AmbientPositionalSound from '../../components/AmbientPositionalSound'
-import ForestSoundArray from './utils/ForestSoundArray'
+import forestSoundArray from './utils/forestSoundArray'
 import AudioButton from '../../components/AudioButton'
 
 import PointerLockButton from '../../components/PointerLockButton'
@@ -76,7 +76,7 @@ const Forest = (): JSX.Element => {
         <color attach='background' args={['black']} />
         <AmbientPositionalSound
           state={audioState}
-          soundObjects={ForestSoundArray}
+          soundObjects={forestSoundArray}
         />
       </Canvas>
       <AmbientStereoSound

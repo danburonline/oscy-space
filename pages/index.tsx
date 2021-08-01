@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import Header from '../src/components/Header'
+import Cards from '../src/components/Cards'
+import roomData from '../src/utils/roomData'
 export default function Home(): JSX.Element {
   return (
     <>
@@ -10,9 +13,12 @@ export default function Home(): JSX.Element {
         />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <main className='flex flex-row items-center justify-center min-h-screen'>
-        <h1>Oscy Space &mdash; V0.1.1</h1>
-      </main>
+      <section className='flex flex-col min-h-screen '>
+        <main className='flex flex-col justify-center min-h-screen py-20'>
+          <Header />
+          <Cards cards={roomData} />
+        </main>
+      </section>
     </>
   )
 }

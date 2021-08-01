@@ -75,3 +75,14 @@ export type DoorPortalProps = {
   color?: string
   onCollide: () => void
 }
+
+export type CardsProps = {
+  cards: CardProps[]
+}
+
+export type CardProps = {
+  title: string
+  description?: string
+  link?: string
+  imageSrc?: string
+}
