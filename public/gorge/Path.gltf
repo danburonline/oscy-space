@@ -9,7 +9,7 @@
   "scenes": [
     {
       "name": "Scene",
-      "nodes": [2]
+      "nodes": [3]
     }
   ],
   "nodes": [
@@ -23,12 +23,16 @@
     },
     {
       "children": [1],
+      "name": "Combined_for_Export"
+    },
+    {
+      "children": [2],
       "name": "RootNode"
     }
   ],
   "materials": [
     {
-      "name": "M_TrimSheet.001",
+      "name": "M_TrimSheet",
       "normalTexture": {
         "index": 0,
         "texCoord": 0
@@ -51,7 +55,7 @@
   ],
   "meshes": [
     {
-      "name": "Path.001",
+      "name": "Path",
       "primitives": [
         {
           "attributes": {
@@ -147,91 +151,91 @@
   "accessors": [
     {
       "componentType": 5126,
-      "count": 65534,
-      "max": [9.467144966125488, 4.062990188598633, 0.9829466342926025],
-      "min": [-10.015680313110352, -4.762381076812744, -65.96685028076172],
+      "count": 65535,
+      "max": [5.622588157653809, 4.062990188598633, -5.164022922515869],
+      "min": [-9.76751708984375, -0.20754875242710114, -61.17258071899414],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 65534,
+      "count": 65535,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 65534,
+      "count": 65535,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 81867,
+      "count": 73815,
       "type": "SCALAR"
     },
     {
       "componentType": 5126,
-      "count": 4792,
-      "max": [5.622589111328125, 3.0715091228485107, -17.939002990722656],
-      "min": [-2.9313735961914062, -0.07162443548440933, -51.92236328125],
+      "count": 16434,
+      "max": [9.467144012451172, 1.3598378896713257, 0.9829442501068115],
+      "min": [-10.015679359436035, -5.670287132263184, -65.93169403076172],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 4792,
+      "count": 16434,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 4792,
+      "count": 16434,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 6150,
+      "count": 25491,
       "type": "SCALAR"
     },
     {
       "componentType": 5126,
-      "count": 3,
-      "max": [-2.683551549911499, 2.2990477085113525, -19.010425567626953],
-      "min": [-2.835834503173828, 2.2813944816589355, -19.09423828125],
+      "count": 45,
+      "max": [-2.466841220855713, 1.205224871635437, -9.287674903869629],
+      "min": [-2.6012611389160156, 0.4579868018627167, -9.442108154296875],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 3,
+      "count": 45,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 3,
+      "count": 45,
       "type": "VEC2"
     },
     {
       "componentType": 5123,
-      "count": 3,
+      "count": 63,
       "type": "SCALAR"
     }
   ],
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 685454,
+      "byteLength": 671709,
       "byteOffset": 0
     },
     {
       "buffer": 0,
-      "byteLength": 54057,
-      "byteOffset": 685456
+      "byteLength": 185067,
+      "byteOffset": 671712
     },
     {
       "buffer": 0,
-      "byteLength": 171,
-      "byteOffset": 739516
+      "byteLength": 763,
+      "byteOffset": 856780
     }
   ],
   "buffers": [
     {
-      "byteLength": 739688,
+      "byteLength": 857544,
       "uri": "Path.bin"
     }
   ]

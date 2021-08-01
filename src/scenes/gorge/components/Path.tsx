@@ -10,18 +10,9 @@ export default function Path(
   const { nodes } = useGLTF('/gorge/Path.gltf') as PathProps
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh
-        geometry={nodes.Path001_1.geometry}
-        material={nodes.Path001_1.material}
-      />
-      <mesh
-        geometry={nodes.Path001_2.geometry}
-        material={nodes.Path001_2.material}
-      />
-      <mesh
-        geometry={nodes.Path001_3.geometry}
-        material={nodes.Path001_3.material}
-      />
+      <mesh geometry={nodes.Path_1.geometry} material={nodes.Path_1.material} />
+      <mesh geometry={nodes.Path_2.geometry} material={nodes.Path_2.material} />
+      <mesh geometry={nodes.Path_3.geometry} material={nodes.Path_3.material} />
     </group>
   )
 }
