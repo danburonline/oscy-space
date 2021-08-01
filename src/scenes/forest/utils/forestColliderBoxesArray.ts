@@ -389,6 +389,338 @@ const forestColliderBoxesArray: forestColliderBoxesArrayInterface[] = [
       MathUtils.degToRad(-4.66)
     ],
     color: '#fff'
+  },
+  {
+    id: 47,
+    size: [5.12, 0.2, 7.32],
+    position: [25.508, -0.851, -13.209],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 48,
+    size: [7.789, 3, 0.1],
+    position: [24.561, 0.071, -13.052],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-26.4), 0],
+    color: '#fff'
+  },
+  {
+    id: 49,
+    size: [0.1, 3, 5.266],
+    position: [21.719, 0, -17.162],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-16.8), 0],
+    color: '#fff'
+  },
+  {
+    id: 50,
+    size: [2.98, 0.2, 5.712],
+    position: [22.544, -0.433, -15.584],
+    scale: [1, 1, 1],
+    rotation: [
+      MathUtils.degToRad(15.6),
+      MathUtils.degToRad(44.6),
+      MathUtils.degToRad(-16.4)
+    ],
+    color: '#fff'
+  },
+  {
+    id: 51,
+    size: [6.46, 0.2, 7.663],
+    position: [24.354, -0.337, -19.326],
+    scale: [1, 1, 1],
+    rotation: [
+      MathUtils.degToRad(11.0),
+      MathUtils.degToRad(42.0),
+      MathUtils.degToRad(-7.0)
+    ],
+    color: '#fff'
+  },
+  {
+    id: 52,
+    size: [0.1, 0.1, 1.858],
+    position: [29.189, 0, -19.679],
+    scale: [1, 1, 1],
+    rotation: [
+      MathUtils.degToRad(-180.0),
+      MathUtils.degToRad(80.8),
+      MathUtils.degToRad(-180.0)
+    ],
+    color: '#fff'
+  },
+  {
+    id: 53,
+    size: [4.916, 3, 0.1],
+    position: [26.507, 0.273, -21.265],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-44.4), MathUtils.degToRad(-6.6)],
+    color: '#fff'
+  },
+  {
+    id: 54,
+    size: [0.1, 3, 10.004],
+    position: [20.755, 0.433, -24.358],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(20.0), 0],
+    color: '#fff'
+  },
+  {
+    id: 55,
+    size: [0.1, 3, 5.172],
+    position: [23.88, 0.604, -25.198],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(22.8), 0],
+    color: '#fff'
+  },
+  {
+    id: 56,
+    size: [16.337, 0.22, 5.74],
+    position: [20.132, -0.265, -28.793],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-55.83), 0],
+    color: '#fff'
+  },
+  {
+    id: 57,
+    size: [0.1, 2.956, 4.8],
+    position: [21.938, 1.0, -29.778],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(23.8), 0],
+    color: '#fff'
+  },
+  {
+    id: 58,
+    size: [3.156, 3, 0.1],
+    position: [18.168, 1, -30.325],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-55.4), 0],
+    color: '#fff'
+  },
+  {
+    id: 59,
+    size: [9.824, 3, 0.1],
+    position: [17.204, 1, -35.015],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-39.2), 0],
+    color: '#fff'
+  },
+  {
+    id: 60,
+    size: [7.189, 3, 0.1],
+    position: [14.311, 1, -33.548],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-33.4), 0],
+    color: '#fff'
+  },
+  {
+    id: 61,
+    size: [2.578, 3, 0.1],
+    position: [10.101, 1.552, -35.852],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-14.8), 0],
+    color: '#fff'
+  },
+  {
+    id: 62,
+    size: [2.025, 3, 0.1],
+    position: [12.651, 1, -38.748],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-41.6), 0],
+    color: '#fff'
+  },
+  {
+    id: 63,
+    size: [8.413, 3, 0.1],
+    position: [7.845, 1, -39.344],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 64,
+    size: [3.948, 3, 0.1],
+    position: [7.083, 1.456, -36.014],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(3.8), 0],
+    color: '#fff'
+  },
+  {
+    id: 65,
+    size: [15.74, 0.2, 6.36],
+    position: [10.841, 0.103, -37.163],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 66,
+    size: [11.52, 0.2, 10.08],
+    position: [0.636, 1.373, -35.89],
+    scale: [1, 1, 1],
+    rotation: [MathUtils.degToRad(-10.8), 0, MathUtils.degToRad(-10.6)],
+    color: '#fff'
+  },
+  {
+    id: 67,
+    size: [1.153, 4.945, 0.1],
+    position: [4.762, 2.747, -35.477],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(52.0), 0],
+    color: '#fff'
+  },
+  {
+    id: 68,
+    size: [0.1, 4.326, 7.91],
+    position: [4.362, 3.636, -31.075],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 69,
+    size: [4.268, 3, 0.1],
+    position: [1.585, 1, -38.913],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(12.0), 0],
+    color: '#fff'
+  },
+  {
+    id: 70,
+    size: [3.096, 4.448, 0.1],
+    position: [-1.93, 2.073, -38.495],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 71,
+    size: [0.1, 3, 8.291],
+    position: [-2.689, 3.445, -34.574],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 72,
+    size: [3.057, 3, 0.1],
+    position: [-1.175, 3.492, -31.254],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 73,
+    size: [6.24, 0.2, 4.65],
+    position: [1.859, 2.985, -28.958],
+    scale: [1, 1, 1],
+    rotation: [MathUtils.degToRad(-27.0), 0, MathUtils.degToRad(-5.6)],
+    color: '#fff'
+  },
+  {
+    id: 74,
+    size: [0.1, 3, 3.412],
+    position: [0.286, 4.432, -29.616],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 75,
+    size: [1, 3, 0.1],
+    position: [4.83, 5.032, -27.272],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 76,
+    size: [6.82, 0.2, 12.7],
+    position: [1.995, 4.027, -20.671],
+    scale: [1, 1, 1],
+    rotation: [0, 0, MathUtils.degToRad(-5.2)],
+    color: '#fff'
+  },
+  {
+    id: 77,
+    size: [0.1, 3, 3.863],
+    position: [-0.669, 5.129, -26.322],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-30.2), 0],
+    color: '#fff'
+  },
+  {
+    id: 78,
+    size: [0.1, 3, 9.187],
+    position: [-1.402, 5.02, -20.221],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(3), 0],
+    color: '#fff'
+  },
+  {
+    id: 79,
+    size: [0.1, 3, 3.813],
+    position: [5.725, 5.0, -29.178],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-16.0), 0],
+    color: '#fff'
+  },
+  {
+    id: 80,
+    size: [6.916, 3, 0.1],
+    position: [9.609, 5.0, -31.008],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 81,
+    size: [12.04, 0.18, 18.8],
+    position: [11.14, 3.997, -22.244],
+    scale: [1, 1, 1],
+    rotation: [0, 0, MathUtils.degToRad(1.8)],
+    color: '#fff'
+  },
+  {
+    id: 82,
+    size: [0.1, 3, 10.982],
+    position: [14.217, 5.089, -25.714],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(12.2), 0],
+    color: '#fff'
+  },
+  {
+    id: 83,
+    size: [0.1, 3, 6.232],
+    position: [15.271, 4.98, -17.336],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-1.8), 0],
+    color: '#fff'
+  },
+  {
+    id: 84,
+    size: [8.006, 3, 0.1],
+    position: [11.322, 5, -13.483],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(10.8), 0],
+    color: '#fff'
+  },
+  {
+    id: 85,
+    size: [4.121, 3, 0.1],
+    position: [5.684, 5, -13.846],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-33.4), 0],
+    color: '#fff'
+  },
+  {
+    id: 86,
+    size: [5.216, 3, 0.1],
+    position: [1.476, 5, -15.398],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-10.4), 0],
+    color: '#fff'
   }
 ]
 
