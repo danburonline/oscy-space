@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../src/components/Header'
 import Cards from '../src/components/Cards'
-import roomData from '../src/utils/roomData'
+import cardsData from '../src/utils/cardsData'
 export default function Home(): JSX.Element {
   return (
     <>
@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
       <section className='flex flex-col min-h-screen '>
         <main className='flex flex-col justify-center min-h-screen py-20'>
           <Header />
-          <Cards cards={roomData} />
+          <Cards cards={cardsData} />
         </main>
       </section>
     </>
