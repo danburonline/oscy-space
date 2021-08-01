@@ -70,7 +70,7 @@ const Gorge = (): JSX.Element => {
         state={audioState}
         volume={40}
         soundFileUrl={
-          'https://storage.googleapis.com/oscy-cdn/taminaschlucht/02%20210724_taminaschlucht_master.mp3'
+          '/gorge/sound/taminaschlucht_02_210724_taminaschlucht_master.mp3'
         }
       />
       <AudioButton

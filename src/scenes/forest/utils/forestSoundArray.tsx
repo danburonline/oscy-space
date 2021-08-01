@@ -6,7 +6,7 @@ const forestSoundArray = [
     z: -42,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/alter%20baum_samples_assets/fliessendes%20wasser.mp3',
+      '/forest/sound/alter_baum_samples_assets_fliessendes_wasser.mp3',
     name: 'AlterBaumFliessendesWasser',
     rotation: 0,
     coneOuterGain: 0,
@@ -22,7 +22,7 @@ const forestSoundArray = [
     z: -40.5,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/alter%20baum_samples_assets/fro%CC%88sche.mp3',
+      '/forest/sound/alter_baum_samples_assets_frösche.mp3',
     name: 'Frosch1',
     rotation: 0,
     coneOuterGain: 0,

@@ -6,7 +6,7 @@ const gorgeSoundArray = [
     z: 0,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/_%20Loop_TaminaSchlucht_Tropfen.mp3',
+      '/gorge/sound/taminaschlucht_ Loop_TaminaSchlucht_Tropfen.mp3',
     name: 'Tropfen',
     rotation: 0,
     coneOuterGain: 0,
@@ -22,7 +22,7 @@ const gorgeSoundArray = [
     z: -35,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/_%20Loop_TaminaSchlucht_Tropfen.mp3',
+      '/gorge/sound/taminaschlucht_ Loop_TaminaSchlucht_Tropfen.mp3',
     name: 'Tropfen',
     rotation: 0,
     coneOuterGain: 0,
@@ -38,7 +38,7 @@ const gorgeSoundArray = [
     z: -50.5,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/Loop_Chain_TaminaSchlucht.mp3',
+      '/gorge/sound/taminaschlucht_Loop_Chain_TaminaSchlucht.mp3',
     name: 'Kette',
     rotation: 0,
     coneOuterGain: 0,
@@ -54,7 +54,7 @@ const gorgeSoundArray = [
     z: -61,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/_%20Loop_TaminaSchlucht_Tropfen.mp3',
+      '/gorge/sound/taminaschlucht_ Loop_TaminaSchlucht_Tropfen.mp3',
     name: 'Tropfen',
     rotation: 0,
     coneOuterGain: 0,
@@ -70,7 +70,7 @@ const gorgeSoundArray = [
     z: -38.25,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/strom.mp3',
+      '/gorge/sound/taminaschlucht_strom.mp3',
     name: 'Lichtsound',
     rotation: 89.7,
     coneOuterGain: 1,
@@ -86,7 +86,7 @@ const gorgeSoundArray = [
     z: -20,
     position: [0, 0, 0],
     filePath:
-      'https://storage.googleapis.com/oscy-cdn/taminaschlucht/strom.mp3',
+      '/gorge/sound/taminaschlucht_strom.mp3',
     name: 'Lichtsound',
     rotation: 0.95,
     coneOuterGain: 1,
