@@ -32,7 +32,7 @@ import AudioButton from '../../components/AudioButton'
 
 import PointerLockButton from '../../components/PointerLockButton'
 import BackHomeButton from '../../components/BackHomeButton'
-import GoToNextScene from '../../components/GoToNextScene'
+import GoToNextScene from '../../components/GoToNextSceneButton'
 import { currentSiteEnum } from '../../types/types'
 
 softShadows()
@@ -52,7 +52,7 @@ const Forest = (): JSX.Element => {
             broadphase={'SAP'}
             iterations={10}
           >
-            <Player />
+            <Player position={[0, 0.5, 0]} />
             <Collider />
             <Ground />
           </Physics>

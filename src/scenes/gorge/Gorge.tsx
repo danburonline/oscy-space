@@ -15,6 +15,7 @@ import RoomElements from '../../scenes/gorge/components/RoomElements'
 import Lighting from './components/Lighting'
 import WaterRocks from './components/WaterRocks'
 import Grass from './components/Grass'
+import DoorPortals from './components/DoorPortals'
 
 import AmbientPositionalAudio from '../../components/AmbientPositionalSound'
 import AmbientStereoSound from '../../components/AmbientStereoSound'
@@ -23,7 +24,7 @@ import gorgeSoundArray from './utils/gorgeSoundArray'
 
 import PointerLockButton from '../../components/PointerLockButton'
 import BackHomeButton from '../../components/BackHomeButton'
-import GoToNextScene from '../../components/GoToNextScene'
+import GoToNextScene from '../../components/GoToNextSceneButton'
 import { currentSiteEnum } from '../../types/types'
 
 const Gorge = (): JSX.Element => {
@@ -41,11 +42,12 @@ const Gorge = (): JSX.Element => {
             broadphase={'SAP'}
             iterations={10}
           >
-            <Player />
+            <Player position={[0, 0.5, -1]} />
             <Collider />
-            <Path />
             <Ground />
+            <DoorPortals />
           </Physics>
+          <Path />
           <Rocks />
           <Lamps />
           <StorageAssets />
