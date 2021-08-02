@@ -773,6 +773,22 @@ const forestColliderBoxesArray: forestColliderBoxesArrayInterface[] = [
     scale: [1, 1, 1],
     rotation: [0, MathUtils.degToRad(-56.2), 0],
     color: '#fff'
+  },
+  {
+    id: 93,
+    size: [1.409, 3.795, 1.104],
+    position: [7.076, 5.797, -24.446],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 94,
+    size: [1.409, 3.795, 1.104],
+    position: [7.153, 5.797, -24.474],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(90.0), 0],
+    color: '#fff'
   }
 ]
 
