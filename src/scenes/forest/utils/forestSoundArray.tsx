@@ -22,7 +22,7 @@ const forestSoundArray = [
     z: -40.5,
     position: [0, 0, 0],
     filePath:
-      '/forest/sound/alter_baum_samples_assets_frösche.mp3',
+      '/forest/sound/alter_baum_samples_assets_froesche.mp3',
     name: 'Frosch1',
     rotation: 0,
     coneOuterGain: 0,
