@@ -6,7 +6,7 @@ export default function AmbientSound(props) {
 
   useEffect(() => {
     setSoundFile(
-      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/03%20proof%20of%20concept_ortf3d_8.0%20to%20stereo_kurz.wav'
+      './sounds/ambient-stereo/proof_of_concept_ortf3d_8-0_to_stereo_kurz.mp3'
     )
   }, [])
 

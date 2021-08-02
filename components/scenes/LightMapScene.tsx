@@ -37,8 +37,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [10, 0, 10],
-    filePath:
-      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/end%20proof%20of%20concept.mp3',
+    filePath: './sounds/lightmap-scene/end_proof_of_concept.mp3',
     name: 'a',
     rotation: 0
   },
@@ -48,8 +47,7 @@ const soundObjects = [
     y: 15,
     z: 15,
     position: [10, 0, 10],
-    filePath:
-      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/end%20proof%20of%20concept_1.mp3',
+    filePath: './sounds/lightmap-scene/end_proof_of_concept_1.mp3',
     name: 'b',
     rotation: Math.PI
   },
@@ -60,8 +58,7 @@ const soundObjects = [
     y: 10,
     z: -15,
     position: [10, 10, 10],
-    filePath:
-      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/end%20proof%20of%20concept_2.mp3',
+    filePath: './sounds/lightmap-scene/end_proof_of_concept_2.mp3',
     name: 'c',
     rotation: 0
   },
@@ -72,8 +69,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [10, 10, 10],
-    filePath:
-      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/end%20proof%20of%20concept_3.mp3',
+    filePath: './sounds/lightmap-scene/end_proof_of_concept_3.mp3',
     name: 'd',
     rotation: Math.PI
   }

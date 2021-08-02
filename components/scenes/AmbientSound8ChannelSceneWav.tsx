@@ -14,7 +14,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [10, 0, -10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/r.wav',
+    filePath: './sounds/ambientSound8Channel/r.mp3',
     name: 'r',
     rotation: 0
   },
@@ -24,7 +24,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [10, 0, 10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/rs.wav',
+    filePath: './sounds/ambientSound8Channel/rs.mp3',
     name: 'rs',
     rotation: Math.PI
   },
@@ -35,7 +35,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [10, 10, -10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/hr.wav',
+    filePath: './sounds/ambientSound8Channel/hr.mp3',
     name: 'hr',
     rotation: 0
   },
@@ -46,8 +46,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [10, 10, 10],
-    filePath:
-      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/hrs.wav',
+    filePath: './sounds/ambientSound8Channel/hrs.mp3',
     name: 'hrs',
     rotation: Math.PI
   },
@@ -58,7 +57,7 @@ const soundObjects = [
     y: 0,
     z: -10,
     position: [-10, 0, -10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/l.wav',
+    filePath: './sounds/ambientSound8Channel/l.mp3',
     name: 'l',
     rotation: 0
   },
@@ -69,7 +68,7 @@ const soundObjects = [
     y: 0,
     z: 10,
     position: [-10, 0, 10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/ls.wav',
+    filePath: './sounds/ambientSound8Channel/ls.mp3',
     name: 'ls',
     rotation: Math.PI
   },
@@ -80,7 +79,7 @@ const soundObjects = [
     y: 10,
     z: -10,
     position: [-10, 10, -10],
-    filePath: 'https://storage.googleapis.com/oscy-cdn/proof_of_concept/hl.wav',
+    filePath: './sounds/ambientSound8Channel/hl.mp3',
     name: 'hl',
     rotation: 0
   },
@@ -90,8 +89,7 @@ const soundObjects = [
     y: 10,
     z: 10,
     position: [-10, 10, 10],
-    filePath:
-      'https://storage.googleapis.com/oscy-cdn/proof_of_concept/hls.wav',
+    filePath: './sounds/ambientSound8Channel/hls.mp3',
     name: 'hls',
     rotation: Math.PI
   }
