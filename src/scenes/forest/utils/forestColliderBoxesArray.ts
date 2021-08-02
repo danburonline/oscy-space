@@ -721,6 +721,74 @@ const forestColliderBoxesArray: forestColliderBoxesArrayInterface[] = [
     scale: [1, 1, 1],
     rotation: [0, MathUtils.degToRad(-10.4), 0],
     color: '#fff'
+  },
+  {
+    id: 87,
+    size: [3.04, 3.08, 0.12],
+    position: [27.848, 0.073, -16.187],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(86.0), 0],
+    color: '#fff'
+  },
+  {
+    id: 88,
+    size: [3.56, 4.14, 0.16],
+    position: [25.984, -0.356, -14.933],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-12.0), 0],
+    color: '#fff'
+  },
+  {
+    id: 89,
+    size: [1.1, 2.62, 0.2],
+    position: [27.657, 0.201, -18.143],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-60.6), 0],
+    color: '#fff'
+  },
+  {
+    id: 90,
+    size: [3.58, 3.44, 0.2],
+    position: [25.718, -0.25, -18.564],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 91,
+    size: [2.46, 4.18, 0.14],
+    position: [23.838, -0.602, -17.278],
+    scale: [1, 1, 1],
+    rotation: [
+      MathUtils.degToRad(180.0),
+      MathUtils.degToRad(-87.2),
+      MathUtils.degToRad(180.0)
+    ],
+    color: '#fff'
+  },
+  {
+    id: 92,
+    size: [1.1, 3.58, 0.18],
+    position: [24.094, -0.459, -15.68],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(-56.2), 0],
+    color: '#fff'
+  },
+  {
+    id: 93,
+    size: [1.409, 3.795, 1.104],
+    position: [7.076, 5.797, -24.446],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 94,
+    size: [1.409, 3.795, 1.104],
+    position: [7.153, 5.797, -24.474],
+    scale: [1, 1, 1],
+    rotation: [0, MathUtils.degToRad(90.0), 0],
+    color: '#fff'
   }
 ]
 
