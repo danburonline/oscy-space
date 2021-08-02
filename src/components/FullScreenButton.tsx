@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExpand } from '@fortawesome/free-solid-svg-icons'
 import { faCompress } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import ReactTooltip from 'react-tooltip'
 
 export default function BackHomeButton(): JSX.Element {
   const fullScreenOn = <FontAwesomeIcon icon={faExpand} />
@@ -49,15 +50,19 @@ export default function BackHomeButton(): JSX.Element {
   }
 
   return (
-    <button
-      title={titleText}
-      id={'fullScreenButton'}
-      onClick={() => {
-        toggleFullscreen()
-      }}
-      className='absolute bottom-0 flex items-center justify-center p-3 m-3 text-white transition-colors ease-in-out rounded-md cursor-pointer bg-primary z-99 right-11 duration-350 hover:bg-hover'
-    >
-      {buttonText}
-    </button>
+    <>
+      <button
+        title={titleText}
+        data-tip={titleText}
+        id={'fullScreenButton'}
+        onClick={() => {
+          toggleFullscreen()
+        }}
+        className='absolute bottom-0 flex items-center justify-center p-3 m-3 text-white transition-colors ease-in-out rounded-md cursor-pointer bg-primary z-99 right-11 duration-350 hover:bg-hover'
+      >
+        {buttonText}
+      </button>
+      <ReactTooltip />
+    </>
   )
 }
