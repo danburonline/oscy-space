@@ -14,11 +14,11 @@ const roomData = [
     imageSrc: '/imgs/forest-thumbnail.jpg'
   },
   {
-    title: 'GitHub Source Code',
+    title: '🐙 GitHub Source Code',
     link: 'https://github.com/danburonline/oscy-space'
   },
   {
-    title: 'Playground Version',
+    title: '🧪 Playground Version',
     link: 'https://poc.oscy.space'
   }
 ]
