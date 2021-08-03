@@ -8,7 +8,7 @@ export default function RoomElements(
 ): JSX.Element {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF(
-    '/gorge/RoomElements.gltf'
+    '/gorge/RoomElements-transformed.glb'
   ) as RoomElementsProps
   return (
     <group ref={group} {...props} dispose={null}>

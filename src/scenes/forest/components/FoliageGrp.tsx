@@ -8,7 +8,7 @@ export default function FoliageGrp(
 ): JSX.Element {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF(
-    '/forest/FoliageGrp.gltf'
+    '/forest/FoliageGrp-transformed.glb'
   ) as FoliageGrpProps
   return (
     <group ref={group} {...props} dispose={null}>

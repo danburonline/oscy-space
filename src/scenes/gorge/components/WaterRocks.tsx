@@ -8,7 +8,7 @@ export default function WaterRocks(
 ): JSX.Element {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF(
-    '/forest/BaseRocks.gltf'
+    '/forest/BaseRocks-transformed.glb'
   ) as WaterRocksProps
   return (
     <group ref={group} {...props} dispose={null}>

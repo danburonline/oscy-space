@@ -7,7 +7,9 @@ export default function WallRock(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/forest/WallRock.gltf') as WallRockProps
+  const { nodes, materials } = useGLTF(
+    '/forest/WallRock-transformed.glb'
+  ) as WallRockProps
 
   return (
     <group ref={group} {...props} dispose={null}>
