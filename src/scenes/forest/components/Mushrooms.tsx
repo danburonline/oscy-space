@@ -7,7 +7,9 @@ export default function Mushrooms(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/forest/Pilze.gltf') as MushroomProps
+  const { nodes, materials } = useGLTF(
+    '/forest/Pilze-transformed.glb'
+  ) as MushroomProps
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh

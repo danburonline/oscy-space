@@ -7,7 +7,9 @@ export default function Grass(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/gorge/Grass.gltf') as GrassProps
+  const { nodes, materials } = useGLTF(
+    '/gorge/Grass-transformed.glb'
+  ) as GrassProps
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh geometry={nodes.Grass_1.geometry} material={materials.M_Grass} />

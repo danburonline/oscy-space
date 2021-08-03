@@ -7,7 +7,9 @@ export default function Ladders(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/forest/Ladders.gltf') as LaddersProps
+  const { nodes, materials } = useGLTF(
+    '/forest/Ladders-transformed.glb'
+  ) as LaddersProps
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>

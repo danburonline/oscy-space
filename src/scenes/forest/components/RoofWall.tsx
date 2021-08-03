@@ -7,7 +7,9 @@ export default function RoofWall(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/forest/WandDach.gltf') as RoofWallProps
+  const { nodes, materials } = useGLTF(
+    '/forest/WandDach-transformed.glb'
+  ) as RoofWallProps
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh

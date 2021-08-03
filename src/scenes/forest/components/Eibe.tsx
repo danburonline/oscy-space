@@ -7,7 +7,9 @@ export default function Eibe(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/forest/EibeCremine.gltf') as EibeProps
+  const { nodes, materials } = useGLTF(
+    '/forest/EibeCremine-transformed.glb'
+  ) as EibeProps
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh

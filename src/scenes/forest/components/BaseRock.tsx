@@ -7,7 +7,9 @@ export default function BaseRock(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/forest/BaseRock.gltf') as BaseRockProps
+  const { nodes, materials } = useGLTF(
+    '/forest/BaseRock-transformed.glb'
+  ) as BaseRockProps
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
