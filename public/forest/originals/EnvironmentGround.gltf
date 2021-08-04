@@ -9,25 +9,22 @@
   "scenes": [
     {
       "name": "Scene",
-      "nodes": [3]
+      "nodes": [2]
     }
   ],
   "nodes": [
     {
       "mesh": 0,
-      "name": "Environment_ground_UV_low.001"
+      "name": "EnvironmentGround_UV_low.001"
     },
     {
       "children": [0],
-      "name": "Environment_ground_UV_low"
+      "name": "EnvironmentGround_UV_low"
     },
     {
       "children": [1],
-      "name": "meshes_fin"
-    },
-    {
-      "children": [2],
-      "name": "RootNode"
+      "name": "OscyFinals",
+      "rotation": [0.7071068286895752, 0, 0, 0.7071067094802856]
     }
   ],
   "materials": [
@@ -55,7 +52,7 @@
   ],
   "meshes": [
     {
-      "name": "Environment_ground_UV_low",
+      "name": "EnvironmentGround_UV_low",
       "primitives": [
         {
           "attributes": {
@@ -111,19 +108,19 @@
   "accessors": [
     {
       "componentType": 5126,
-      "count": 3858,
-      "max": [49.48541259765625, 5.1626763343811035, 8.961040496826172],
-      "min": [-6.514585018157959, -1.3732281923294067, -45.03895568847656],
+      "count": 3864,
+      "max": [49.48541259765625, 8.961038589477539, 1.3732303380966187],
+      "min": [-6.514585494995117, -45.038963317871094, -5.162674427032471],
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 3858,
+      "count": 3864,
       "type": "VEC3"
     },
     {
       "componentType": 5126,
-      "count": 3858,
+      "count": 3864,
       "type": "VEC2"
     },
     {
@@ -135,13 +132,13 @@
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 48332,
+      "byteLength": 48619,
       "byteOffset": 0
     }
   ],
   "buffers": [
     {
-      "byteLength": 48332,
+      "byteLength": 48620,
       "uri": "EnvironmentGround.bin"
     }
   ]

@@ -12,11 +12,14 @@ export default function EnvironmentGround(
   ) as EnvironmentGroundProps
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh
-        receiveShadow
-        geometry={nodes.Environment_ground_UV_low001.geometry}
-        material={materials.GroundForest}
-      />
+      <group rotation={[Math.PI / 2, 0, 0]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.EnvironmentGround_UV_low001.geometry}
+          material={materials.GroundForest}
+        />
+      </group>
     </group>
   )
 }
