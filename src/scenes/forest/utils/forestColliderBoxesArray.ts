@@ -548,7 +548,7 @@ const forestColliderBoxesArray: forestColliderBoxesArrayInterface[] = [
   },
   {
     id: 65,
-    size: [15.74, 0.2, 6.36],
+    size: [15.74, 0.2, 9.728],
     position: [10.841, 0.103, -37.163],
     scale: [1, 1, 1],
     rotation: [0, 0, 0],
@@ -556,10 +556,14 @@ const forestColliderBoxesArray: forestColliderBoxesArrayInterface[] = [
   },
   {
     id: 66,
-    size: [11.52, 0.2, 10.08],
-    position: [0.636, 1.373, -35.89],
+    size: [6.0, 0.2, 15.387],
+    position: [-2.672, 1.486, -36.771],
     scale: [1, 1, 1],
-    rotation: [MathUtils.degToRad(-10.8), 0, MathUtils.degToRad(-10.6)],
+    rotation: [
+      MathUtils.degToRad(-6.57),
+      MathUtils.degToRad(0.42),
+      MathUtils.degToRad(-3.67)
+    ],
     color: '#fff'
   },
   {
@@ -572,7 +576,7 @@ const forestColliderBoxesArray: forestColliderBoxesArrayInterface[] = [
   },
   {
     id: 68,
-    size: [0.1, 4.326, 7.91],
+    size: [0.1, 6.479, 7.91],
     position: [4.362, 3.636, -31.075],
     scale: [1, 1, 1],
     rotation: [0, 0, 0],
@@ -612,10 +616,10 @@ const forestColliderBoxesArray: forestColliderBoxesArrayInterface[] = [
   },
   {
     id: 73,
-    size: [6.24, 0.2, 4.65],
-    position: [1.859, 2.985, -28.958],
+    size: [6.24, 0.2, 4.3],
+    position: [1.859, 3.446, -28.792],
     scale: [1, 1, 1],
-    rotation: [MathUtils.degToRad(-27.0), 0, MathUtils.degToRad(-5.6)],
+    rotation: [MathUtils.degToRad(-17.83), 0, MathUtils.degToRad(-5.6)],
     color: '#fff'
   },
   {
@@ -788,6 +792,126 @@ const forestColliderBoxesArray: forestColliderBoxesArrayInterface[] = [
     position: [7.153, 5.797, -24.474],
     scale: [1, 1, 1],
     rotation: [0, MathUtils.degToRad(90.0), 0],
+    color: '#fff'
+  },
+  {
+    id: 95,
+    size: [6.206, 0.108, 5.43],
+    position: [3.268, 0.686, -36.83],
+    scale: [1, 1, 1],
+    rotation: [
+      MathUtils.degToRad(-3.4),
+      MathUtils.degToRad(0.23),
+      MathUtils.degToRad(-14.51)
+    ],
+    color: '#fff'
+  },
+  {
+    id: 96,
+    size: [6.0, 0.2, 5],
+    position: [3.18, 1.749, -32.915],
+    scale: [1, 1, 1],
+    rotation: [
+      MathUtils.degToRad(-22.5),
+      MathUtils.degToRad(3.52),
+      MathUtils.degToRad(-6.85)
+    ],
+    color: '#fff'
+  },
+  {
+    id: 97,
+    size: [3.0, 0.2, 4.0],
+    position: [-1.184, 2.184, -31.996],
+    scale: [1, 1, 1],
+    rotation: [MathUtils.degToRad(-22.53), 0, MathUtils.degToRad(9.51)],
+    color: '#fff'
+  },
+  {
+    id: 98,
+    size: [0.5, 2, 0.5],
+    position: [1.804, 1.148, -4.459],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 99,
+    size: [0.5, 2, 0.5],
+    position: [0.623, 1.265, 1.563],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 100,
+    size: [0.5, 2, 0.5],
+    position: [7.84, 1.8, -5.058],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 101,
+    size: [0.5, 2, 0.5],
+    position: [6.676, 1.388, 2.2],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 102,
+    size: [0.5, 2, 0.5],
+    position: [10.702, 2.262, -0.131],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 103,
+    size: [0.5, 2, 0.5],
+    position: [39.434, 0.982, -14.638],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 104,
+    size: [0.5, 2, 0.5],
+    position: [31.497, 0.897, -17.963],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 105,
+    size: [0.5, 2, 0.5],
+    position: [10.843, 5.055, -30.286],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 106,
+    size: [0.5, 2, 0.5],
+    position: [9.152, 5.046, -17.561],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 107,
+    size: [0.5, 2, 0.5],
+    position: [3.682, 5.038, -18.664],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
+    color: '#fff'
+  },
+  {
+    id: 108,
+    size: [0.5, 2, 0.5],
+    position: [0.614, 5.349, -18.895],
+    scale: [1, 1, 1],
+    rotation: [0, 0, 0],
     color: '#fff'
   }
 ]
