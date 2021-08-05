@@ -8,15 +8,18 @@ export default function EnvironmentGround(
 ): JSX.Element {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF(
-    '/forest/EnvironmentGround.gltf'
+    '/forest/EnvironmentGround-transformed.glb'
   ) as EnvironmentGroundProps
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh
-        receiveShadow
-        geometry={nodes.Environment_ground_UV_low001.geometry}
-        material={materials.GroundForest}
-      />
+      <group rotation={[Math.PI / 2, 0, 0]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.EnvironmentGround_UV_low001.geometry}
+          material={materials.GroundForest}
+        />
+      </group>
     </group>
   )
 }

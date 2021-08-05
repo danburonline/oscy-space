@@ -49,7 +49,7 @@ const Forest = (): JSX.Element => {
             allowSleep={true}
             gravity={[0, -20, 0]}
             tolerance={0.0001}
-            size={100}
+            size={115}
             broadphase={'SAP'}
             iterations={10}
           >

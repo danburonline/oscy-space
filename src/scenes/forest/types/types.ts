@@ -23,7 +23,7 @@ export type BeechesProps = GLTF & {
 
 export type EnvironmentGroundProps = GLTF & {
   nodes: {
-    Environment_ground_UV_low001: THREE.Mesh
+    EnvironmentGround_UV_low001: THREE.Mesh
   }
   materials: {
     GroundForest: THREE.MeshStandardMaterial

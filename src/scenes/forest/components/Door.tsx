@@ -7,7 +7,9 @@ export default function Door(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/forest/Door.gltf') as DoorProps
+  const { nodes, materials } = useGLTF(
+    '/forest/Door-transformed.glb'
+  ) as DoorProps
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>

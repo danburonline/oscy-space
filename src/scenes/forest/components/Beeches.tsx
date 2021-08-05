@@ -7,7 +7,9 @@ export default function Beeches(
   props: JSX.IntrinsicElements['group']
 ): JSX.Element {
   const group = useRef<THREE.Group>()
-  const { nodes, materials } = useGLTF('/forest/Beeches.gltf') as BeechesProps
+  const { nodes, materials } = useGLTF(
+    '/forest/Beeches-transformed.glb'
+  ) as BeechesProps
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
