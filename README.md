@@ -15,8 +15,8 @@ This repository divides into three branches which will trigger GitHub Actions pi
 ### Run The Build Server
 
 - Build the Docker image with `docker build . -t oscy-space:latest`.
-- Run the created image with `docker run -p 3000:3000 oscy-space`.
-- Access the site on <http://localhost:3000>.
+- Run the created image with `docker run -p 8080:8080 oscy-space`.
+- Access the site on <http://localhost:8080>.
 
 ### Run The Development Server
 

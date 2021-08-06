@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $port",
+    "start": "next start -p 8080",
     "format": "prettier -w .",
     "lint": "next lint"
   },
