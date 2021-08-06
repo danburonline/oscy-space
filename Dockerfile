@@ -13,8 +13,5 @@ RUN yarn --production-only
 # Copy local code to the container image
 RUN yarn build
 
-# Expose the Next.js application port
-EXPOSE 3000
-
 # Run the web service on container startup
 CMD [ "yarn", "start" ]
