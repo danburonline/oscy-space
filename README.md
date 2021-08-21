@@ -1,5 +1,7 @@
 # Oscy Space
 
+![Oscy Logo and Banner](./img/readme-banner.png)
+
 Oscy Space is the project name for two experimental and immersive spatial audio proof of concepts implemented with React-Three-Fiber, where people can explore interesting nature scenes from Switzerland.
 
 ## Branching and Continuous Deployment
